@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D4890EC-929D-4DBC-8F64-B3F8FB02A1BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Life</RootNamespace>
+    <AssemblyName>Life</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>опубликовать\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Program.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RapidInterface, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RapidInterface\RapidInterface\bin\Debug\RapidInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Usable">
+      <HintPath>..\..\Usable\Usable\bin\Debug\Usable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Global.cs" />
+    <Compile Include="Views\DatebookMoneyReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookMoneyReportView.Designer.cs">
+      <DependentUpon>DatebookMoneyReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DBClass.cs" />
+    <Compile Include="Reports\InterfaceReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\InterfaceReport.Designer.cs">
+      <DependentUpon>InterfaceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReportEx.cs" />
+    <Compile Include="Views\DatebookCostCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookCostCollectionView.Designer.cs">
+      <DependentUpon>DatebookCostCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatebookView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookView.Designer.cs">
+      <DependentUpon>DatebookView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CostTypeView.Designer.cs">
+      <DependentUpon>CostTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoteTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NoteTypeView.Designer.cs">
+      <DependentUpon>NoteTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NoteView.Designer.cs">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PersonView.Designer.cs">
+      <DependentUpon>PersonView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EducationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EducationView.Designer.cs">
+      <DependentUpon>EducationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhoneTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PhoneTypeView.Designer.cs">
+      <DependentUpon>PhoneTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SexView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SexView.Designer.cs">
+      <DependentUpon>SexView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonCategoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PersonCategoryView.Designer.cs">
+      <DependentUpon>PersonCategoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlaceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PlaceView.Designer.cs">
+      <DependentUpon>PlaceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SportTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SportTypeView.Designer.cs">
+      <DependentUpon>SportTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Temp.Designer.cs">
+      <DependentUpon>Temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ElectronCouplingTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ElectronCouplingTypeView.Designer.cs">
+      <DependentUpon>ElectronCouplingTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfitTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProfitTypeView.Designer.cs">
+      <DependentUpon>ProfitTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatebookProfitCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookProfitCollectionView.Designer.cs">
+      <DependentUpon>DatebookProfitCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DatebookMoneyReport.cs" />
+    <Compile Include="Reports\DatebookMoneyReport.Designer.cs">
+      <DependentUpon>DatebookMoneyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_DBInterfaceViewForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\_DBInterfaceViewForm.Designer.cs">
+      <DependentUpon>_DBInterfaceViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs" />
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\DatebookSportCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookSportCollectionView.Designer.cs">
+      <DependentUpon>DatebookSportCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatebookMeetingCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookMeetingCollectionView.Designer.cs">
+      <DependentUpon>DatebookMeetingCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatebookMeetingSexCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DatebookMeetingSexCollectionView.Designer.cs">
+      <DependentUpon>DatebookMeetingSexCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DisbalanceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DisbalanceView.Designer.cs">
+      <DependentUpon>DisbalanceView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\DatebookMoneyReport.resx">
+      <DependentUpon>DatebookMoneyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InterfaceReport.resx">
+      <DependentUpon>InterfaceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReportEx.resx">
+      <DependentUpon>XtraReportEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookCostCollectionView.resx">
+      <DependentUpon>DatebookCostCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostTypeView.resx">
+      <DependentUpon>CostTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookMeetingCollectionView.resx">
+      <DependentUpon>DatebookMeetingCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookMeetingSexCollectionView.resx">
+      <DependentUpon>DatebookMeetingSexCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookMoneyReportView.resx">
+      <DependentUpon>DatebookMoneyReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookProfitCollectionView.resx">
+      <DependentUpon>DatebookProfitCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookSportCollectionView.resx">
+      <DependentUpon>DatebookSportCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DatebookView.resx">
+      <DependentUpon>DatebookView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DisbalanceView.resx">
+      <DependentUpon>DisbalanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EducationView.resx">
+      <DependentUpon>EducationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ElectronCouplingTypeView.resx">
+      <DependentUpon>ElectronCouplingTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NoteTypeView.resx">
+      <DependentUpon>NoteTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NoteView.resx">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PersonView.resx">
+      <DependentUpon>PersonView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PhoneTypeView.resx">
+      <DependentUpon>PhoneTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PlaceView.resx">
+      <DependentUpon>PlaceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfitTypeView.resx">
+      <DependentUpon>ProfitTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SexView.resx">
+      <DependentUpon>SexView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PersonCategoryView.resx">
+      <DependentUpon>PersonCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SportTypeView.resx">
+      <DependentUpon>SportTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Temp.resx">
+      <DependentUpon>Temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Program.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VarXml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DBConnection>
+	<DataBaseType>1</DataBaseType>
+	<DataBase>DB.accdb</DataBase>
+	<LoginFormNeed>true</LoginFormNeed>
+	<PasswordNeed>true</PasswordNeed>
+	<User>admin</User>
+	<Password>---</Password>
+  </DBConnection>
+  <Disbalance>
+	<Account1>Кошелек</Account1>
+	<Account2>Заначка 1</Account2>
+	<Account3>Заначка 2</Account3>
+	<Account4>VC *4118</Account4>
+	<Account5>VG *1767</Account5>
+	<Account6>MC *6815</Account6>
+	<Account7>СС *6560</Account7>
+	<Account8>УС *9323</Account8>
+	<Account9>Резерв 1</Account9>
+	<Account10>Резерв 2</Account10>
+  </Disbalance>
+</VarXml>
