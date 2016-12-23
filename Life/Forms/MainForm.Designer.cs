@@ -912,8 +912,8 @@
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.Name = "MainForm";
-            this.OnlineLimit = 60;
-            this.OnlineLost = 5;
+            this.OnlineLimit = 5;
+            this.OnlineLost = 60;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Жизнь";
             this.OnlineChanged += new System.EventHandler(this.MainForm_OnlineChanged);
