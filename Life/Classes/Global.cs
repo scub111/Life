@@ -218,7 +218,7 @@ namespace Life
 
         public void Init()
         {
-            Version = "v1.6.45";
+            Version = "v1.6.47";
 
             varXml = new VarXml("Config.xml");
             varXml.LoadFromXML();

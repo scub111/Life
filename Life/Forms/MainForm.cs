@@ -1,17 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using System.IO;
-using DevExpress.Xpo;
-using DevExpress.Xpo.DB;
-using System.Threading;
-using Usable;
 using RapidInterface;
 
 namespace Life
@@ -22,7 +12,7 @@ namespace Life
         {
             Global.Default.Init();
             InitializeComponent();
-            dbConnection1.DataBaseType = (RapidInterface.DBConnection.SQLType)Global.Default.varXml.DBConnection.DataBaseType;
+            dbConnection1.DataBaseType = (DBConnection.SQLType)Global.Default.varXml.DBConnection.DataBaseType;
             dbConnection1.DataBase = Global.Default.varXml.DBConnection.DataBase;
             dbConnection1.PasswordNeed = Global.Default.varXml.DBConnection.PasswordNeed;
             dbConnection1.LoginFormNeed = Global.Default.varXml.DBConnection.LoginFormNeed;
@@ -51,7 +41,7 @@ namespace Life
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Text += string.Format(" {0}", Global.Default.Version);
+        Text += string.Format(" {0}", Global.Default.Version);
             InitText = Text;
         }
 
@@ -67,6 +57,11 @@ namespace Life
         private void MainForm_OnlineCountChanged(object sender, EventArgs e)
         {
             Text = string.Format("{0} [{1} c]", InitText, OnlineLost);
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            dbConnection1.ShowLoginForm();
         }
     }
 }

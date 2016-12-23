@@ -120,6 +120,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString2);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(859, 574);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -198,19 +199,19 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton2;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(230, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(231, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Тип заметки";
+            this.formNavigatorControl1.TableCaption = "Тип заметки2";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // NoteTypeCaptionTextEdit1
             // 
             this.NoteTypeCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "NoteTypeCaption", true));
-            this.NoteTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 66);
+            this.NoteTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 65);
             this.NoteTypeCaptionTextEdit1.Name = "NoteTypeCaptionTextEdit1";
             this.NoteTypeCaptionTextEdit1.Size = new System.Drawing.Size(696, 20);
             this.NoteTypeCaptionTextEdit1.StyleController = this.formLayoutControl1;
@@ -219,7 +220,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 90);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 89);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(696, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -240,7 +241,6 @@
             this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutGroup1.Name = "formLayoutGroup1";
             this.formLayoutGroup1.Size = new System.Drawing.Size(824, 547);
-            this.formLayoutGroup1.Text = "formLayoutGroup1";
             this.formLayoutGroup1.TextVisible = false;
             // 
             // formNavigatorLayoutItem1
@@ -251,9 +251,7 @@
             this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
             this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(804, 23);
-            this.formNavigatorLayoutItem1.Text = "formNavigatorLayoutItem1";
             this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.formNavigatorLayoutItem1.TextToControlDistance = 0;
             this.formNavigatorLayoutItem1.TextVisible = false;
             // 
             // formDataLayoutGroup1
@@ -285,7 +283,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 24);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(780, 437);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(780, 438);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
             // 
@@ -383,10 +381,10 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton2;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(230, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(231, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
             this.tableNavigatorControl1.TableCaption = "Тип заметки";
@@ -403,7 +401,6 @@
             this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutGroup1.Name = "tableLayoutGroup1";
             this.tableLayoutGroup1.Size = new System.Drawing.Size(824, 547);
-            this.tableLayoutGroup1.Text = "tableLayoutGroup1";
             this.tableLayoutGroup1.TextVisible = false;
             // 
             // tableNavigatorLayoutItem1
@@ -414,9 +411,7 @@
             this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
             this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(804, 23);
-            this.tableNavigatorLayoutItem1.Text = "tableNavigatorLayoutItem1";
             this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableNavigatorLayoutItem1.TextToControlDistance = 0;
             this.tableNavigatorLayoutItem1.TextVisible = false;
             // 
             // tableGridLayoutItem1
@@ -426,9 +421,7 @@
             this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
             this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
             this.tableGridLayoutItem1.Size = new System.Drawing.Size(804, 504);
-            this.tableGridLayoutItem1.Text = "tableGridLayoutItem1";
             this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableGridLayoutItem1.TextToControlDistance = 0;
             this.tableGridLayoutItem1.TextVisible = false;
             // 
             // dockManager1

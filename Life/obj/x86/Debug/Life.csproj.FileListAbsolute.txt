@@ -156,10 +156,8 @@ D:\_Projects\Life\Life\obj\x86\Debug\Life.csproj.GenerateResource.Cache
 D:\_Projects\Life\Life\obj\x86\Debug\Life.exe.licenses
 D:\_Projects\Life\Life\bin\Debug\Life.exe
 D:\_Projects\Life\Life\bin\Debug\Life.pdb
-D:\_Projects\Life\Life\bin\Debug\RapidInterface.dll
 D:\_Projects\Life\Life\bin\Debug\Usable.dll
 D:\_Projects\Life\Life\bin\Debug\DevExpress.BonusSkins.v15.2.dll
-D:\_Projects\Life\Life\bin\Debug\RapidInterface.pdb
 D:\_Projects\Life\Life\bin\Debug\Usable.pdb
 D:\_Projects\Life\Life\obj\x86\Debug\Life.exe
 D:\_Projects\Life\Life\obj\x86\Debug\Life.pdb
@@ -170,3 +168,5 @@ D:\_Projects\Life\Life\obj\x86\Debug\Life.SettingsView.en.resources
 D:\_Projects\Life\Life\obj\x86\Debug\Life.SettingsView.ru.resources
 D:\_Projects\Life\Life\obj\x86\Debug\en\Life.resources.dll
 D:\_Projects\Life\Life\obj\x86\Debug\ru\Life.resources.dll
+D:\_Projects\Life\Life\bin\Debug\RapidInterface.dll
+D:\_Projects\Life\Life\bin\Debug\RapidInterface.pdb

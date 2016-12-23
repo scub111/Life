@@ -28,39 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NoteView));
-            this.baseXPCollecton1 = new DevExpress.Xpo.XPCollection();
+            this.baseXPCollecton1 = new DevExpress.Xpo.XPCollection(this.components);
             this._dbInterface1 = new RapidInterface.DBInterface();
-            this.baseUnitOfWork1 = new DevExpress.Xpo.UnitOfWork();
-            this.baseXPCollecton2 = new DevExpress.Xpo.XPCollection();
+            this.baseUnitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
+            this.baseXPCollecton2 = new DevExpress.Xpo.XPCollection(this.components);
             this.dockPanelMerge1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.tableGridControl1 = new RapidInterface.GridControlEx();
-            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.NoteTypeIDGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.NoteTypeRepGridLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
-            this.NoteTypeXPCollection1 = new DevExpress.Xpo.XPCollection();
-            this.NoteTypeGridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.NoteTypeCaptionGridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.icons1 = new DevExpress.Utils.ImageCollection();
-            this.NoteCaptionGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.TextGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
-            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx();
-            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.formDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.formLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.formNavigatorControl1 = new RapidInterface.DataNavigatorEx();
+            this.formNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
             this.NoteTypeIDGridLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.NoteTypeXPCollection1 = new DevExpress.Xpo.XPCollection(this.components);
             this.NoteTypeIDGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.NoteTypeCaptionGridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.icons1 = new DevExpress.Utils.ImageCollection(this.components);
             this.NoteCaptionTextEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.CommentTextEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.TextTextEdit1 = new DevExpress.XtraEditors.MemoEdit();
@@ -71,7 +54,25 @@
             this.NoteCaptionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CommentLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.TextLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
+            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
+            this.tableGridControl1 = new RapidInterface.GridControlEx(this.components);
+            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
+            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.NoteTypeIDGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.NoteTypeRepGridLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.NoteTypeGridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.NoteTypeCaptionGridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NoteCaptionGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.TextGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
+            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.itemXPObject1 = new RapidInterface.DBInterfaceItemXPObject();
             this.itemString1 = new RapidInterface.DBInterfaceItemString();
             this.itemString2 = new RapidInterface.DBInterfaceItemString();
@@ -82,26 +83,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton2)).BeginInit();
             this.dockPanelMerge1.SuspendLayout();
-            this.tableDockPanel1.SuspendLayout();
-            this.tableDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
-            this.tableLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeRepGridLookUpEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeXPCollection1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             this.formDockPanel1.SuspendLayout();
             this.formDockContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
             this.formLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NoteTypeIDGridLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeXPCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoteTypeIDGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoteCaptionTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextTextEdit1.Properties)).BeginInit();
@@ -112,6 +101,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoteCaptionLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextLayoutItem1)).BeginInit();
+            this.tableDockPanel1.SuspendLayout();
+            this.tableDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
+            this.tableLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeRepGridLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,6 +150,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString4);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(859, 574);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -190,6 +192,207 @@
             this.dockPanelMerge1.Size = new System.Drawing.Size(859, 574);
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
+            // 
+            // formDockPanel1
+            // 
+            this.formDockPanel1.Controls.Add(this.formDockContainer1);
+            this.formDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.formDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
+            this.formDockPanel1.ID = new System.Guid("bec138de-0dbd-4d4f-9ec4-548e2c48bbed");
+            this.formDockPanel1.Location = new System.Drawing.Point(31, 23);
+            this.formDockPanel1.Name = "formDockPanel1";
+            this.formDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
+            this.formDockPanel1.Size = new System.Drawing.Size(824, 547);
+            this.formDockPanel1.Text = "Форма";
+            // 
+            // formDockContainer1
+            // 
+            this.formDockContainer1.Controls.Add(this.formLayoutControl1);
+            this.formDockContainer1.Location = new System.Drawing.Point(0, 0);
+            this.formDockContainer1.Name = "formDockContainer1";
+            this.formDockContainer1.Size = new System.Drawing.Size(824, 547);
+            this.formDockContainer1.TabIndex = 0;
+            // 
+            // formLayoutControl1
+            // 
+            this.formLayoutControl1.Controls.Add(this.formNavigatorControl1);
+            this.formLayoutControl1.Controls.Add(this.NoteTypeIDGridLookUpEdit1);
+            this.formLayoutControl1.Controls.Add(this.NoteCaptionTextEdit1);
+            this.formLayoutControl1.Controls.Add(this.CommentTextEdit1);
+            this.formLayoutControl1.Controls.Add(this.TextTextEdit1);
+            this.formLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.formLayoutControl1.Images = this.icons1;
+            this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.formLayoutControl1.Name = "formLayoutControl1";
+            this.formLayoutControl1.Root = this.formLayoutGroup1;
+            this.formLayoutControl1.Size = new System.Drawing.Size(824, 547);
+            this.formLayoutControl1.TabIndex = 0;
+            // 
+            // formNavigatorControl1
+            // 
+            this.formNavigatorControl1.DataSource = this.baseXPCollecton2;
+            this.formNavigatorControl1.Error = false;
+            this.formNavigatorControl1.Location = new System.Drawing.Point(231, 12);
+            this.formNavigatorControl1.Name = "formNavigatorControl1";
+            this.formNavigatorControl1.ShowToolTips = true;
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
+            this.formNavigatorControl1.StyleController = this.formLayoutControl1;
+            this.formNavigatorControl1.TabIndex = 4;
+            this.formNavigatorControl1.TableCaption = "Заметки2";
+            this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
+            // 
+            // NoteTypeIDGridLookUpEdit1
+            // 
+            this.NoteTypeIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "NoteTypeID!", true));
+            this.NoteTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(114, 65);
+            this.NoteTypeIDGridLookUpEdit1.Name = "NoteTypeIDGridLookUpEdit1";
+            this.NoteTypeIDGridLookUpEdit1.Properties.DataSource = this.NoteTypeXPCollection1;
+            this.NoteTypeIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
+            this.NoteTypeIDGridLookUpEdit1.Properties.NullText = "";
+            this.NoteTypeIDGridLookUpEdit1.Properties.ValueMember = "This";
+            this.NoteTypeIDGridLookUpEdit1.Properties.View = this.NoteTypeIDGridLookUpEdit1View;
+            this.NoteTypeIDGridLookUpEdit1.Size = new System.Drawing.Size(686, 20);
+            this.NoteTypeIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
+            this.NoteTypeIDGridLookUpEdit1.TabIndex = 5;
+            // 
+            // NoteTypeXPCollection1
+            // 
+            this.NoteTypeXPCollection1.DeleteObjectOnRemove = true;
+            this.NoteTypeXPCollection1.ObjectType = typeof(Life.NoteType);
+            this.NoteTypeXPCollection1.Session = this.baseUnitOfWork1;
+            // 
+            // NoteTypeIDGridLookUpEdit1View
+            // 
+            this.NoteTypeIDGridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.NoteTypeCaptionGridColumn1});
+            this.NoteTypeIDGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.NoteTypeIDGridLookUpEdit1View.Images = this.icons1;
+            this.NoteTypeIDGridLookUpEdit1View.Name = "NoteTypeIDGridLookUpEdit1View";
+            this.NoteTypeIDGridLookUpEdit1View.OptionsBehavior.AutoPopulateColumns = false;
+            this.NoteTypeIDGridLookUpEdit1View.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.NoteTypeIDGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.NoteTypeIDGridLookUpEdit1View.OptionsView.ShowAutoFilterRow = true;
+            this.NoteTypeIDGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // NoteTypeCaptionGridColumn1
+            // 
+            this.NoteTypeCaptionGridColumn1.Caption = "Наименование";
+            this.NoteTypeCaptionGridColumn1.FieldName = "NoteTypeCaption";
+            this.NoteTypeCaptionGridColumn1.Name = "NoteTypeCaptionGridColumn1";
+            this.NoteTypeCaptionGridColumn1.Visible = true;
+            this.NoteTypeCaptionGridColumn1.VisibleIndex = 0;
+            // 
+            // icons1
+            // 
+            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
+            this.icons1.Images.SetKeyName(0, "NoteType.png");
+            // 
+            // NoteCaptionTextEdit1
+            // 
+            this.NoteCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "NoteCaption", true));
+            this.NoteCaptionTextEdit1.Location = new System.Drawing.Point(114, 89);
+            this.NoteCaptionTextEdit1.Name = "NoteCaptionTextEdit1";
+            this.NoteCaptionTextEdit1.Size = new System.Drawing.Size(686, 20);
+            this.NoteCaptionTextEdit1.StyleController = this.formLayoutControl1;
+            this.NoteCaptionTextEdit1.TabIndex = 6;
+            // 
+            // CommentTextEdit1
+            // 
+            this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "Comment", true));
+            this.CommentTextEdit1.Location = new System.Drawing.Point(114, 113);
+            this.CommentTextEdit1.Name = "CommentTextEdit1";
+            this.CommentTextEdit1.Size = new System.Drawing.Size(686, 20);
+            this.CommentTextEdit1.StyleController = this.formLayoutControl1;
+            this.CommentTextEdit1.TabIndex = 7;
+            // 
+            // TextTextEdit1
+            // 
+            this.TextTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "Text", true));
+            this.TextTextEdit1.Location = new System.Drawing.Point(114, 137);
+            this.TextTextEdit1.Name = "TextTextEdit1";
+            this.TextTextEdit1.Size = new System.Drawing.Size(686, 386);
+            this.TextTextEdit1.StyleController = this.formLayoutControl1;
+            this.TextTextEdit1.TabIndex = 8;
+            // 
+            // formLayoutGroup1
+            // 
+            this.formLayoutGroup1.CustomizationFormText = "Основная группа формы";
+            this.formLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.formLayoutGroup1.GroupBordersVisible = false;
+            this.formLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.formNavigatorLayoutItem1,
+            this.formDataLayoutGroup1});
+            this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
+            this.formLayoutGroup1.Name = "formLayoutGroup1";
+            this.formLayoutGroup1.Size = new System.Drawing.Size(824, 547);
+            this.formLayoutGroup1.TextVisible = false;
+            // 
+            // formNavigatorLayoutItem1
+            // 
+            this.formNavigatorLayoutItem1.Control = this.formNavigatorControl1;
+            this.formNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.formNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
+            this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
+            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(804, 23);
+            this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.formNavigatorLayoutItem1.TextVisible = false;
+            // 
+            // formDataLayoutGroup1
+            // 
+            this.formDataLayoutGroup1.AppearanceGroup.BackColor = System.Drawing.Color.Gainsboro;
+            this.formDataLayoutGroup1.AppearanceGroup.Options.UseBackColor = true;
+            this.formDataLayoutGroup1.CustomizationFormText = "Основные данные";
+            this.formDataLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.NoteTypeIDLayoutItem1,
+            this.NoteCaptionLayoutItem1,
+            this.CommentLayoutItem1,
+            this.TextLayoutItem1});
+            this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
+            this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
+            this.formDataLayoutGroup1.Size = new System.Drawing.Size(804, 504);
+            this.formDataLayoutGroup1.Text = "Основные данные";
+            // 
+            // NoteTypeIDLayoutItem1
+            // 
+            this.NoteTypeIDLayoutItem1.Control = this.NoteTypeIDGridLookUpEdit1;
+            this.NoteTypeIDLayoutItem1.CustomizationFormText = "Тип заметки";
+            this.NoteTypeIDLayoutItem1.ImageIndex = 0;
+            this.NoteTypeIDLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.NoteTypeIDLayoutItem1.Name = "NoteTypeIDLayoutItem1";
+            this.NoteTypeIDLayoutItem1.Size = new System.Drawing.Size(780, 24);
+            this.NoteTypeIDLayoutItem1.Text = "Тип заметки:";
+            this.NoteTypeIDLayoutItem1.TextSize = new System.Drawing.Size(87, 16);
+            // 
+            // NoteCaptionLayoutItem1
+            // 
+            this.NoteCaptionLayoutItem1.Control = this.NoteCaptionTextEdit1;
+            this.NoteCaptionLayoutItem1.CustomizationFormText = "Наименование";
+            this.NoteCaptionLayoutItem1.Location = new System.Drawing.Point(0, 24);
+            this.NoteCaptionLayoutItem1.Name = "NoteCaptionLayoutItem1";
+            this.NoteCaptionLayoutItem1.Size = new System.Drawing.Size(780, 24);
+            this.NoteCaptionLayoutItem1.Text = "Наименование:";
+            this.NoteCaptionLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
+            // 
+            // CommentLayoutItem1
+            // 
+            this.CommentLayoutItem1.Control = this.CommentTextEdit1;
+            this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
+            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 48);
+            this.CommentLayoutItem1.Name = "CommentLayoutItem1";
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(780, 24);
+            this.CommentLayoutItem1.Text = "Комментарий:";
+            this.CommentLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
+            // 
+            // TextLayoutItem1
+            // 
+            this.TextLayoutItem1.Control = this.TextTextEdit1;
+            this.TextLayoutItem1.CustomizationFormText = "Текст";
+            this.TextLayoutItem1.Location = new System.Drawing.Point(0, 72);
+            this.TextLayoutItem1.Name = "TextLayoutItem1";
+            this.TextLayoutItem1.Size = new System.Drawing.Size(780, 390);
+            this.TextLayoutItem1.Text = "Текст:";
+            this.TextLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
             // 
             // tableDockPanel1
             // 
@@ -294,12 +497,6 @@
             this.NoteTypeRepGridLookUpEdit1.ValueMember = "This";
             this.NoteTypeRepGridLookUpEdit1.View = this.NoteTypeGridView1;
             // 
-            // NoteTypeXPCollection1
-            // 
-            this.NoteTypeXPCollection1.DeleteObjectOnRemove = true;
-            this.NoteTypeXPCollection1.ObjectType = typeof(Life.NoteType);
-            this.NoteTypeXPCollection1.Session = this.baseUnitOfWork1;
-            // 
             // NoteTypeGridView1
             // 
             this.NoteTypeGridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -320,11 +517,6 @@
             this.NoteTypeCaptionGridColumn2.Name = "NoteTypeCaptionGridColumn2";
             this.NoteTypeCaptionGridColumn2.Visible = true;
             this.NoteTypeCaptionGridColumn2.VisibleIndex = 0;
-            // 
-            // icons1
-            // 
-            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
-            this.icons1.Images.SetKeyName(0, "NoteType.png");
             // 
             // NoteCaptionGridColumn1
             // 
@@ -359,13 +551,13 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton2;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(230, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(231, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "";
+            this.tableNavigatorControl1.TableCaption = "Заметки";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1
@@ -401,196 +593,6 @@
             this.tableGridLayoutItem1.Size = new System.Drawing.Size(804, 504);
             this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.tableGridLayoutItem1.TextVisible = false;
-            // 
-            // formDockPanel1
-            // 
-            this.formDockPanel1.Controls.Add(this.formDockContainer1);
-            this.formDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.formDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
-            this.formDockPanel1.ID = new System.Guid("bec138de-0dbd-4d4f-9ec4-548e2c48bbed");
-            this.formDockPanel1.Location = new System.Drawing.Point(31, 23);
-            this.formDockPanel1.Name = "formDockPanel1";
-            this.formDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
-            this.formDockPanel1.Size = new System.Drawing.Size(824, 547);
-            this.formDockPanel1.Text = "Форма";
-            // 
-            // formDockContainer1
-            // 
-            this.formDockContainer1.Controls.Add(this.formLayoutControl1);
-            this.formDockContainer1.Location = new System.Drawing.Point(0, 0);
-            this.formDockContainer1.Name = "formDockContainer1";
-            this.formDockContainer1.Size = new System.Drawing.Size(824, 547);
-            this.formDockContainer1.TabIndex = 0;
-            // 
-            // formLayoutControl1
-            // 
-            this.formLayoutControl1.Controls.Add(this.formNavigatorControl1);
-            this.formLayoutControl1.Controls.Add(this.NoteTypeIDGridLookUpEdit1);
-            this.formLayoutControl1.Controls.Add(this.NoteCaptionTextEdit1);
-            this.formLayoutControl1.Controls.Add(this.CommentTextEdit1);
-            this.formLayoutControl1.Controls.Add(this.TextTextEdit1);
-            this.formLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formLayoutControl1.Images = this.icons1;
-            this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.formLayoutControl1.Name = "formLayoutControl1";
-            this.formLayoutControl1.Root = this.formLayoutGroup1;
-            this.formLayoutControl1.Size = new System.Drawing.Size(824, 547);
-            this.formLayoutControl1.TabIndex = 0;
-            // 
-            // formNavigatorControl1
-            // 
-            this.formNavigatorControl1.DataSource = this.baseXPCollecton2;
-            this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(230, 12);
-            this.formNavigatorControl1.Name = "formNavigatorControl1";
-            this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
-            this.formNavigatorControl1.StyleController = this.formLayoutControl1;
-            this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "";
-            this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
-            // 
-            // NoteTypeIDGridLookUpEdit1
-            // 
-            this.NoteTypeIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "NoteTypeID!", true));
-            this.NoteTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(114, 66);
-            this.NoteTypeIDGridLookUpEdit1.Name = "NoteTypeIDGridLookUpEdit1";
-            this.NoteTypeIDGridLookUpEdit1.Properties.DataSource = this.NoteTypeXPCollection1;
-            this.NoteTypeIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
-            this.NoteTypeIDGridLookUpEdit1.Properties.NullText = "";
-            this.NoteTypeIDGridLookUpEdit1.Properties.ValueMember = "This";
-            this.NoteTypeIDGridLookUpEdit1.Properties.View = this.NoteTypeIDGridLookUpEdit1View;
-            this.NoteTypeIDGridLookUpEdit1.Size = new System.Drawing.Size(686, 20);
-            this.NoteTypeIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
-            this.NoteTypeIDGridLookUpEdit1.TabIndex = 5;
-            // 
-            // NoteTypeIDGridLookUpEdit1View
-            // 
-            this.NoteTypeIDGridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.NoteTypeCaptionGridColumn1});
-            this.NoteTypeIDGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.NoteTypeIDGridLookUpEdit1View.Images = this.icons1;
-            this.NoteTypeIDGridLookUpEdit1View.Name = "NoteTypeIDGridLookUpEdit1View";
-            this.NoteTypeIDGridLookUpEdit1View.OptionsBehavior.AutoPopulateColumns = false;
-            this.NoteTypeIDGridLookUpEdit1View.OptionsDetail.AllowExpandEmptyDetails = true;
-            this.NoteTypeIDGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.NoteTypeIDGridLookUpEdit1View.OptionsView.ShowAutoFilterRow = true;
-            this.NoteTypeIDGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // NoteTypeCaptionGridColumn1
-            // 
-            this.NoteTypeCaptionGridColumn1.Caption = "Наименование";
-            this.NoteTypeCaptionGridColumn1.FieldName = "NoteTypeCaption";
-            this.NoteTypeCaptionGridColumn1.Name = "NoteTypeCaptionGridColumn1";
-            this.NoteTypeCaptionGridColumn1.Visible = true;
-            this.NoteTypeCaptionGridColumn1.VisibleIndex = 0;
-            // 
-            // NoteCaptionTextEdit1
-            // 
-            this.NoteCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "NoteCaption", true));
-            this.NoteCaptionTextEdit1.Location = new System.Drawing.Point(114, 90);
-            this.NoteCaptionTextEdit1.Name = "NoteCaptionTextEdit1";
-            this.NoteCaptionTextEdit1.Size = new System.Drawing.Size(686, 20);
-            this.NoteCaptionTextEdit1.StyleController = this.formLayoutControl1;
-            this.NoteCaptionTextEdit1.TabIndex = 6;
-            // 
-            // CommentTextEdit1
-            // 
-            this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(114, 114);
-            this.CommentTextEdit1.Name = "CommentTextEdit1";
-            this.CommentTextEdit1.Size = new System.Drawing.Size(686, 20);
-            this.CommentTextEdit1.StyleController = this.formLayoutControl1;
-            this.CommentTextEdit1.TabIndex = 7;
-            // 
-            // TextTextEdit1
-            // 
-            this.TextTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton2, "Text", true));
-            this.TextTextEdit1.Location = new System.Drawing.Point(114, 138);
-            this.TextTextEdit1.Name = "TextTextEdit1";
-            this.TextTextEdit1.Size = new System.Drawing.Size(686, 385);
-            this.TextTextEdit1.StyleController = this.formLayoutControl1;
-            this.TextTextEdit1.TabIndex = 8;
-            // 
-            // formLayoutGroup1
-            // 
-            this.formLayoutGroup1.CustomizationFormText = "Основная группа формы";
-            this.formLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.formLayoutGroup1.GroupBordersVisible = false;
-            this.formLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.formNavigatorLayoutItem1,
-            this.formDataLayoutGroup1});
-            this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
-            this.formLayoutGroup1.Name = "formLayoutGroup1";
-            this.formLayoutGroup1.Size = new System.Drawing.Size(824, 547);
-            this.formLayoutGroup1.TextVisible = false;
-            // 
-            // formNavigatorLayoutItem1
-            // 
-            this.formNavigatorLayoutItem1.Control = this.formNavigatorControl1;
-            this.formNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.formNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
-            this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
-            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(804, 23);
-            this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.formNavigatorLayoutItem1.TextVisible = false;
-            // 
-            // formDataLayoutGroup1
-            // 
-            this.formDataLayoutGroup1.AppearanceGroup.BackColor = System.Drawing.Color.Gainsboro;
-            this.formDataLayoutGroup1.AppearanceGroup.Options.UseBackColor = true;
-            this.formDataLayoutGroup1.CustomizationFormText = "Основные данные";
-            this.formDataLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.NoteTypeIDLayoutItem1,
-            this.NoteCaptionLayoutItem1,
-            this.CommentLayoutItem1,
-            this.TextLayoutItem1});
-            this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
-            this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
-            this.formDataLayoutGroup1.Size = new System.Drawing.Size(804, 504);
-            this.formDataLayoutGroup1.Text = "Основные данные";
-            // 
-            // NoteTypeIDLayoutItem1
-            // 
-            this.NoteTypeIDLayoutItem1.Control = this.NoteTypeIDGridLookUpEdit1;
-            this.NoteTypeIDLayoutItem1.CustomizationFormText = "Тип заметки";
-            this.NoteTypeIDLayoutItem1.ImageIndex = 0;
-            this.NoteTypeIDLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.NoteTypeIDLayoutItem1.Name = "NoteTypeIDLayoutItem1";
-            this.NoteTypeIDLayoutItem1.Size = new System.Drawing.Size(780, 24);
-            this.NoteTypeIDLayoutItem1.Text = "Тип заметки:";
-            this.NoteTypeIDLayoutItem1.TextSize = new System.Drawing.Size(87, 16);
-            // 
-            // NoteCaptionLayoutItem1
-            // 
-            this.NoteCaptionLayoutItem1.Control = this.NoteCaptionTextEdit1;
-            this.NoteCaptionLayoutItem1.CustomizationFormText = "Наименование";
-            this.NoteCaptionLayoutItem1.Location = new System.Drawing.Point(0, 24);
-            this.NoteCaptionLayoutItem1.Name = "NoteCaptionLayoutItem1";
-            this.NoteCaptionLayoutItem1.Size = new System.Drawing.Size(780, 24);
-            this.NoteCaptionLayoutItem1.Text = "Наименование:";
-            this.NoteCaptionLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
-            // 
-            // CommentLayoutItem1
-            // 
-            this.CommentLayoutItem1.Control = this.CommentTextEdit1;
-            this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
-            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 48);
-            this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(780, 24);
-            this.CommentLayoutItem1.Text = "Комментарий:";
-            this.CommentLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
-            // 
-            // TextLayoutItem1
-            // 
-            this.TextLayoutItem1.Control = this.TextTextEdit1;
-            this.TextLayoutItem1.CustomizationFormText = "Текст";
-            this.TextLayoutItem1.Location = new System.Drawing.Point(0, 72);
-            this.TextLayoutItem1.Name = "TextLayoutItem1";
-            this.TextLayoutItem1.Size = new System.Drawing.Size(780, 389);
-            this.TextLayoutItem1.Text = "Текст:";
-            this.TextLayoutItem1.TextSize = new System.Drawing.Size(87, 13);
             // 
             // dockManager1
             // 
@@ -689,26 +691,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton2)).EndInit();
             this.dockPanelMerge1.ResumeLayout(false);
-            this.tableDockPanel1.ResumeLayout(false);
-            this.tableDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
-            this.tableLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeRepGridLookUpEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeXPCollection1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             this.formDockPanel1.ResumeLayout(false);
             this.formDockContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
             this.formLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.NoteTypeIDGridLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeXPCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoteTypeIDGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoteCaptionTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextTextEdit1.Properties)).EndInit();
@@ -719,6 +709,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoteCaptionLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextLayoutItem1)).EndInit();
+            this.tableDockPanel1.ResumeLayout(false);
+            this.tableDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
+            this.tableLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeRepGridLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoteTypeGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
 

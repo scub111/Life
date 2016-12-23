@@ -125,8 +125,7 @@
     <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
-    <Reference Include="RapidInterface, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="RapidInterface">
       <HintPath>..\..\RapidInterface\RapidInterface\bin\Debug\RapidInterface.dll</HintPath>
     </Reference>
     <Reference Include="System">
