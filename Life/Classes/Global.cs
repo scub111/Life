@@ -24,6 +24,11 @@ namespace Life
             public int DataBaseType;
 
             /// <summary>
+            /// Сервер.
+            /// </summary>
+            public string Server;           
+
+            /// <summary>
             /// Имя БД.
             /// </summary>
             public string DataBase;
@@ -110,7 +115,7 @@ namespace Life
         /// </summary>
         public VarXml(string strFileXml)
         {
-            this.FileXml = strFileXml;
+            FileXml = strFileXml;
             DBConnection = new DBConnectionXml();
             Disbalance = new DisbalanceXlm();
             Init();
@@ -128,6 +133,7 @@ namespace Life
         {
             FilePath = Path.GetDirectoryName(Application.ExecutablePath) + "\\" + FileXml;
             DBConnection.DataBaseType = 1;
+            DBConnection.Server = "";
             DBConnection.DataBase = "DataBase.accdb";
             DBConnection.PasswordNeed = false;
             DBConnection.LoginFormNeed = false;
@@ -184,6 +190,7 @@ namespace Life
 
                 DBConnection.DataBaseType = obj.DBConnection.DataBaseType;
                 DBConnection.DataBase = obj.DBConnection.DataBase;
+                DBConnection.Server = obj.DBConnection.Server;
                 DBConnection.PasswordNeed = obj.DBConnection.PasswordNeed;
                 DBConnection.LoginFormNeed = obj.DBConnection.LoginFormNeed;
                 DBConnection.User = obj.DBConnection.User;
@@ -218,7 +225,7 @@ namespace Life
 
         public void Init()
         {
-            Version = "v1.6.48";
+            Version = "v1.6.50";
 
             varXml = new VarXml("Config.xml");
             varXml.LoadFromXML();

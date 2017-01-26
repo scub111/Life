@@ -111,13 +111,6 @@
             this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this._dbInterface1 = new RapidInterface.DBInterface();
             this.dockPanelMerge1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
-            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.formDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.formLayoutControl1 = new RapidInterface.LayoutControlEx();
@@ -210,6 +203,13 @@
             this.XPObjectWithPhonesCollectionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.PersonElectronCouplingCollectionLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.PersonElectronCouplingCollectionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
+            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
+            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.itemXPObject1 = new RapidInterface.DBInterfaceItemXPObject();
             this.itemString1 = new RapidInterface.DBInterfaceItemString();
@@ -287,18 +287,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonCategoryXPCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonCategoryGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlaceRepGridLookUpEdit13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlaceGridView13)).BeginInit();
             this._dbInterface1.SuspendLayout();
             this.dockPanelMerge1.SuspendLayout();
-            this.tableDockPanel1.SuspendLayout();
-            this.tableDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
-            this.tableLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             this.formDockPanel1.SuspendLayout();
             this.formDockContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
@@ -309,7 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NameTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PatronymicTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AcronymTextEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PassportTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EthnicGroupTextEdit1.Properties)).BeginInit();
@@ -366,6 +359,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.XPObjectWithPhonesCollectionLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonElectronCouplingCollectionLayoutGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonElectronCouplingCollectionLayoutItem1)).BeginInit();
+            this.tableDockPanel1.SuspendLayout();
+            this.tableDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
+            this.tableLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -416,6 +416,11 @@
             this.PlaceXPCollection1.DeleteObjectOnRemove = true;
             this.PlaceXPCollection1.ObjectType = typeof(Life.Place);
             this.PlaceXPCollection1.Session = this.baseUnitOfWork1;
+            // 
+            // baseUnitOfWork1
+            // 
+            this.baseUnitOfWork1.IsObjectModifiedOnNonPersistentPropertyChange = null;
+            this.baseUnitOfWork1.TrackPropertiesModifications = false;
             // 
             // PlaceGridView8
             // 
@@ -909,6 +914,7 @@
             this.tableGridBand1.Columns.Add(this.BehaviourGridColumn1);
             this.tableGridBand1.Columns.Add(this.CommentGridColumn1);
             this.tableGridBand1.Name = "tableGridBand1";
+            this.tableGridBand1.VisibleIndex = 0;
             this.tableGridBand1.Width = 856;
             // 
             // SurnameGridColumn1
@@ -1058,9 +1064,10 @@
             this.BirthDateRepositoryItemDateEdit1.AutoHeight = false;
             this.BirthDateRepositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.BirthDateRepositoryItemDateEdit1.Name = "BirthDateRepositoryItemDateEdit1";
-            this.BirthDateRepositoryItemDateEdit1.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.BirthDateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.BirthDateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.BirthDateRepositoryItemDateEdit1.Name = "BirthDateRepositoryItemDateEdit1";
             // 
             // BirthPlaceIDGridColumn1
             // 
@@ -1141,7 +1148,7 @@
             this._dbInterface1.BaseUnitOfWork = this.baseUnitOfWork1;
             this._dbInterface1.BaseXPCollecton = this.baseXPCollecton1;
             this._dbInterface1.Controls.Add(this.dockPanelMerge1);
-            this._dbInterface1.CountOpenDesigner = 46;
+            this._dbInterface1.CountOpenDesigner = 50;
             this._dbInterface1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbInterface1.DockManager = this.dockManager1;
             this._dbInterface1.DockPanelMerge = this.dockPanelMerge1;
@@ -1153,7 +1160,7 @@
             this._dbInterface1.FormNavigatorControl = this.formNavigatorControl1;
             this._dbInterface1.FormNavigatorLayoutItem = this.formNavigatorLayoutItem1;
             this._dbInterface1.Icons = this.icons1;
-            this._dbInterface1.ImagePath = "d:\\Мои документы\\!Projects\\RapidInterface\\RapidInterface\\Life\\Life\\Image\\";
+            this._dbInterface1.ImagePath = "D:\\_Projects\\Life\\Life\\Image";
             this._dbInterface1.Items.Add(this.itemXPObject1);
             this._dbInterface1.Items.Add(this.itemString2);
             this._dbInterface1.Items.Add(this.itemString3);
@@ -1216,6 +1223,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString48);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(1149, 753);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -1228,6 +1236,7 @@
             this._dbInterface1.TableLayoutGroup = this.tableLayoutGroup1;
             this._dbInterface1.TableNavigatorControl = this.tableNavigatorControl1;
             this._dbInterface1.TableNavigatorLayoutItem = this.tableNavigatorLayoutItem1;
+            this._dbInterface1.TableType = typeof(Life.Person);
             this._dbInterface1.XPCollections.Add(this.baseXPCollecton1);
             this._dbInterface1.XPCollections.Add(this.PersonCategoryXPCollection1);
             this._dbInterface1.XPCollections.Add(this.PlaceXPCollection1);
@@ -1250,90 +1259,6 @@
             this.dockPanelMerge1.Size = new System.Drawing.Size(1149, 753);
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
-            // 
-            // tableDockPanel1
-            // 
-            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
-            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
-            this.tableDockPanel1.ID = new System.Guid("45034dd5-2aad-4e37-9125-1df96d8293a2");
-            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
-            this.tableDockPanel1.Name = "tableDockPanel1";
-            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(898, 596);
-            this.tableDockPanel1.Size = new System.Drawing.Size(1114, 726);
-            this.tableDockPanel1.Text = "Таблица";
-            // 
-            // tableDockContainer1
-            // 
-            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
-            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
-            this.tableDockContainer1.Name = "tableDockContainer1";
-            this.tableDockContainer1.Size = new System.Drawing.Size(1114, 726);
-            this.tableDockContainer1.TabIndex = 0;
-            // 
-            // tableLayoutControl1
-            // 
-            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
-            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
-            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutControl1.Images = this.icons1;
-            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutControl1.Name = "tableLayoutControl1";
-            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
-            this.tableLayoutControl1.Size = new System.Drawing.Size(1114, 726);
-            this.tableLayoutControl1.TabIndex = 0;
-            // 
-            // tableNavigatorControl1
-            // 
-            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
-            this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(376, 12);
-            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
-            this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
-            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
-            this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Человек";
-            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
-            // 
-            // tableLayoutGroup1
-            // 
-            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
-            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.tableLayoutGroup1.GroupBordersVisible = false;
-            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.tableNavigatorLayoutItem1,
-            this.tableGridLayoutItem1});
-            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
-            this.tableLayoutGroup1.Size = new System.Drawing.Size(1114, 726);
-            this.tableLayoutGroup1.Text = "tableLayoutGroup1";
-            this.tableLayoutGroup1.TextVisible = false;
-            // 
-            // tableNavigatorLayoutItem1
-            // 
-            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
-            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
-            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
-            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(1094, 23);
-            this.tableNavigatorLayoutItem1.Text = "tableNavigatorLayoutItem1";
-            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableNavigatorLayoutItem1.TextToControlDistance = 0;
-            this.tableNavigatorLayoutItem1.TextVisible = false;
-            // 
-            // tableGridLayoutItem1
-            // 
-            this.tableGridLayoutItem1.Control = this.tableGridControl1;
-            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
-            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
-            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
-            this.tableGridLayoutItem1.Size = new System.Drawing.Size(1094, 683);
-            this.tableGridLayoutItem1.Text = "tableGridLayoutItem1";
-            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableGridLayoutItem1.TextToControlDistance = 0;
-            this.tableGridLayoutItem1.TextVisible = false;
             // 
             // formDockPanel1
             // 
@@ -1399,14 +1324,14 @@
             // PersonCategoryIDGridLookUpEdit1
             // 
             this.PersonCategoryIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PersonCategoryID!", true));
-            this.PersonCategoryIDGridLookUpEdit1.Location = new System.Drawing.Point(477, 90);
+            this.PersonCategoryIDGridLookUpEdit1.Location = new System.Drawing.Point(476, 89);
             this.PersonCategoryIDGridLookUpEdit1.Name = "PersonCategoryIDGridLookUpEdit1";
             this.PersonCategoryIDGridLookUpEdit1.Properties.DataSource = this.PersonCategoryXPCollection1;
             this.PersonCategoryIDGridLookUpEdit1.Properties.DisplayMember = "PersonCategoryCaption";
             this.PersonCategoryIDGridLookUpEdit1.Properties.NullText = "";
             this.PersonCategoryIDGridLookUpEdit1.Properties.ValueMember = "This";
             this.PersonCategoryIDGridLookUpEdit1.Properties.View = this.PersonCategoryIDGridLookUpEdit1View;
-            this.PersonCategoryIDGridLookUpEdit1.Size = new System.Drawing.Size(187, 20);
+            this.PersonCategoryIDGridLookUpEdit1.Size = new System.Drawing.Size(188, 20);
             this.PersonCategoryIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.PersonCategoryIDGridLookUpEdit1.TabIndex = 5;
             // 
@@ -1434,37 +1359,37 @@
             // SurnameTextEdit1
             // 
             this.SurnameTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Surname", true));
-            this.SurnameTextEdit1.Location = new System.Drawing.Point(158, 66);
+            this.SurnameTextEdit1.Location = new System.Drawing.Point(157, 65);
             this.SurnameTextEdit1.Name = "SurnameTextEdit1";
-            this.SurnameTextEdit1.Size = new System.Drawing.Size(181, 20);
+            this.SurnameTextEdit1.Size = new System.Drawing.Size(182, 20);
             this.SurnameTextEdit1.StyleController = this.formLayoutControl1;
             this.SurnameTextEdit1.TabIndex = 6;
             // 
             // NameTextEdit1
             // 
             this.NameTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Name", true));
-            this.NameTextEdit1.Location = new System.Drawing.Point(477, 66);
+            this.NameTextEdit1.Location = new System.Drawing.Point(476, 65);
             this.NameTextEdit1.Name = "NameTextEdit1";
-            this.NameTextEdit1.Size = new System.Drawing.Size(187, 20);
+            this.NameTextEdit1.Size = new System.Drawing.Size(188, 20);
             this.NameTextEdit1.StyleController = this.formLayoutControl1;
             this.NameTextEdit1.TabIndex = 7;
             // 
             // PatronymicTextEdit1
             // 
             this.PatronymicTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Patronymic", true));
-            this.PatronymicTextEdit1.Location = new System.Drawing.Point(802, 66);
+            this.PatronymicTextEdit1.Location = new System.Drawing.Point(801, 65);
             this.PatronymicTextEdit1.Name = "PatronymicTextEdit1";
-            this.PatronymicTextEdit1.Size = new System.Drawing.Size(288, 20);
+            this.PatronymicTextEdit1.Size = new System.Drawing.Size(289, 20);
             this.PatronymicTextEdit1.StyleController = this.formLayoutControl1;
             this.PatronymicTextEdit1.TabIndex = 8;
             // 
             // AcronymTextEdit1
             // 
             this.AcronymTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Acronym", true));
-            this.AcronymTextEdit1.Location = new System.Drawing.Point(802, 90);
+            this.AcronymTextEdit1.Location = new System.Drawing.Point(801, 89);
             this.AcronymTextEdit1.Name = "AcronymTextEdit1";
             this.AcronymTextEdit1.Properties.ReadOnly = true;
-            this.AcronymTextEdit1.Size = new System.Drawing.Size(288, 20);
+            this.AcronymTextEdit1.Size = new System.Drawing.Size(289, 20);
             this.AcronymTextEdit1.StyleController = this.formLayoutControl1;
             this.AcronymTextEdit1.TabIndex = 9;
             // 
@@ -1472,32 +1397,33 @@
             // 
             this.BirthDateDateEditEx1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "BirthDate", true));
             this.BirthDateDateEditEx1.EditValue = new System.DateTime(2014, 4, 3, 0, 0, 0, 0);
-            this.BirthDateDateEditEx1.Location = new System.Drawing.Point(158, 114);
+            this.BirthDateDateEditEx1.Location = new System.Drawing.Point(157, 113);
             this.BirthDateDateEditEx1.Name = "BirthDateDateEditEx1";
             this.BirthDateDateEditEx1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.BirthDateDateEditEx1.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.BirthDateDateEditEx1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(),
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.BirthDateDateEditEx1.Size = new System.Drawing.Size(372, 20);
+            this.BirthDateDateEditEx1.Properties.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.BirthDateDateEditEx1.Size = new System.Drawing.Size(373, 20);
             this.BirthDateDateEditEx1.StyleController = this.formLayoutControl1;
             this.BirthDateDateEditEx1.TabIndex = 11;
             // 
             // PassportTextEdit1
             // 
             this.PassportTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Passport", true));
-            this.PassportTextEdit1.Location = new System.Drawing.Point(158, 138);
+            this.PassportTextEdit1.Location = new System.Drawing.Point(157, 137);
             this.PassportTextEdit1.Name = "PassportTextEdit1";
-            this.PassportTextEdit1.Size = new System.Drawing.Size(372, 20);
+            this.PassportTextEdit1.Size = new System.Drawing.Size(373, 20);
             this.PassportTextEdit1.StyleController = this.formLayoutControl1;
             this.PassportTextEdit1.TabIndex = 12;
             // 
             // EthnicGroupTextEdit1
             // 
             this.EthnicGroupTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "EthnicGroup", true));
-            this.EthnicGroupTextEdit1.Location = new System.Drawing.Point(668, 138);
+            this.EthnicGroupTextEdit1.Location = new System.Drawing.Point(667, 137);
             this.EthnicGroupTextEdit1.Name = "EthnicGroupTextEdit1";
-            this.EthnicGroupTextEdit1.Size = new System.Drawing.Size(422, 20);
+            this.EthnicGroupTextEdit1.Size = new System.Drawing.Size(423, 20);
             this.EthnicGroupTextEdit1.StyleController = this.formLayoutControl1;
             this.EthnicGroupTextEdit1.TabIndex = 13;
             // 
@@ -1508,13 +1434,13 @@
             this.PersonAddressCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.PersonAddressCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.PersonAddressCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.PersonAddressCollectionGridControl1.Location = new System.Drawing.Point(550, 272);
+            this.PersonAddressCollectionGridControl1.Location = new System.Drawing.Point(550, 271);
             this.PersonAddressCollectionGridControl1.MainView = this.PersonAddressCollectionGridView1;
             this.PersonAddressCollectionGridControl1.Name = "PersonAddressCollectionGridControl1";
             this.PersonAddressCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.PlaceRepGridLookUpEdit7});
             this.PersonAddressCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.PersonAddressCollectionGridControl1.Size = new System.Drawing.Size(540, 107);
+            this.PersonAddressCollectionGridControl1.Size = new System.Drawing.Size(540, 108);
             this.PersonAddressCollectionGridControl1.TabIndex = 17;
             this.PersonAddressCollectionGridControl1.UseEmbeddedNavigator = true;
             this.PersonAddressCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1590,14 +1516,14 @@
             this.PersonEducationCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.PersonEducationCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.PersonEducationCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.PersonEducationCollectionGridControl1.Location = new System.Drawing.Point(550, 426);
+            this.PersonEducationCollectionGridControl1.Location = new System.Drawing.Point(550, 425);
             this.PersonEducationCollectionGridControl1.MainView = this.PersonEducationCollectionGridView1;
             this.PersonEducationCollectionGridControl1.Name = "PersonEducationCollectionGridControl1";
             this.PersonEducationCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.PlaceRepGridLookUpEdit9,
             this.EducationRepGridLookUpEdit1});
             this.PersonEducationCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.PersonEducationCollectionGridControl1.Size = new System.Drawing.Size(540, 105);
+            this.PersonEducationCollectionGridControl1.Size = new System.Drawing.Size(540, 106);
             this.PersonEducationCollectionGridControl1.TabIndex = 18;
             this.PersonEducationCollectionGridControl1.UseEmbeddedNavigator = true;
             this.PersonEducationCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1725,13 +1651,13 @@
             this.PersonWorkCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.PersonWorkCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.PersonWorkCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.PersonWorkCollectionGridControl1.Location = new System.Drawing.Point(24, 426);
+            this.PersonWorkCollectionGridControl1.Location = new System.Drawing.Point(24, 425);
             this.PersonWorkCollectionGridControl1.MainView = this.PersonWorkCollectionGridView1;
             this.PersonWorkCollectionGridControl1.Name = "PersonWorkCollectionGridControl1";
             this.PersonWorkCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.PlaceRepGridLookUpEdit11});
             this.PersonWorkCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.PersonWorkCollectionGridControl1.Size = new System.Drawing.Size(498, 105);
+            this.PersonWorkCollectionGridControl1.Size = new System.Drawing.Size(498, 106);
             this.PersonWorkCollectionGridControl1.TabIndex = 19;
             this.PersonWorkCollectionGridControl1.UseEmbeddedNavigator = true;
             this.PersonWorkCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1812,14 +1738,14 @@
             // SexIDGridLookUpEdit1
             // 
             this.SexIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "SexID!", true));
-            this.SexIDGridLookUpEdit1.Location = new System.Drawing.Point(158, 90);
+            this.SexIDGridLookUpEdit1.Location = new System.Drawing.Point(157, 89);
             this.SexIDGridLookUpEdit1.Name = "SexIDGridLookUpEdit1";
             this.SexIDGridLookUpEdit1.Properties.DataSource = this.SexXPCollection1;
             this.SexIDGridLookUpEdit1.Properties.DisplayMember = "SexCaption";
             this.SexIDGridLookUpEdit1.Properties.NullText = "";
             this.SexIDGridLookUpEdit1.Properties.ValueMember = "This";
             this.SexIDGridLookUpEdit1.Properties.View = this.SexIDGridLookUpEdit1View;
-            this.SexIDGridLookUpEdit1.Size = new System.Drawing.Size(181, 20);
+            this.SexIDGridLookUpEdit1.Size = new System.Drawing.Size(182, 20);
             this.SexIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.SexIDGridLookUpEdit1.TabIndex = 22;
             // 
@@ -1851,13 +1777,13 @@
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.XPObjectWithPhonesCollectionGridControl1.Location = new System.Drawing.Point(24, 272);
+            this.XPObjectWithPhonesCollectionGridControl1.Location = new System.Drawing.Point(24, 271);
             this.XPObjectWithPhonesCollectionGridControl1.MainView = this.XPObjectWithPhonesCollectionGridView1;
             this.XPObjectWithPhonesCollectionGridControl1.Name = "XPObjectWithPhonesCollectionGridControl1";
             this.XPObjectWithPhonesCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.PhoneTypeRepGridLookUpEdit1});
             this.XPObjectWithPhonesCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.XPObjectWithPhonesCollectionGridControl1.Size = new System.Drawing.Size(498, 107);
+            this.XPObjectWithPhonesCollectionGridControl1.Size = new System.Drawing.Size(498, 108);
             this.XPObjectWithPhonesCollectionGridControl1.TabIndex = 23;
             this.XPObjectWithPhonesCollectionGridControl1.UseEmbeddedNavigator = true;
             this.XPObjectWithPhonesCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1938,14 +1864,14 @@
             // BirthPlaceIDGridLookUpEdit1
             // 
             this.BirthPlaceIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "BirthPlaceID!", true));
-            this.BirthPlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(668, 114);
+            this.BirthPlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(667, 113);
             this.BirthPlaceIDGridLookUpEdit1.Name = "BirthPlaceIDGridLookUpEdit1";
             this.BirthPlaceIDGridLookUpEdit1.Properties.DataSource = this.PlaceXPCollection1;
             this.BirthPlaceIDGridLookUpEdit1.Properties.DisplayMember = "PlaceCaption";
             this.BirthPlaceIDGridLookUpEdit1.Properties.NullText = "";
             this.BirthPlaceIDGridLookUpEdit1.Properties.ValueMember = "This";
             this.BirthPlaceIDGridLookUpEdit1.Properties.View = this.BirthPlaceIDGridLookUpEdit1View;
-            this.BirthPlaceIDGridLookUpEdit1.Size = new System.Drawing.Size(422, 20);
+            this.BirthPlaceIDGridLookUpEdit1.Size = new System.Drawing.Size(423, 20);
             this.BirthPlaceIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.BirthPlaceIDGridLookUpEdit1.TabIndex = 24;
             // 
@@ -1977,13 +1903,13 @@
             this.PersonElectronCouplingCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.PersonElectronCouplingCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.PersonElectronCouplingCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.PersonElectronCouplingCollectionGridControl1.Location = new System.Drawing.Point(24, 578);
+            this.PersonElectronCouplingCollectionGridControl1.Location = new System.Drawing.Point(24, 577);
             this.PersonElectronCouplingCollectionGridControl1.MainView = this.PersonElectronCouplingCollectionGridView1;
             this.PersonElectronCouplingCollectionGridControl1.Name = "PersonElectronCouplingCollectionGridControl1";
             this.PersonElectronCouplingCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.ElectronCouplingTypeRepGridLookUpEdit1});
             this.PersonElectronCouplingCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.PersonElectronCouplingCollectionGridControl1.Size = new System.Drawing.Size(1066, 124);
+            this.PersonElectronCouplingCollectionGridControl1.Size = new System.Drawing.Size(1066, 125);
             this.PersonElectronCouplingCollectionGridControl1.TabIndex = 25;
             this.PersonElectronCouplingCollectionGridControl1.UseEmbeddedNavigator = true;
             this.PersonElectronCouplingCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2082,18 +2008,18 @@
             // BehaviourTextEdit1
             // 
             this.BehaviourTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Behaviour", true));
-            this.BehaviourTextEdit1.Location = new System.Drawing.Point(158, 162);
+            this.BehaviourTextEdit1.Location = new System.Drawing.Point(157, 161);
             this.BehaviourTextEdit1.Name = "BehaviourTextEdit1";
-            this.BehaviourTextEdit1.Size = new System.Drawing.Size(372, 63);
+            this.BehaviourTextEdit1.Size = new System.Drawing.Size(373, 64);
             this.BehaviourTextEdit1.StyleController = this.formLayoutControl1;
             this.BehaviourTextEdit1.TabIndex = 20;
             // 
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(668, 162);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(667, 161);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
-            this.CommentTextEdit1.Size = new System.Drawing.Size(422, 63);
+            this.CommentTextEdit1.Size = new System.Drawing.Size(423, 64);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
             this.CommentTextEdit1.TabIndex = 15;
             // 
@@ -2113,7 +2039,6 @@
             this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutGroup1.Name = "formLayoutGroup1";
             this.formLayoutGroup1.Size = new System.Drawing.Size(1114, 726);
-            this.formLayoutGroup1.Text = "formLayoutGroup1";
             this.formLayoutGroup1.TextVisible = false;
             // 
             // formNavigatorLayoutItem1
@@ -2124,9 +2049,7 @@
             this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
             this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(1094, 23);
-            this.formNavigatorLayoutItem1.Text = "formNavigatorLayoutItem1";
             this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.formNavigatorLayoutItem1.TextToControlDistance = 0;
             this.formNavigatorLayoutItem1.TextVisible = false;
             // 
             // formDataLayoutGroup1
@@ -2239,7 +2162,7 @@
             this.BehaviourLayoutItem1.CustomizationFormText = "Характеристика";
             this.BehaviourLayoutItem1.Location = new System.Drawing.Point(0, 96);
             this.BehaviourLayoutItem1.Name = "BehaviourLayoutItem1";
-            this.BehaviourLayoutItem1.Size = new System.Drawing.Size(510, 67);
+            this.BehaviourLayoutItem1.Size = new System.Drawing.Size(510, 68);
             this.BehaviourLayoutItem1.Text = "Характеристика:";
             this.BehaviourLayoutItem1.TextSize = new System.Drawing.Size(130, 13);
             // 
@@ -2271,7 +2194,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(510, 96);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(560, 67);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(560, 68);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(130, 13);
             // 
@@ -2293,10 +2216,9 @@
             this.PersonEducationCollectionLayoutItem1.CustomizationFormText = "Образования";
             this.PersonEducationCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.PersonEducationCollectionLayoutItem1.Name = "PersonEducationCollectionLayoutItem1";
-            this.PersonEducationCollectionLayoutItem1.Size = new System.Drawing.Size(544, 109);
+            this.PersonEducationCollectionLayoutItem1.Size = new System.Drawing.Size(544, 110);
             this.PersonEducationCollectionLayoutItem1.Text = "Образования:";
             this.PersonEducationCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.PersonEducationCollectionLayoutItem1.TextToControlDistance = 0;
             this.PersonEducationCollectionLayoutItem1.TextVisible = false;
             // 
             // PersonAddressCollectionLayoutGroup1
@@ -2317,10 +2239,9 @@
             this.PersonAddressCollectionLayoutItem1.CustomizationFormText = "Адреса";
             this.PersonAddressCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.PersonAddressCollectionLayoutItem1.Name = "PersonAddressCollectionLayoutItem1";
-            this.PersonAddressCollectionLayoutItem1.Size = new System.Drawing.Size(544, 111);
+            this.PersonAddressCollectionLayoutItem1.Size = new System.Drawing.Size(544, 112);
             this.PersonAddressCollectionLayoutItem1.Text = "Адреса:";
             this.PersonAddressCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.PersonAddressCollectionLayoutItem1.TextToControlDistance = 0;
             this.PersonAddressCollectionLayoutItem1.TextVisible = false;
             // 
             // PersonWorkCollectionLayoutGroup1
@@ -2341,10 +2262,9 @@
             this.PersonWorkCollectionLayoutItem1.CustomizationFormText = "Работы";
             this.PersonWorkCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.PersonWorkCollectionLayoutItem1.Name = "PersonWorkCollectionLayoutItem1";
-            this.PersonWorkCollectionLayoutItem1.Size = new System.Drawing.Size(502, 109);
+            this.PersonWorkCollectionLayoutItem1.Size = new System.Drawing.Size(502, 110);
             this.PersonWorkCollectionLayoutItem1.Text = "Работы:";
             this.PersonWorkCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.PersonWorkCollectionLayoutItem1.TextToControlDistance = 0;
             this.PersonWorkCollectionLayoutItem1.TextVisible = false;
             // 
             // XPObjectWithPhonesCollectionLayoutGroup1
@@ -2365,10 +2285,9 @@
             this.XPObjectWithPhonesCollectionLayoutItem1.CustomizationFormText = "Телефоны";
             this.XPObjectWithPhonesCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.XPObjectWithPhonesCollectionLayoutItem1.Name = "XPObjectWithPhonesCollectionLayoutItem1";
-            this.XPObjectWithPhonesCollectionLayoutItem1.Size = new System.Drawing.Size(502, 111);
+            this.XPObjectWithPhonesCollectionLayoutItem1.Size = new System.Drawing.Size(502, 112);
             this.XPObjectWithPhonesCollectionLayoutItem1.Text = "Телефоны:";
             this.XPObjectWithPhonesCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.XPObjectWithPhonesCollectionLayoutItem1.TextToControlDistance = 0;
             this.XPObjectWithPhonesCollectionLayoutItem1.TextVisible = false;
             // 
             // PersonElectronCouplingCollectionLayoutGroup1
@@ -2389,11 +2308,89 @@
             this.PersonElectronCouplingCollectionLayoutItem1.CustomizationFormText = "Электронные связи";
             this.PersonElectronCouplingCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.PersonElectronCouplingCollectionLayoutItem1.Name = "PersonElectronCouplingCollectionLayoutItem1";
-            this.PersonElectronCouplingCollectionLayoutItem1.Size = new System.Drawing.Size(1070, 128);
+            this.PersonElectronCouplingCollectionLayoutItem1.Size = new System.Drawing.Size(1070, 129);
             this.PersonElectronCouplingCollectionLayoutItem1.Text = "Электронные связи:";
             this.PersonElectronCouplingCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.PersonElectronCouplingCollectionLayoutItem1.TextToControlDistance = 0;
             this.PersonElectronCouplingCollectionLayoutItem1.TextVisible = false;
+            // 
+            // tableDockPanel1
+            // 
+            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
+            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
+            this.tableDockPanel1.ID = new System.Guid("45034dd5-2aad-4e37-9125-1df96d8293a2");
+            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
+            this.tableDockPanel1.Name = "tableDockPanel1";
+            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(898, 596);
+            this.tableDockPanel1.Size = new System.Drawing.Size(1114, 726);
+            this.tableDockPanel1.Text = "Таблица";
+            // 
+            // tableDockContainer1
+            // 
+            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
+            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
+            this.tableDockContainer1.Name = "tableDockContainer1";
+            this.tableDockContainer1.Size = new System.Drawing.Size(1114, 726);
+            this.tableDockContainer1.TabIndex = 0;
+            // 
+            // tableLayoutControl1
+            // 
+            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
+            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
+            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutControl1.Images = this.icons1;
+            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutControl1.Name = "tableLayoutControl1";
+            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
+            this.tableLayoutControl1.Size = new System.Drawing.Size(1114, 726);
+            this.tableLayoutControl1.TabIndex = 0;
+            // 
+            // tableNavigatorControl1
+            // 
+            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
+            this.tableNavigatorControl1.Error = false;
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(376, 12);
+            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
+            this.tableNavigatorControl1.ShowToolTips = true;
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
+            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
+            this.tableNavigatorControl1.TabIndex = 5;
+            this.tableNavigatorControl1.TableCaption = "Человек";
+            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
+            // 
+            // tableLayoutGroup1
+            // 
+            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
+            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.tableLayoutGroup1.GroupBordersVisible = false;
+            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.tableNavigatorLayoutItem1,
+            this.tableGridLayoutItem1});
+            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
+            this.tableLayoutGroup1.Size = new System.Drawing.Size(1114, 726);
+            this.tableLayoutGroup1.TextVisible = false;
+            // 
+            // tableNavigatorLayoutItem1
+            // 
+            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
+            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
+            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
+            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(1094, 23);
+            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableNavigatorLayoutItem1.TextVisible = false;
+            // 
+            // tableGridLayoutItem1
+            // 
+            this.tableGridLayoutItem1.Control = this.tableGridControl1;
+            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
+            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
+            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
+            this.tableGridLayoutItem1.Size = new System.Drawing.Size(1094, 683);
+            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableGridLayoutItem1.TextVisible = false;
             // 
             // dockManager1
             // 
@@ -2405,9 +2402,7 @@
             // 
             this.itemXPObject1.Caption = "Категория человека";
             this.itemXPObject1.ControlName = "PersonCategoryID";
-            this.itemXPObject1.DataSource = this.PersonCategoryXPCollection1;
             this.itemXPObject1.DBInterface = this._dbInterface1;
-            this.itemXPObject1.DisplayMember = "PersonCategoryCaption";
             this.itemXPObject1.FieldName = "PersonCategoryID";
             this.itemXPObject1.FormEdit = this.PersonCategoryIDGridLookUpEdit1;
             this.itemXPObject1.FormGridColumn = null;
@@ -2423,7 +2418,6 @@
             this.itemXPObject1.TableGridView = this.PersonCategoryGridView1;
             this.itemXPObject1.TableRepositoryEdit = this.PersonCategoryRepGridLookUpEdit1;
             this.itemXPObject1.TableType = typeof(Life.PersonCategory);
-            this.itemXPObject1.ValueMember = "This";
             // 
             // itemString1
             // 
@@ -2515,9 +2509,7 @@
             // 
             this.itemXPObject20.Caption = "Место рождения";
             this.itemXPObject20.ControlName = "BirthPlaceID";
-            this.itemXPObject20.DataSource = this.PlaceXPCollection1;
             this.itemXPObject20.DBInterface = this._dbInterface1;
-            this.itemXPObject20.DisplayMember = "PlaceCaption";
             this.itemXPObject20.FieldName = "BirthPlaceID";
             this.itemXPObject20.FormEdit = this.BirthPlaceIDGridLookUpEdit1;
             this.itemXPObject20.FormGridColumn = null;
@@ -2533,7 +2525,6 @@
             this.itemXPObject20.TableGridView = this.PlaceGridView13;
             this.itemXPObject20.TableRepositoryEdit = this.PlaceRepGridLookUpEdit13;
             this.itemXPObject20.TableType = typeof(Life.Place);
-            this.itemXPObject20.ValueMember = "This";
             // 
             // itemString43
             // 
@@ -2610,8 +2601,6 @@
             // 
             this.itemXPCollection2.Caption = "Адреса";
             this.itemXPCollection2.ControlName = "PersonAddressCollection";
-            this.itemXPCollection2.DataMember = "PersonAddressCollection";
-            this.itemXPCollection2.DataSource = this.baseXPCollecton1;
             this.itemXPCollection2.DBInterface = this._dbInterface1;
             this.itemXPCollection2.FieldName = "PersonAddressCollection";
             this.itemXPCollection2.FormEdit = this.PersonAddressCollectionGridControl1;
@@ -2649,9 +2638,7 @@
             // 
             this.itemXPObject13.Caption = "Место";
             this.itemXPObject13.ControlName = "PlaceID";
-            this.itemXPObject13.DataSource = this.PlaceXPCollection1;
             this.itemXPObject13.DBInterface = this._dbInterface1;
-            this.itemXPObject13.DisplayMember = "PlaceCaption";
             this.itemXPObject13.FieldName = "PlaceID";
             this.itemXPObject13.FormEdit = this.PlaceRepGridLookUpEdit7;
             this.itemXPObject13.FormGridColumn = this.PlaceIDGridColumn7;
@@ -2668,7 +2655,6 @@
             this.itemXPObject13.TableGridView = this.PlaceGridView8;
             this.itemXPObject13.TableRepositoryEdit = this.PlaceRepGridLookUpEdit8;
             this.itemXPObject13.TableType = typeof(Life.Place);
-            this.itemXPObject13.ValueMember = "This";
             // 
             // itemString34
             // 
@@ -2689,8 +2675,6 @@
             // 
             this.itemXPCollection3.Caption = "Образования";
             this.itemXPCollection3.ControlName = "PersonEducationCollection";
-            this.itemXPCollection3.DataMember = "PersonEducationCollection";
-            this.itemXPCollection3.DataSource = this.baseXPCollecton1;
             this.itemXPCollection3.DBInterface = this._dbInterface1;
             this.itemXPCollection3.FieldName = "PersonEducationCollection";
             this.itemXPCollection3.FormEdit = this.PersonEducationCollectionGridControl1;
@@ -2745,9 +2729,7 @@
             // 
             this.itemXPObject14.Caption = "Место";
             this.itemXPObject14.ControlName = "PlaceID";
-            this.itemXPObject14.DataSource = this.PlaceXPCollection1;
             this.itemXPObject14.DBInterface = this._dbInterface1;
-            this.itemXPObject14.DisplayMember = "PlaceCaption";
             this.itemXPObject14.FieldName = "PlaceID";
             this.itemXPObject14.FormEdit = this.PlaceRepGridLookUpEdit9;
             this.itemXPObject14.FormGridColumn = this.PlaceIDGridColumn9;
@@ -2764,7 +2746,6 @@
             this.itemXPObject14.TableGridView = this.PlaceGridView10;
             this.itemXPObject14.TableRepositoryEdit = this.PlaceRepGridLookUpEdit10;
             this.itemXPObject14.TableType = typeof(Life.Place);
-            this.itemXPObject14.ValueMember = "This";
             // 
             // itemString35
             // 
@@ -2785,9 +2766,7 @@
             // 
             this.itemXPObject16.Caption = "Образование";
             this.itemXPObject16.ControlName = "EducationID";
-            this.itemXPObject16.DataSource = this.EducationXPCollection1;
             this.itemXPObject16.DBInterface = this._dbInterface1;
-            this.itemXPObject16.DisplayMember = "EducationCaption";
             this.itemXPObject16.FieldName = "EducationID";
             this.itemXPObject16.FormEdit = this.EducationRepGridLookUpEdit1;
             this.itemXPObject16.FormGridColumn = this.EducationIDGridColumn1;
@@ -2803,7 +2782,6 @@
             this.itemXPObject16.TableGridView = this.EducationGridView2;
             this.itemXPObject16.TableRepositoryEdit = this.EducationRepGridLookUpEdit2;
             this.itemXPObject16.TableType = typeof(Life.Education);
-            this.itemXPObject16.ValueMember = "This";
             // 
             // itemString37
             // 
@@ -2824,8 +2802,6 @@
             // 
             this.itemXPCollection4.Caption = "Работы";
             this.itemXPCollection4.ControlName = "PersonWorkCollection";
-            this.itemXPCollection4.DataMember = "PersonWorkCollection";
-            this.itemXPCollection4.DataSource = this.baseXPCollecton1;
             this.itemXPCollection4.DBInterface = this._dbInterface1;
             this.itemXPCollection4.FieldName = "PersonWorkCollection";
             this.itemXPCollection4.FormEdit = this.PersonWorkCollectionGridControl1;
@@ -2879,9 +2855,7 @@
             // 
             this.itemXPObject15.Caption = "Место";
             this.itemXPObject15.ControlName = "PlaceID";
-            this.itemXPObject15.DataSource = this.PlaceXPCollection1;
             this.itemXPObject15.DBInterface = this._dbInterface1;
-            this.itemXPObject15.DisplayMember = "PlaceCaption";
             this.itemXPObject15.FieldName = "PlaceID";
             this.itemXPObject15.FormEdit = this.PlaceRepGridLookUpEdit11;
             this.itemXPObject15.FormGridColumn = this.PlaceIDGridColumn11;
@@ -2898,7 +2872,6 @@
             this.itemXPObject15.TableGridView = this.PlaceGridView12;
             this.itemXPObject15.TableRepositoryEdit = this.PlaceRepGridLookUpEdit12;
             this.itemXPObject15.TableType = typeof(Life.Place);
-            this.itemXPObject15.ValueMember = "This";
             // 
             // itemString36
             // 
@@ -2919,9 +2892,7 @@
             // 
             this.itemXPObject18.Caption = "Пол";
             this.itemXPObject18.ControlName = "SexID";
-            this.itemXPObject18.DataSource = this.SexXPCollection1;
             this.itemXPObject18.DBInterface = this._dbInterface1;
-            this.itemXPObject18.DisplayMember = "SexCaption";
             this.itemXPObject18.FieldName = "SexID";
             this.itemXPObject18.FormEdit = this.SexIDGridLookUpEdit1;
             this.itemXPObject18.FormGridColumn = null;
@@ -2937,7 +2908,6 @@
             this.itemXPObject18.TableGridView = this.SexGridView1;
             this.itemXPObject18.TableRepositoryEdit = this.SexRepGridLookUpEdit1;
             this.itemXPObject18.TableType = typeof(Life.Sex);
-            this.itemXPObject18.ValueMember = "This";
             // 
             // itemString39
             // 
@@ -2958,8 +2928,6 @@
             // 
             this.itemXPCollection5.Caption = "Телефоны";
             this.itemXPCollection5.ControlName = "XPObjectWithPhonesCollection";
-            this.itemXPCollection5.DataMember = "XPObjectWithPhonesCollection";
-            this.itemXPCollection5.DataSource = this.baseXPCollecton1;
             this.itemXPCollection5.DBInterface = this._dbInterface1;
             this.itemXPCollection5.FieldName = "XPObjectWithPhonesCollection";
             this.itemXPCollection5.FormEdit = this.XPObjectWithPhonesCollectionGridControl1;
@@ -2983,9 +2951,7 @@
             // 
             this.itemXPObject19.Caption = "Тип телефона";
             this.itemXPObject19.ControlName = "PhoneTypeID";
-            this.itemXPObject19.DataSource = this.PhoneTypeXPCollection1;
             this.itemXPObject19.DBInterface = this._dbInterface1;
-            this.itemXPObject19.DisplayMember = "PhoneTypeCaption";
             this.itemXPObject19.FieldName = "PhoneTypeID";
             this.itemXPObject19.FormEdit = this.PhoneTypeRepGridLookUpEdit1;
             this.itemXPObject19.FormGridColumn = this.PhoneTypeIDGridColumn1;
@@ -3002,7 +2968,6 @@
             this.itemXPObject19.TableGridView = this.PhoneTypeGridView2;
             this.itemXPObject19.TableRepositoryEdit = this.PhoneTypeRepGridLookUpEdit2;
             this.itemXPObject19.TableType = typeof(Life.PhoneType);
-            this.itemXPObject19.ValueMember = "This";
             // 
             // itemString40
             // 
@@ -3053,8 +3018,6 @@
             // 
             this.itemXPCollection6.Caption = "Электронные связи";
             this.itemXPCollection6.ControlName = "PersonElectronCouplingCollection";
-            this.itemXPCollection6.DataMember = "PersonElectronCouplingCollection";
-            this.itemXPCollection6.DataSource = this.baseXPCollecton1;
             this.itemXPCollection6.DBInterface = this._dbInterface1;
             this.itemXPCollection6.FieldName = "PersonElectronCouplingCollection";
             this.itemXPCollection6.FormEdit = this.PersonElectronCouplingCollectionGridControl1;
@@ -3080,9 +3043,7 @@
             // 
             this.itemXPObject21.Caption = "Тип";
             this.itemXPObject21.ControlName = "ElectronCouplingTypeID";
-            this.itemXPObject21.DataSource = this.ElectronCouplingTypeXPCollection1;
             this.itemXPObject21.DBInterface = this._dbInterface1;
-            this.itemXPObject21.DisplayMember = "ElectronCouplingTypeCaption";
             this.itemXPObject21.FieldName = "ElectronCouplingTypeID";
             this.itemXPObject21.FormEdit = this.ElectronCouplingTypeRepGridLookUpEdit1;
             this.itemXPObject21.FormGridColumn = this.ElectronCouplingTypeIDGridColumn1;
@@ -3099,7 +3060,6 @@
             this.itemXPObject21.TableGridView = this.ElectronCouplingTypeGridView2;
             this.itemXPObject21.TableRepositoryEdit = this.ElectronCouplingTypeRepGridLookUpEdit2;
             this.itemXPObject21.TableType = typeof(Life.ElectronCouplingType);
-            this.itemXPObject21.ValueMember = "This";
             // 
             // itemString44
             // 
@@ -3216,19 +3176,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonCategoryRepGridLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonCategoryXPCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonCategoryGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDateRepositoryItemDateEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlaceRepGridLookUpEdit13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlaceGridView13)).EndInit();
             this._dbInterface1.ResumeLayout(false);
             this.dockPanelMerge1.ResumeLayout(false);
-            this.tableDockPanel1.ResumeLayout(false);
-            this.tableDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
-            this.tableLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             this.formDockPanel1.ResumeLayout(false);
             this.formDockContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
@@ -3239,7 +3192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NameTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PatronymicTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AcronymTextEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDateDateEditEx1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PassportTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EthnicGroupTextEdit1.Properties)).EndInit();
@@ -3296,6 +3249,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.XPObjectWithPhonesCollectionLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonElectronCouplingCollectionLayoutGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonElectronCouplingCollectionLayoutItem1)).EndInit();
+            this.tableDockPanel1.ResumeLayout(false);
+            this.tableDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
+            this.tableLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
 

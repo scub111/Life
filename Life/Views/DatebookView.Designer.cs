@@ -1622,7 +1622,7 @@
             this._dbInterface1.BaseUnitOfWork = this.baseUnitOfWork1;
             this._dbInterface1.BaseXPCollecton = this.baseXPCollecton1;
             this._dbInterface1.Controls.Add(this.dockPanelMerge1);
-            this._dbInterface1.CountOpenDesigner = 55;
+            this._dbInterface1.CountOpenDesigner = 56;
             this._dbInterface1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbInterface1.DockManager = this.dockManager1;
             this._dbInterface1.DockPanelMerge = this.dockPanelMerge1;

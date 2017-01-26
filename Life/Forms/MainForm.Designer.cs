@@ -137,7 +137,7 @@
             this._dbForm1.BaseNavBarGroup = this.baseNavBarGroup1;
             this._dbForm1.BaseTabbedView = this.baseTabbedView1;
             this._dbForm1.Controls.Add(this.baseLayoutControl1);
-            this._dbForm1.CountOpenDesigner = 70;
+            this._dbForm1.CountOpenDesigner = 71;
             this._dbForm1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbForm1.FilterClearButton = this.filterClearButton1;
             this._dbForm1.FilterClearLayoutItem = this.filterClearLayoutItem1;
@@ -913,7 +913,7 @@
             this.KeyPreview = true;
             this.Name = "MainForm";
             this.OnlineLimit = 60;
-            this.OnlineLost = 5;
+            this.OnlineLost = 60;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Жизнь";
             this.OnlineChanged += new System.EventHandler(this.MainForm_OnlineChanged);

@@ -13,6 +13,7 @@ namespace Life
             Global.Default.Init();
             InitializeComponent();
             dbConnection1.DataBaseType = (DBConnection.SQLType)Global.Default.varXml.DBConnection.DataBaseType;
+            dbConnection1.Server = Global.Default.varXml.DBConnection.Server;
             dbConnection1.DataBase = Global.Default.varXml.DBConnection.DataBase;
             dbConnection1.PasswordNeed = Global.Default.varXml.DBConnection.PasswordNeed;
             dbConnection1.LoginFormNeed = Global.Default.varXml.DBConnection.LoginFormNeed;
