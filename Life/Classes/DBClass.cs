@@ -2002,6 +2002,17 @@ namespace Life
             set { SetPropertyValueEx("ProfitTypeCaption", ref _ProfitTypeCaption, value); }
         }
 
+        bool _Clean;
+        /// <summary>
+        /// Чистый.
+        /// </summary>
+        [DisplayName("Чистый")]
+        public bool Clean
+        {
+            get { return _Clean; }
+            set { SetPropertyValueEx("Clean", ref _Clean, value); }
+        }
+
         string _Comment;
         /// <summary>
         /// Комментарий.

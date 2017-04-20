@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.Xpo;
-using DevExpress.XtraReports.UI;
 using RapidInterface;
 
 namespace Life

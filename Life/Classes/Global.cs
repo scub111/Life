@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -122,7 +123,7 @@ namespace Life
         }
 
         /// <summary>
-        /// Конструктор/
+        /// Конструктор
         /// </summary>
         public VarXml()
             : this("Config.xml")
@@ -225,7 +226,8 @@ namespace Life
 
         public void Init()
         {
-            Version = "v1.6.50";
+            //Version = "v1.6.50";
+            Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
             varXml = new VarXml("Config.xml");
             varXml.LoadFromXML();

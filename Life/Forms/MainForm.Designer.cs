@@ -34,8 +34,9 @@
             this._dbForm1 = new RapidInterface.DBForm();
             this.barLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.baseNavBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.SettingsViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.DatebookProfitReportViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.DatebookCostReportViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.baseNavBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.DatebookViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.PersonViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
@@ -58,8 +59,8 @@
             this.DatebookSportCollectionViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.DatebookMeetingCollectionViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.DatebookMeetingSexCollectionViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.DatebookCostReportViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.SettingsViewNavBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.icons1 = new DevExpress.Utils.ImageCollection(this.components);
             this.baseControlContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.baseDockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
@@ -93,6 +94,7 @@
             this.DatebookMeetingSexCollectionView1 = new RapidInterface.DBFormItemView();
             this.DisbalanceView1 = new RapidInterface.DBFormItemView();
             this.SettingsView1 = new RapidInterface.DBFormItemView();
+            this.DatebookProfitReportView1 = new RapidInterface.DBFormItemBase();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dbConnection1)).BeginInit();
             this._dbForm1.SuspendLayout();
@@ -137,7 +139,7 @@
             this._dbForm1.BaseNavBarGroup = this.baseNavBarGroup1;
             this._dbForm1.BaseTabbedView = this.baseTabbedView1;
             this._dbForm1.Controls.Add(this.baseLayoutControl1);
-            this._dbForm1.CountOpenDesigner = 71;
+            this._dbForm1.CountOpenDesigner = 76;
             this._dbForm1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbForm1.FilterClearButton = this.filterClearButton1;
             this._dbForm1.FilterClearLayoutItem = this.filterClearLayoutItem1;
@@ -166,6 +168,7 @@
             this._dbForm1.Items.Add(this.DatebookMeetingSexCollectionView1);
             this._dbForm1.Items.Add(this.DisbalanceView1);
             this._dbForm1.Items.Add(this.SettingsView1);
+            this._dbForm1.Items.Add(this.DatebookProfitReportView1);
             this._dbForm1.Location = new System.Drawing.Point(0, 0);
             this._dbForm1.Name = "_dbForm1";
             this._dbForm1.NotifyIcon = this.notifyIcon1;
@@ -185,7 +188,7 @@
             // 
             // baseNavBarControl1
             // 
-            this.baseNavBarControl1.ActiveGroup = this.navBarGroup4;
+            this.baseNavBarControl1.ActiveGroup = this.navBarGroup3;
             this.baseNavBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.baseNavBarGroup1,
             this.navBarGroup1,
@@ -213,7 +216,8 @@
             this.DatebookMeetingCollectionViewNavBarItem1,
             this.DatebookMeetingSexCollectionViewNavBarItem1,
             this.DisbalanceViewNavBarItem1,
-            this.SettingsViewNavBarItem1});
+            this.SettingsViewNavBarItem1,
+            this.DatebookProfitReportViewNavBarItem1});
             this.baseNavBarControl1.LinkSelectionMode = DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl;
             this.baseNavBarControl1.Location = new System.Drawing.Point(2, 28);
             this.baseNavBarControl1.Name = "baseNavBarControl1";
@@ -222,24 +226,35 @@
             this.baseNavBarControl1.SmallImages = this.icons1;
             this.baseNavBarControl1.TabIndex = 5;
             // 
-            // navBarGroup4
+            // navBarGroup3
             // 
-            this.navBarGroup4.Caption = "Разное";
-            this.navBarGroup4.Expanded = true;
-            this.navBarGroup4.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.SettingsViewNavBarItem1)});
-            this.navBarGroup4.Name = "navBarGroup4";
-            this.navBarGroup4.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup4.SmallImage")));
+            this.navBarGroup3.Caption = "Отчеты";
+            this.navBarGroup3.Expanded = true;
+            this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.DatebookProfitReportViewNavBarItem1),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.DatebookCostReportViewNavBarItem1)});
+            this.navBarGroup3.Name = "navBarGroup3";
+            this.navBarGroup3.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.SmallImage")));
             // 
-            // SettingsViewNavBarItem1
+            // DatebookProfitReportViewNavBarItem1
             // 
-            this.SettingsViewNavBarItem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.SettingsViewNavBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.Red;
-            this.SettingsViewNavBarItem1.AppearancePressed.Options.UseFont = true;
-            this.SettingsViewNavBarItem1.AppearancePressed.Options.UseForeColor = true;
-            this.SettingsViewNavBarItem1.Caption = "Настройки";
-            this.SettingsViewNavBarItem1.Name = "SettingsViewNavBarItem1";
-            this.SettingsViewNavBarItem1.SmallImageIndex = 21;
+            this.DatebookProfitReportViewNavBarItem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.DatebookProfitReportViewNavBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.Red;
+            this.DatebookProfitReportViewNavBarItem1.AppearancePressed.Options.UseFont = true;
+            this.DatebookProfitReportViewNavBarItem1.AppearancePressed.Options.UseForeColor = true;
+            this.DatebookProfitReportViewNavBarItem1.Caption = "Доходы";
+            this.DatebookProfitReportViewNavBarItem1.Name = "DatebookProfitReportViewNavBarItem1";
+            this.DatebookProfitReportViewNavBarItem1.SmallImageIndex = 22;
+            // 
+            // DatebookCostReportViewNavBarItem1
+            // 
+            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.DatebookCostReportViewNavBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.Red;
+            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Options.UseFont = true;
+            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Options.UseForeColor = true;
+            this.DatebookCostReportViewNavBarItem1.Caption = "Деньги";
+            this.DatebookCostReportViewNavBarItem1.Name = "DatebookCostReportViewNavBarItem1";
+            this.DatebookCostReportViewNavBarItem1.SmallImageIndex = 16;
             // 
             // baseNavBarGroup1
             // 
@@ -474,24 +489,24 @@
             this.DatebookMeetingSexCollectionViewNavBarItem1.Name = "DatebookMeetingSexCollectionViewNavBarItem1";
             this.DatebookMeetingSexCollectionViewNavBarItem1.SmallImageIndex = 19;
             // 
-            // navBarGroup3
+            // navBarGroup4
             // 
-            this.navBarGroup3.Caption = "Отчеты";
-            this.navBarGroup3.Expanded = true;
-            this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.DatebookCostReportViewNavBarItem1)});
-            this.navBarGroup3.Name = "navBarGroup3";
-            this.navBarGroup3.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.SmallImage")));
+            this.navBarGroup4.Caption = "Разное";
+            this.navBarGroup4.Expanded = true;
+            this.navBarGroup4.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.SettingsViewNavBarItem1)});
+            this.navBarGroup4.Name = "navBarGroup4";
+            this.navBarGroup4.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup4.SmallImage")));
             // 
-            // DatebookCostReportViewNavBarItem1
+            // SettingsViewNavBarItem1
             // 
-            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.DatebookCostReportViewNavBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.Red;
-            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Options.UseFont = true;
-            this.DatebookCostReportViewNavBarItem1.AppearancePressed.Options.UseForeColor = true;
-            this.DatebookCostReportViewNavBarItem1.Caption = "Деньги";
-            this.DatebookCostReportViewNavBarItem1.Name = "DatebookCostReportViewNavBarItem1";
-            this.DatebookCostReportViewNavBarItem1.SmallImageIndex = 16;
+            this.SettingsViewNavBarItem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.SettingsViewNavBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.Red;
+            this.SettingsViewNavBarItem1.AppearancePressed.Options.UseFont = true;
+            this.SettingsViewNavBarItem1.AppearancePressed.Options.UseForeColor = true;
+            this.SettingsViewNavBarItem1.Caption = "Настройки";
+            this.SettingsViewNavBarItem1.Name = "SettingsViewNavBarItem1";
+            this.SettingsViewNavBarItem1.SmallImageIndex = 21;
             // 
             // icons1
             // 
@@ -518,6 +533,7 @@
             this.icons1.Images.SetKeyName(19, "DatebookMeetingSexCollection.png");
             this.icons1.Images.SetKeyName(20, "Disbalance.png");
             this.icons1.Images.SetKeyName(21, "Settings.png");
+            this.icons1.Images.SetKeyName(22, "DatebookProfitReportView.png");
             // 
             // baseControlContainer1
             // 
@@ -894,6 +910,18 @@
             this.SettingsView1.View = null;
             this.SettingsView1.ViewType = typeof(Life.SettingsView);
             // 
+            // DatebookProfitReportView1
+            // 
+            this.DatebookProfitReportView1.BaseNavBarItem = this.DatebookProfitReportViewNavBarItem1;
+            this.DatebookProfitReportView1.Caption = "Доходы";
+            this.DatebookProfitReportView1.DBForm = this._dbForm1;
+            this.DatebookProfitReportView1.ImageIndex = 22;
+            this.DatebookProfitReportView1.ImageName = "DatebookProfitReportView.png";
+            this.DatebookProfitReportView1.Images = this.icons1;
+            this.DatebookProfitReportView1.IsDocumentActivated = false;
+            this.DatebookProfitReportView1.View = null;
+            this.DatebookProfitReportView1.ViewType = typeof(Life.DatebookProfitReportView);
+            // 
             // notifyIcon1
             // 
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
@@ -1005,6 +1033,8 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
         private DevExpress.XtraNavBar.NavBarItem SettingsViewNavBarItem1;
         private RapidInterface.DBFormItemView SettingsView1;
+        private DevExpress.XtraNavBar.NavBarItem DatebookProfitReportViewNavBarItem1;
+        private RapidInterface.DBFormItemBase DatebookProfitReportView1;
     }
 }
 

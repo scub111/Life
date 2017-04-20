@@ -154,7 +154,7 @@
             this._dbInterface1.BaseUnitOfWork = this.baseUnitOfWork1;
             this._dbInterface1.BaseXPCollecton = this.baseXPCollecton1;
             this._dbInterface1.Controls.Add(this.dockPanelMerge1);
-            this._dbInterface1.CountOpenDesigner = 22;
+            this._dbInterface1.CountOpenDesigner = 23;
             this._dbInterface1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbInterface1.DockManager = this.dockManager1;
             this._dbInterface1.DockPanelMerge = this.dockPanelMerge1;
@@ -184,7 +184,8 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString4);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
-            this._dbInterface1.Size = new System.Drawing.Size(812, 547);
+            this._dbInterface1.ProgramDesign = false;
+            this._dbInterface1.Size = new System.Drawing.Size(915, 626);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
             this._dbInterface1.TableDockPanel = this.tableDockPanel1;
@@ -224,7 +225,7 @@
             this.dockPanelMerge1.Location = new System.Drawing.Point(0, 0);
             this.dockPanelMerge1.Name = "dockPanelMerge1";
             this.dockPanelMerge1.OriginalSize = new System.Drawing.Size(501, 200);
-            this.dockPanelMerge1.Size = new System.Drawing.Size(812, 547);
+            this.dockPanelMerge1.Size = new System.Drawing.Size(915, 626);
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
             // 
@@ -236,8 +237,8 @@
             this.tableDockPanel1.ID = new System.Guid("7f259f67-967c-458c-98cf-5004551cd31c");
             this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
             this.tableDockPanel1.Name = "tableDockPanel1";
-            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
-            this.tableDockPanel1.Size = new System.Drawing.Size(777, 520);
+            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(777, 520);
+            this.tableDockPanel1.Size = new System.Drawing.Size(880, 599);
             this.tableDockPanel1.Text = "Таблица";
             // 
             // tableDockContainer1
@@ -245,7 +246,7 @@
             this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
             this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
             this.tableDockContainer1.Name = "tableDockContainer1";
-            this.tableDockContainer1.Size = new System.Drawing.Size(777, 520);
+            this.tableDockContainer1.Size = new System.Drawing.Size(880, 599);
             this.tableDockContainer1.TabIndex = 0;
             // 
             // tableLayoutControl1
@@ -257,7 +258,7 @@
             this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutControl1.Name = "tableLayoutControl1";
             this.tableLayoutControl1.Root = this.tableLayoutGroup1;
-            this.tableLayoutControl1.Size = new System.Drawing.Size(777, 520);
+            this.tableLayoutControl1.Size = new System.Drawing.Size(880, 599);
             this.tableLayoutControl1.TabIndex = 0;
             // 
             // tableGridControl1
@@ -275,7 +276,7 @@
             this.CostTypeRepGridLookUpEdit1,
             this.PlaceRepGridLookUpEdit1});
             this.tableGridControl1.ShowOnlyPredefinedDetails = true;
-            this.tableGridControl1.Size = new System.Drawing.Size(753, 473);
+            this.tableGridControl1.Size = new System.Drawing.Size(856, 552);
             this.tableGridControl1.TabIndex = 4;
             this.tableGridControl1.UseEmbeddedNavigator = true;
             this.tableGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -293,8 +294,6 @@
             this.CostGridColumn1,
             this.CommentGridColumn1});
             this.tableGridView1.GridControl = this.tableGridControl1;
-            this.tableGridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Cost", null, "{Sum = #.##}")});
             this.tableGridView1.Images = this.icons1;
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
@@ -302,6 +301,7 @@
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowFooter = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
+            this.tableGridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.tableGridView1_PopupMenuShowing);
             // 
             // tableGridBand1
             // 
@@ -373,6 +373,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.DateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.DateRepositoryItemDateEdit1.Name = "DateRepositoryItemDateEdit1";
             // 
             // icons1
@@ -493,6 +494,8 @@
             this.CostGridColumn1.Caption = "Расход";
             this.CostGridColumn1.FieldName = "Cost";
             this.CostGridColumn1.Name = "CostGridColumn1";
+            this.CostGridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Cost", "{0:0.##}")});
             this.CostGridColumn1.Visible = true;
             this.CostGridColumn1.Width = 100;
             // 
@@ -508,10 +511,10 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(206, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(259, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
             this.tableNavigatorControl1.TableCaption = "Расходы";
@@ -527,7 +530,7 @@
             this.tableGridLayoutItem1});
             this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutGroup1.Name = "tableLayoutGroup1";
-            this.tableLayoutGroup1.Size = new System.Drawing.Size(777, 520);
+            this.tableLayoutGroup1.Size = new System.Drawing.Size(880, 599);
             this.tableLayoutGroup1.TextVisible = false;
             // 
             // tableNavigatorLayoutItem1
@@ -537,7 +540,7 @@
             this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
             this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
-            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(757, 23);
+            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(860, 23);
             this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.tableNavigatorLayoutItem1.TextVisible = false;
             // 
@@ -547,7 +550,7 @@
             this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
             this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
             this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
-            this.tableGridLayoutItem1.Size = new System.Drawing.Size(757, 477);
+            this.tableGridLayoutItem1.Size = new System.Drawing.Size(860, 556);
             this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.tableGridLayoutItem1.TextVisible = false;
             // 
@@ -559,8 +562,8 @@
             this.formDockPanel1.ID = new System.Guid("e4fcbef4-721d-40f3-b309-d3b4cd321f20");
             this.formDockPanel1.Location = new System.Drawing.Point(31, 23);
             this.formDockPanel1.Name = "formDockPanel1";
-            this.formDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
-            this.formDockPanel1.Size = new System.Drawing.Size(777, 520);
+            this.formDockPanel1.OriginalSize = new System.Drawing.Size(777, 520);
+            this.formDockPanel1.Size = new System.Drawing.Size(880, 599);
             this.formDockPanel1.Text = "Форма";
             // 
             // formDockContainer1
@@ -568,7 +571,7 @@
             this.formDockContainer1.Controls.Add(this.formLayoutControl1);
             this.formDockContainer1.Location = new System.Drawing.Point(0, 0);
             this.formDockContainer1.Name = "formDockContainer1";
-            this.formDockContainer1.Size = new System.Drawing.Size(777, 520);
+            this.formDockContainer1.Size = new System.Drawing.Size(880, 599);
             this.formDockContainer1.TabIndex = 0;
             // 
             // formLayoutControl1
@@ -585,17 +588,17 @@
             this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutControl1.Name = "formLayoutControl1";
             this.formLayoutControl1.Root = this.formLayoutGroup1;
-            this.formLayoutControl1.Size = new System.Drawing.Size(777, 520);
+            this.formLayoutControl1.Size = new System.Drawing.Size(880, 599);
             this.formLayoutControl1.TabIndex = 0;
             // 
             // formNavigatorControl1
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(206, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(259, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
             this.formNavigatorControl1.TableCaption = "Расходы";
@@ -604,7 +607,7 @@
             // DatebookOwnerGridLookUpEdit1
             // 
             this.DatebookOwnerGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "DatebookOwner!", true));
-            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 66);
+            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 65);
             this.DatebookOwnerGridLookUpEdit1.Name = "DatebookOwnerGridLookUpEdit1";
             this.DatebookOwnerGridLookUpEdit1.Properties.DataSource = this.DatebookXPCollection1;
             this.DatebookOwnerGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -613,7 +616,7 @@
             this.DateRepositoryItemDateEdit1});
             this.DatebookOwnerGridLookUpEdit1.Properties.ValueMember = "This";
             this.DatebookOwnerGridLookUpEdit1.Properties.View = this.DatebookOwnerGridLookUpEdit1View;
-            this.DatebookOwnerGridLookUpEdit1.Size = new System.Drawing.Size(578, 20);
+            this.DatebookOwnerGridLookUpEdit1.Size = new System.Drawing.Size(681, 20);
             this.DatebookOwnerGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.DatebookOwnerGridLookUpEdit1.TabIndex = 5;
             // 
@@ -642,14 +645,14 @@
             // CostTypeIDGridLookUpEdit1
             // 
             this.CostTypeIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "CostTypeID!", true));
-            this.CostTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 90);
+            this.CostTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 89);
             this.CostTypeIDGridLookUpEdit1.Name = "CostTypeIDGridLookUpEdit1";
             this.CostTypeIDGridLookUpEdit1.Properties.DataSource = this.CostTypeXPCollection1;
             this.CostTypeIDGridLookUpEdit1.Properties.DisplayMember = "CostTypeCaption";
             this.CostTypeIDGridLookUpEdit1.Properties.NullText = "";
             this.CostTypeIDGridLookUpEdit1.Properties.ValueMember = "This";
             this.CostTypeIDGridLookUpEdit1.Properties.View = this.CostTypeIDGridLookUpEdit1View;
-            this.CostTypeIDGridLookUpEdit1.Size = new System.Drawing.Size(578, 20);
+            this.CostTypeIDGridLookUpEdit1.Size = new System.Drawing.Size(681, 20);
             this.CostTypeIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.CostTypeIDGridLookUpEdit1.TabIndex = 6;
             // 
@@ -677,14 +680,14 @@
             // PlaceIDGridLookUpEdit1
             // 
             this.PlaceIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PlaceID!", true));
-            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 114);
+            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 113);
             this.PlaceIDGridLookUpEdit1.Name = "PlaceIDGridLookUpEdit1";
             this.PlaceIDGridLookUpEdit1.Properties.DataSource = this.PlaceXPCollection1;
             this.PlaceIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
             this.PlaceIDGridLookUpEdit1.Properties.NullText = "";
             this.PlaceIDGridLookUpEdit1.Properties.ValueMember = "This";
             this.PlaceIDGridLookUpEdit1.Properties.View = this.PlaceIDGridLookUpEdit1View;
-            this.PlaceIDGridLookUpEdit1.Size = new System.Drawing.Size(578, 20);
+            this.PlaceIDGridLookUpEdit1.Size = new System.Drawing.Size(681, 20);
             this.PlaceIDGridLookUpEdit1.StyleController = this.formLayoutControl1;
             this.PlaceIDGridLookUpEdit1.TabIndex = 7;
             // 
@@ -712,9 +715,9 @@
             // TargetTextEdit1
             // 
             this.TargetTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Target", true));
-            this.TargetTextEdit1.Location = new System.Drawing.Point(175, 138);
+            this.TargetTextEdit1.Location = new System.Drawing.Point(175, 137);
             this.TargetTextEdit1.Name = "TargetTextEdit1";
-            this.TargetTextEdit1.Size = new System.Drawing.Size(578, 20);
+            this.TargetTextEdit1.Size = new System.Drawing.Size(681, 20);
             this.TargetTextEdit1.StyleController = this.formLayoutControl1;
             this.TargetTextEdit1.TabIndex = 8;
             // 
@@ -726,18 +729,18 @@
             0,
             0,
             0});
-            this.CostSpinEdit1.Location = new System.Drawing.Point(175, 162);
+            this.CostSpinEdit1.Location = new System.Drawing.Point(175, 161);
             this.CostSpinEdit1.Name = "CostSpinEdit1";
-            this.CostSpinEdit1.Size = new System.Drawing.Size(578, 20);
+            this.CostSpinEdit1.Size = new System.Drawing.Size(681, 20);
             this.CostSpinEdit1.StyleController = this.formLayoutControl1;
             this.CostSpinEdit1.TabIndex = 9;
             // 
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 186);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 185);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
-            this.CommentTextEdit1.Size = new System.Drawing.Size(578, 20);
+            this.CommentTextEdit1.Size = new System.Drawing.Size(681, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
             this.CommentTextEdit1.TabIndex = 10;
             // 
@@ -751,7 +754,7 @@
             this.formDataLayoutGroup1});
             this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutGroup1.Name = "formLayoutGroup1";
-            this.formLayoutGroup1.Size = new System.Drawing.Size(777, 520);
+            this.formLayoutGroup1.Size = new System.Drawing.Size(880, 599);
             this.formLayoutGroup1.TextVisible = false;
             // 
             // formNavigatorLayoutItem1
@@ -761,7 +764,7 @@
             this.formNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
             this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
-            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(757, 23);
+            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(860, 23);
             this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.formNavigatorLayoutItem1.TextVisible = false;
             // 
@@ -779,7 +782,7 @@
             this.CommentLayoutItem1});
             this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
             this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
-            this.formDataLayoutGroup1.Size = new System.Drawing.Size(757, 477);
+            this.formDataLayoutGroup1.Size = new System.Drawing.Size(860, 556);
             this.formDataLayoutGroup1.Text = "Основные данные";
             // 
             // DatebookOwnerLayoutItem1
@@ -789,7 +792,7 @@
             this.DatebookOwnerLayoutItem1.ImageIndex = 0;
             this.DatebookOwnerLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.DatebookOwnerLayoutItem1.Name = "DatebookOwnerLayoutItem1";
-            this.DatebookOwnerLayoutItem1.Size = new System.Drawing.Size(733, 24);
+            this.DatebookOwnerLayoutItem1.Size = new System.Drawing.Size(836, 24);
             this.DatebookOwnerLayoutItem1.Text = "Владелец \"Ежедневник\":";
             this.DatebookOwnerLayoutItem1.TextSize = new System.Drawing.Size(148, 16);
             // 
@@ -800,7 +803,7 @@
             this.CostTypeIDLayoutItem1.ImageIndex = 1;
             this.CostTypeIDLayoutItem1.Location = new System.Drawing.Point(0, 24);
             this.CostTypeIDLayoutItem1.Name = "CostTypeIDLayoutItem1";
-            this.CostTypeIDLayoutItem1.Size = new System.Drawing.Size(733, 24);
+            this.CostTypeIDLayoutItem1.Size = new System.Drawing.Size(836, 24);
             this.CostTypeIDLayoutItem1.Text = "Тип расхода:";
             this.CostTypeIDLayoutItem1.TextSize = new System.Drawing.Size(148, 16);
             // 
@@ -811,7 +814,7 @@
             this.PlaceIDLayoutItem1.ImageIndex = 2;
             this.PlaceIDLayoutItem1.Location = new System.Drawing.Point(0, 48);
             this.PlaceIDLayoutItem1.Name = "PlaceIDLayoutItem1";
-            this.PlaceIDLayoutItem1.Size = new System.Drawing.Size(733, 24);
+            this.PlaceIDLayoutItem1.Size = new System.Drawing.Size(836, 24);
             this.PlaceIDLayoutItem1.Text = "Место:";
             this.PlaceIDLayoutItem1.TextSize = new System.Drawing.Size(148, 16);
             // 
@@ -821,7 +824,7 @@
             this.TargetLayoutItem1.CustomizationFormText = "Что";
             this.TargetLayoutItem1.Location = new System.Drawing.Point(0, 72);
             this.TargetLayoutItem1.Name = "TargetLayoutItem1";
-            this.TargetLayoutItem1.Size = new System.Drawing.Size(733, 24);
+            this.TargetLayoutItem1.Size = new System.Drawing.Size(836, 24);
             this.TargetLayoutItem1.Text = "Что:";
             this.TargetLayoutItem1.TextSize = new System.Drawing.Size(148, 13);
             // 
@@ -831,7 +834,7 @@
             this.CostLayoutItem1.CustomizationFormText = "Расход";
             this.CostLayoutItem1.Location = new System.Drawing.Point(0, 96);
             this.CostLayoutItem1.Name = "CostLayoutItem1";
-            this.CostLayoutItem1.Size = new System.Drawing.Size(733, 24);
+            this.CostLayoutItem1.Size = new System.Drawing.Size(836, 24);
             this.CostLayoutItem1.Text = "Расход:";
             this.CostLayoutItem1.TextSize = new System.Drawing.Size(148, 13);
             // 
@@ -841,7 +844,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 120);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(733, 314);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(836, 394);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(148, 13);
             // 
@@ -1009,7 +1012,7 @@
             this.Controls.Add(this._dbInterface1);
             this.DBInterface = this._dbInterface1;
             this.Name = "DatebookCostCollectionView";
-            this.Size = new System.Drawing.Size(812, 547);
+            this.Size = new System.Drawing.Size(915, 626);
             this._dbInterface1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton1)).EndInit();

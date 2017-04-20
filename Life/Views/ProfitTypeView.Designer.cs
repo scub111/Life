@@ -28,63 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitTypeView));
             this._dbInterface1 = new RapidInterface.DBInterface();
-            this.baseUnitOfWork1 = new DevExpress.Xpo.UnitOfWork();
-            this.baseXPCollecton1 = new DevExpress.Xpo.XPCollection();
+            this.baseUnitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
+            this.baseXPCollecton1 = new DevExpress.Xpo.XPCollection(this.components);
             this.dockPanelMerge1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.tableGridControl1 = new RapidInterface.GridControlEx();
-            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.ProfitTypeCaptionGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.icons1 = new DevExpress.Utils.ImageCollection();
-            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx();
-            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.formDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.formLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.formNavigatorControl1 = new RapidInterface.DataNavigatorEx();
+            this.formNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
             this.ProfitTypeCaptionTextEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.CleanCheckEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.CommentTextEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.icons1 = new DevExpress.Utils.ImageCollection(this.components);
             this.formLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.formNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDataLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ProfitTypeCaptionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CleanLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CommentLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
+            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
+            this.tableGridControl1 = new RapidInterface.GridControlEx(this.components);
+            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
+            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.ProfitTypeCaptionGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CleanGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
+            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.itemString1 = new RapidInterface.DBInterfaceItemString();
+            this.itemBoolean1 = new RapidInterface.DBInterfaceItemBoolean();
             this.itemString2 = new RapidInterface.DBInterfaceItemString();
             this._dbInterface1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton1)).BeginInit();
             this.dockPanelMerge1.SuspendLayout();
+            this.formDockPanel1.SuspendLayout();
+            this.formDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
+            this.formLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CleanCheckEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CleanLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).BeginInit();
             this.tableDockPanel1.SuspendLayout();
             this.tableDockContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
             this.tableLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
-            this.formDockPanel1.SuspendLayout();
-            this.formDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
-            this.formLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionTextEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +100,7 @@
             this._dbInterface1.BaseUnitOfWork = this.baseUnitOfWork1;
             this._dbInterface1.BaseXPCollecton = this.baseXPCollecton1;
             this._dbInterface1.Controls.Add(this.dockPanelMerge1);
-            this._dbInterface1.CountOpenDesigner = 2;
+            this._dbInterface1.CountOpenDesigner = 6;
             this._dbInterface1.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dbInterface1.DockManager = this.dockManager1;
             this._dbInterface1.DockPanelMerge = this.dockPanelMerge1;
@@ -107,16 +114,19 @@
             this._dbInterface1.Icons = this.icons1;
             this._dbInterface1.ImagePath = "d:\\Мои документы\\!Projects\\RapidInterface\\RapidInterface\\Life\\Life\\";
             this._dbInterface1.Items.Add(this.itemString1);
+            this._dbInterface1.Items.Add(this.itemBoolean1);
             this._dbInterface1.Items.Add(this.itemString2);
             this._dbInterface1.ItemsSeq.Add(this.itemString1);
+            this._dbInterface1.ItemsSeq.Add(this.itemBoolean1);
             this._dbInterface1.ItemsSeq.Add(this.itemString2);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(878, 551);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
             this._dbInterface1.TableDockPanel = this.tableDockPanel1;
-            this._dbInterface1.TableGridBand = null;
+            this._dbInterface1.TableGridBand = this.tableGridBand1;
             this._dbInterface1.TableGridControl = this.tableGridControl1;
             this._dbInterface1.TableGridLayoutItem = this.tableGridLayoutItem1;
             this._dbInterface1.TableGridView = this.tableGridView1;
@@ -140,7 +150,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -152,6 +162,154 @@
             this.dockPanelMerge1.Size = new System.Drawing.Size(878, 551);
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
+            // 
+            // formDockPanel1
+            // 
+            this.formDockPanel1.Controls.Add(this.formDockContainer1);
+            this.formDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.formDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
+            this.formDockPanel1.ID = new System.Guid("4daf0a54-de40-4a7a-aef6-70bb57231c5c");
+            this.formDockPanel1.Location = new System.Drawing.Point(31, 23);
+            this.formDockPanel1.Name = "formDockPanel1";
+            this.formDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
+            this.formDockPanel1.Size = new System.Drawing.Size(843, 524);
+            this.formDockPanel1.Text = "Форма";
+            // 
+            // formDockContainer1
+            // 
+            this.formDockContainer1.Controls.Add(this.formLayoutControl1);
+            this.formDockContainer1.Location = new System.Drawing.Point(0, 0);
+            this.formDockContainer1.Name = "formDockContainer1";
+            this.formDockContainer1.Size = new System.Drawing.Size(843, 524);
+            this.formDockContainer1.TabIndex = 0;
+            // 
+            // formLayoutControl1
+            // 
+            this.formLayoutControl1.Controls.Add(this.formNavigatorControl1);
+            this.formLayoutControl1.Controls.Add(this.ProfitTypeCaptionTextEdit1);
+            this.formLayoutControl1.Controls.Add(this.CleanCheckEdit1);
+            this.formLayoutControl1.Controls.Add(this.CommentTextEdit1);
+            this.formLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.formLayoutControl1.Images = this.icons1;
+            this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.formLayoutControl1.Name = "formLayoutControl1";
+            this.formLayoutControl1.Root = this.formLayoutGroup1;
+            this.formLayoutControl1.Size = new System.Drawing.Size(843, 524);
+            this.formLayoutControl1.TabIndex = 0;
+            // 
+            // formNavigatorControl1
+            // 
+            this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
+            this.formNavigatorControl1.Error = false;
+            this.formNavigatorControl1.Location = new System.Drawing.Point(241, 12);
+            this.formNavigatorControl1.Name = "formNavigatorControl1";
+            this.formNavigatorControl1.ShowToolTips = true;
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
+            this.formNavigatorControl1.StyleController = this.formLayoutControl1;
+            this.formNavigatorControl1.TabIndex = 4;
+            this.formNavigatorControl1.TableCaption = "Тип дохода";
+            this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
+            // 
+            // ProfitTypeCaptionTextEdit1
+            // 
+            this.ProfitTypeCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ProfitTypeCaption", true));
+            this.ProfitTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 65);
+            this.ProfitTypeCaptionTextEdit1.Name = "ProfitTypeCaptionTextEdit1";
+            this.ProfitTypeCaptionTextEdit1.Size = new System.Drawing.Size(715, 20);
+            this.ProfitTypeCaptionTextEdit1.StyleController = this.formLayoutControl1;
+            this.ProfitTypeCaptionTextEdit1.TabIndex = 5;
+            // 
+            // CleanCheckEdit1
+            // 
+            this.CleanCheckEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Clean", true));
+            this.CleanCheckEdit1.Location = new System.Drawing.Point(24, 89);
+            this.CleanCheckEdit1.Name = "CleanCheckEdit1";
+            this.CleanCheckEdit1.Properties.Caption = "Чистый";
+            this.CleanCheckEdit1.Size = new System.Drawing.Size(795, 19);
+            this.CleanCheckEdit1.StyleController = this.formLayoutControl1;
+            this.CleanCheckEdit1.TabIndex = 6;
+            // 
+            // CommentTextEdit1
+            // 
+            this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
+            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 112);
+            this.CommentTextEdit1.Name = "CommentTextEdit1";
+            this.CommentTextEdit1.Size = new System.Drawing.Size(715, 20);
+            this.CommentTextEdit1.StyleController = this.formLayoutControl1;
+            this.CommentTextEdit1.TabIndex = 7;
+            // 
+            // icons1
+            // 
+            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
+            // 
+            // formLayoutGroup1
+            // 
+            this.formLayoutGroup1.CustomizationFormText = "Основная группа формы";
+            this.formLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.formLayoutGroup1.GroupBordersVisible = false;
+            this.formLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.formNavigatorLayoutItem1,
+            this.formDataLayoutGroup1});
+            this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
+            this.formLayoutGroup1.Name = "formLayoutGroup1";
+            this.formLayoutGroup1.Size = new System.Drawing.Size(843, 524);
+            this.formLayoutGroup1.TextVisible = false;
+            // 
+            // formNavigatorLayoutItem1
+            // 
+            this.formNavigatorLayoutItem1.Control = this.formNavigatorControl1;
+            this.formNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.formNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
+            this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
+            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(823, 23);
+            this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.formNavigatorLayoutItem1.TextVisible = false;
+            // 
+            // formDataLayoutGroup1
+            // 
+            this.formDataLayoutGroup1.AppearanceGroup.BackColor = System.Drawing.Color.Gainsboro;
+            this.formDataLayoutGroup1.AppearanceGroup.Options.UseBackColor = true;
+            this.formDataLayoutGroup1.CustomizationFormText = "Основные данные";
+            this.formDataLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ProfitTypeCaptionLayoutItem1,
+            this.CleanLayoutItem1,
+            this.CommentLayoutItem1});
+            this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
+            this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
+            this.formDataLayoutGroup1.Size = new System.Drawing.Size(823, 481);
+            this.formDataLayoutGroup1.Text = "Основные данные";
+            // 
+            // ProfitTypeCaptionLayoutItem1
+            // 
+            this.ProfitTypeCaptionLayoutItem1.Control = this.ProfitTypeCaptionTextEdit1;
+            this.ProfitTypeCaptionLayoutItem1.CustomizationFormText = "Наименование";
+            this.ProfitTypeCaptionLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.ProfitTypeCaptionLayoutItem1.Name = "ProfitTypeCaptionLayoutItem1";
+            this.ProfitTypeCaptionLayoutItem1.Size = new System.Drawing.Size(799, 24);
+            this.ProfitTypeCaptionLayoutItem1.Text = "Наименование:";
+            this.ProfitTypeCaptionLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // CleanLayoutItem1
+            // 
+            this.CleanLayoutItem1.Control = this.CleanCheckEdit1;
+            this.CleanLayoutItem1.CustomizationFormText = "Чистый";
+            this.CleanLayoutItem1.Location = new System.Drawing.Point(0, 24);
+            this.CleanLayoutItem1.Name = "CleanLayoutItem1";
+            this.CleanLayoutItem1.Size = new System.Drawing.Size(799, 23);
+            this.CleanLayoutItem1.Text = "Чистый:";
+            this.CleanLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.CleanLayoutItem1.TextVisible = false;
+            // 
+            // CommentLayoutItem1
+            // 
+            this.CommentLayoutItem1.Control = this.CommentTextEdit1;
+            this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
+            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 47);
+            this.CommentLayoutItem1.Name = "CommentLayoutItem1";
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(799, 392);
+            this.CommentLayoutItem1.Text = "Комментарий:";
+            this.CommentLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
             // 
             // tableDockPanel1
             // 
@@ -209,6 +367,7 @@
             this.tableGridBand1});
             this.tableGridView1.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
             this.ProfitTypeCaptionGridColumn1,
+            this.CleanGridColumn1,
             this.CommentGridColumn1});
             this.tableGridView1.GridControl = this.tableGridControl1;
             this.tableGridView1.Images = this.icons1;
@@ -222,6 +381,7 @@
             // 
             this.tableGridBand1.Caption = "Основные данные";
             this.tableGridBand1.Columns.Add(this.ProfitTypeCaptionGridColumn1);
+            this.tableGridBand1.Columns.Add(this.CleanGridColumn1);
             this.tableGridBand1.Columns.Add(this.CommentGridColumn1);
             this.tableGridBand1.Name = "tableGridBand1";
             this.tableGridBand1.VisibleIndex = 0;
@@ -233,7 +393,15 @@
             this.ProfitTypeCaptionGridColumn1.FieldName = "ProfitTypeCaption";
             this.ProfitTypeCaptionGridColumn1.Name = "ProfitTypeCaptionGridColumn1";
             this.ProfitTypeCaptionGridColumn1.Visible = true;
-            this.ProfitTypeCaptionGridColumn1.Width = 400;
+            this.ProfitTypeCaptionGridColumn1.Width = 267;
+            // 
+            // CleanGridColumn1
+            // 
+            this.CleanGridColumn1.Caption = "Чистый";
+            this.CleanGridColumn1.FieldName = "Clean";
+            this.CleanGridColumn1.Name = "CleanGridColumn1";
+            this.CleanGridColumn1.Visible = true;
+            this.CleanGridColumn1.Width = 267;
             // 
             // CommentGridColumn1
             // 
@@ -241,20 +409,16 @@
             this.CommentGridColumn1.FieldName = "Comment";
             this.CommentGridColumn1.Name = "CommentGridColumn1";
             this.CommentGridColumn1.Visible = true;
-            this.CommentGridColumn1.Width = 401;
-            // 
-            // icons1
-            // 
-            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
+            this.CommentGridColumn1.Width = 267;
             // 
             // tableNavigatorControl1
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(239, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(241, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
             this.tableNavigatorControl1.TableCaption = "Тип дохода";
@@ -271,7 +435,6 @@
             this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutGroup1.Name = "tableLayoutGroup1";
             this.tableLayoutGroup1.Size = new System.Drawing.Size(843, 524);
-            this.tableLayoutGroup1.Text = "tableLayoutGroup1";
             this.tableLayoutGroup1.TextVisible = false;
             // 
             // tableNavigatorLayoutItem1
@@ -282,9 +445,7 @@
             this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
             this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(823, 23);
-            this.tableNavigatorLayoutItem1.Text = "tableNavigatorLayoutItem1";
             this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableNavigatorLayoutItem1.TextToControlDistance = 0;
             this.tableNavigatorLayoutItem1.TextVisible = false;
             // 
             // tableGridLayoutItem1
@@ -294,134 +455,8 @@
             this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
             this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
             this.tableGridLayoutItem1.Size = new System.Drawing.Size(823, 481);
-            this.tableGridLayoutItem1.Text = "tableGridLayoutItem1";
             this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableGridLayoutItem1.TextToControlDistance = 0;
             this.tableGridLayoutItem1.TextVisible = false;
-            // 
-            // formDockPanel1
-            // 
-            this.formDockPanel1.Controls.Add(this.formDockContainer1);
-            this.formDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.formDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
-            this.formDockPanel1.ID = new System.Guid("4daf0a54-de40-4a7a-aef6-70bb57231c5c");
-            this.formDockPanel1.Location = new System.Drawing.Point(31, 23);
-            this.formDockPanel1.Name = "formDockPanel1";
-            this.formDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
-            this.formDockPanel1.Size = new System.Drawing.Size(843, 524);
-            this.formDockPanel1.Text = "Форма";
-            // 
-            // formDockContainer1
-            // 
-            this.formDockContainer1.Controls.Add(this.formLayoutControl1);
-            this.formDockContainer1.Location = new System.Drawing.Point(0, 0);
-            this.formDockContainer1.Name = "formDockContainer1";
-            this.formDockContainer1.Size = new System.Drawing.Size(843, 524);
-            this.formDockContainer1.TabIndex = 0;
-            // 
-            // formLayoutControl1
-            // 
-            this.formLayoutControl1.Controls.Add(this.formNavigatorControl1);
-            this.formLayoutControl1.Controls.Add(this.ProfitTypeCaptionTextEdit1);
-            this.formLayoutControl1.Controls.Add(this.CommentTextEdit1);
-            this.formLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formLayoutControl1.Images = this.icons1;
-            this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.formLayoutControl1.Name = "formLayoutControl1";
-            this.formLayoutControl1.Root = this.formLayoutGroup1;
-            this.formLayoutControl1.Size = new System.Drawing.Size(843, 524);
-            this.formLayoutControl1.TabIndex = 0;
-            // 
-            // formNavigatorControl1
-            // 
-            this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
-            this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(239, 12);
-            this.formNavigatorControl1.Name = "formNavigatorControl1";
-            this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
-            this.formNavigatorControl1.StyleController = this.formLayoutControl1;
-            this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Тип дохода";
-            this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
-            // 
-            // ProfitTypeCaptionTextEdit1
-            // 
-            this.ProfitTypeCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ProfitTypeCaption", true));
-            this.ProfitTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 66);
-            this.ProfitTypeCaptionTextEdit1.Name = "ProfitTypeCaptionTextEdit1";
-            this.ProfitTypeCaptionTextEdit1.Size = new System.Drawing.Size(715, 20);
-            this.ProfitTypeCaptionTextEdit1.StyleController = this.formLayoutControl1;
-            this.ProfitTypeCaptionTextEdit1.TabIndex = 5;
-            // 
-            // CommentTextEdit1
-            // 
-            this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 90);
-            this.CommentTextEdit1.Name = "CommentTextEdit1";
-            this.CommentTextEdit1.Size = new System.Drawing.Size(715, 20);
-            this.CommentTextEdit1.StyleController = this.formLayoutControl1;
-            this.CommentTextEdit1.TabIndex = 6;
-            // 
-            // formLayoutGroup1
-            // 
-            this.formLayoutGroup1.CustomizationFormText = "Основная группа формы";
-            this.formLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.formLayoutGroup1.GroupBordersVisible = false;
-            this.formLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.formNavigatorLayoutItem1,
-            this.formDataLayoutGroup1});
-            this.formLayoutGroup1.Location = new System.Drawing.Point(0, 0);
-            this.formLayoutGroup1.Name = "formLayoutGroup1";
-            this.formLayoutGroup1.Size = new System.Drawing.Size(843, 524);
-            this.formLayoutGroup1.Text = "formLayoutGroup1";
-            this.formLayoutGroup1.TextVisible = false;
-            // 
-            // formNavigatorLayoutItem1
-            // 
-            this.formNavigatorLayoutItem1.Control = this.formNavigatorControl1;
-            this.formNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.formNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
-            this.formNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.formNavigatorLayoutItem1.Name = "formNavigatorLayoutItem1";
-            this.formNavigatorLayoutItem1.Size = new System.Drawing.Size(823, 23);
-            this.formNavigatorLayoutItem1.Text = "formNavigatorLayoutItem1";
-            this.formNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.formNavigatorLayoutItem1.TextToControlDistance = 0;
-            this.formNavigatorLayoutItem1.TextVisible = false;
-            // 
-            // formDataLayoutGroup1
-            // 
-            this.formDataLayoutGroup1.AppearanceGroup.BackColor = System.Drawing.Color.Gainsboro;
-            this.formDataLayoutGroup1.AppearanceGroup.Options.UseBackColor = true;
-            this.formDataLayoutGroup1.CustomizationFormText = "Основные данные";
-            this.formDataLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ProfitTypeCaptionLayoutItem1,
-            this.CommentLayoutItem1});
-            this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
-            this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
-            this.formDataLayoutGroup1.Size = new System.Drawing.Size(823, 481);
-            this.formDataLayoutGroup1.Text = "Основные данные";
-            // 
-            // ProfitTypeCaptionLayoutItem1
-            // 
-            this.ProfitTypeCaptionLayoutItem1.Control = this.ProfitTypeCaptionTextEdit1;
-            this.ProfitTypeCaptionLayoutItem1.CustomizationFormText = "Наименование";
-            this.ProfitTypeCaptionLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.ProfitTypeCaptionLayoutItem1.Name = "ProfitTypeCaptionLayoutItem1";
-            this.ProfitTypeCaptionLayoutItem1.Size = new System.Drawing.Size(799, 24);
-            this.ProfitTypeCaptionLayoutItem1.Text = "Наименование:";
-            this.ProfitTypeCaptionLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
-            // 
-            // CommentLayoutItem1
-            // 
-            this.CommentLayoutItem1.Control = this.CommentTextEdit1;
-            this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
-            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 24);
-            this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(799, 414);
-            this.CommentLayoutItem1.Text = "Комментарий:";
-            this.CommentLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
             // 
             // dockManager1
             // 
@@ -442,6 +477,20 @@
             this.itemString1.Images = this.icons1;
             this.itemString1.Parent = null;
             this.itemString1.TableGridColumn = this.ProfitTypeCaptionGridColumn1;
+            // 
+            // itemBoolean1
+            // 
+            this.itemBoolean1.Caption = "Чистый";
+            this.itemBoolean1.ControlName = "Clean";
+            this.itemBoolean1.DBInterface = this._dbInterface1;
+            this.itemBoolean1.FieldName = "Clean";
+            this.itemBoolean1.FormEdit = this.CleanCheckEdit1;
+            this.itemBoolean1.FormGridColumn = null;
+            this.itemBoolean1.FormLayoutItem = this.CleanLayoutItem1;
+            this.itemBoolean1.ImageName = "";
+            this.itemBoolean1.Images = this.icons1;
+            this.itemBoolean1.Parent = null;
+            this.itemBoolean1.TableGridColumn = this.CleanGridColumn1;
             // 
             // itemString2
             // 
@@ -469,27 +518,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton1)).EndInit();
             this.dockPanelMerge1.ResumeLayout(false);
+            this.formDockPanel1.ResumeLayout(false);
+            this.formDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
+            this.formLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CleanCheckEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CleanLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).EndInit();
             this.tableDockPanel1.ResumeLayout(false);
             this.tableDockContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
             this.tableLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
-            this.formDockPanel1.ResumeLayout(false);
-            this.formDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
-            this.formLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionTextEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CommentTextEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfitTypeCaptionLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CommentLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -520,13 +571,17 @@
         private DevExpress.XtraLayout.LayoutControlItem tableGridLayoutItem1;
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn ProfitTypeCaptionGridColumn1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn CommentGridColumn1;
         private DevExpress.XtraEditors.TextEdit ProfitTypeCaptionTextEdit1;
-        private DevExpress.XtraEditors.TextEdit CommentTextEdit1;
         private DevExpress.XtraLayout.LayoutControlItem ProfitTypeCaptionLayoutItem1;
-        private DevExpress.XtraLayout.LayoutControlItem CommentLayoutItem1;
         private RapidInterface.DBInterfaceItemString itemString1;
-        private RapidInterface.DBInterfaceItemString itemString2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand tableGridBand1;
+        private DevExpress.XtraEditors.CheckEdit CleanCheckEdit1;
+        private DevExpress.XtraEditors.TextEdit CommentTextEdit1;
+        private DevExpress.XtraLayout.LayoutControlItem CleanLayoutItem1;
+        private DevExpress.XtraLayout.LayoutControlItem CommentLayoutItem1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn CleanGridColumn1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn CommentGridColumn1;
+        private RapidInterface.DBInterfaceItemBoolean itemBoolean1;
+        private RapidInterface.DBInterfaceItemString itemString2;
     }
 }

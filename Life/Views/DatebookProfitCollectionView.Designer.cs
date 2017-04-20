@@ -184,6 +184,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString4);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(817, 501);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -215,7 +216,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -302,6 +303,7 @@
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowFooter = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
+            this.tableGridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.tableGridView1_PopupMenuShowing);
             // 
             // tableGridBand1
             // 
@@ -373,6 +375,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.DateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.DateRepositoryItemDateEdit1.Name = "DateRepositoryItemDateEdit1";
             // 
             // icons1
@@ -510,10 +513,10 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(209, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(210, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
             this.tableNavigatorControl1.TableCaption = "Прибыль";
@@ -594,10 +597,10 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(209, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(210, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
             this.formNavigatorControl1.TableCaption = "Прибыль";
@@ -606,7 +609,7 @@
             // DatebookOwnerGridLookUpEdit1
             // 
             this.DatebookOwnerGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "DatebookOwner!", true));
-            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 66);
+            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 65);
             this.DatebookOwnerGridLookUpEdit1.Name = "DatebookOwnerGridLookUpEdit1";
             this.DatebookOwnerGridLookUpEdit1.Properties.DataSource = this.DatebookXPCollection1;
             this.DatebookOwnerGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -644,7 +647,7 @@
             // ProfitTypeIDGridLookUpEdit1
             // 
             this.ProfitTypeIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ProfitTypeID!", true));
-            this.ProfitTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 90);
+            this.ProfitTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 89);
             this.ProfitTypeIDGridLookUpEdit1.Name = "ProfitTypeIDGridLookUpEdit1";
             this.ProfitTypeIDGridLookUpEdit1.Properties.DataSource = this.ProfitTypeXPCollection1;
             this.ProfitTypeIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -679,7 +682,7 @@
             // PlaceIDGridLookUpEdit1
             // 
             this.PlaceIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PlaceID!", true));
-            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 114);
+            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 113);
             this.PlaceIDGridLookUpEdit1.Name = "PlaceIDGridLookUpEdit1";
             this.PlaceIDGridLookUpEdit1.Properties.DataSource = this.PlaceXPCollection1;
             this.PlaceIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -719,7 +722,7 @@
             0,
             0,
             0});
-            this.ProfitSpinEdit1.Location = new System.Drawing.Point(175, 138);
+            this.ProfitSpinEdit1.Location = new System.Drawing.Point(175, 137);
             this.ProfitSpinEdit1.Name = "ProfitSpinEdit1";
             this.ProfitSpinEdit1.Size = new System.Drawing.Size(583, 20);
             this.ProfitSpinEdit1.StyleController = this.formLayoutControl1;
@@ -728,7 +731,7 @@
             // SourceTextEdit1
             // 
             this.SourceTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Source", true));
-            this.SourceTextEdit1.Location = new System.Drawing.Point(175, 162);
+            this.SourceTextEdit1.Location = new System.Drawing.Point(175, 161);
             this.SourceTextEdit1.Name = "SourceTextEdit1";
             this.SourceTextEdit1.Size = new System.Drawing.Size(583, 20);
             this.SourceTextEdit1.StyleController = this.formLayoutControl1;
@@ -737,7 +740,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 186);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 185);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(583, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -843,7 +846,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 120);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(738, 268);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(738, 269);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(148, 13);
             // 

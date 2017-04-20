@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using RapidInterface;
 
 namespace Life
@@ -34,7 +30,7 @@ namespace Life
             else
                 report.BeginDate.Value = new DateTime(DateTime.Now.Year - 1, 12, DateTime.Now.Day);
 
-            this.documentViewer1.PrintingSystem = report.PrintingSystem;
+            documentViewer1.PrintingSystem = report.PrintingSystem;
             report.CreateDocument();  
         }
     }
