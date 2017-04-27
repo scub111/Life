@@ -173,6 +173,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString3);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(1078, 688);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -244,16 +245,6 @@
             this.tableLayoutControl1.Images = this.icons1;
             this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutControl1.Name = "tableLayoutControl1";
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tableLayoutControl1.Root = this.tableLayoutGroup1;
             this.tableLayoutControl1.Size = new System.Drawing.Size(1043, 661);
             this.tableLayoutControl1.TabIndex = 0;
@@ -296,6 +287,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -349,6 +341,7 @@
             this.DatebookMeetingCollectionGridView1.Name = "DatebookMeetingCollectionGridView1";
             this.DatebookMeetingCollectionGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookMeetingCollectionGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookMeetingCollectionGridView1.OptionsFind.AlwaysVisible = true;
             this.DatebookMeetingCollectionGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.DatebookMeetingCollectionGridView1.OptionsView.ShowAutoFilterRow = true;
             this.DatebookMeetingCollectionGridView1.OptionsView.ShowGroupPanel = false;
@@ -404,6 +397,7 @@
             this.PlaceGridView1.Name = "PlaceGridView1";
             this.PlaceGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView1.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView1.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView1.OptionsView.ShowGroupPanel = false;
@@ -432,6 +426,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.SexTimeRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.SexTimeRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.SexTimeRepositoryItemDateEdit1.Name = "SexTimeRepositoryItemDateEdit1";
             // 
             // OrgasmCountGridColumn1
@@ -462,13 +457,13 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(339, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(341, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Секс";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1
@@ -538,16 +533,6 @@
             this.formLayoutControl1.Images = this.icons1;
             this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutControl1.Name = "formLayoutControl1";
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.formLayoutControl1.Root = this.formLayoutGroup1;
             this.formLayoutControl1.Size = new System.Drawing.Size(1043, 661);
             this.formLayoutControl1.TabIndex = 0;
@@ -556,19 +541,19 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(339, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(341, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Секс";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // DatebookMeetingCollectionOwnerGridLookUpEdit1
             // 
             this.DatebookMeetingCollectionOwnerGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "DatebookMeetingCollectionOwner!", true));
-            this.DatebookMeetingCollectionOwnerGridLookUpEdit1.Location = new System.Drawing.Point(161, 66);
+            this.DatebookMeetingCollectionOwnerGridLookUpEdit1.Location = new System.Drawing.Point(161, 65);
             this.DatebookMeetingCollectionOwnerGridLookUpEdit1.Name = "DatebookMeetingCollectionOwnerGridLookUpEdit1";
             this.DatebookMeetingCollectionOwnerGridLookUpEdit1.Properties.DataSource = this.DatebookMeetingCollectionXPCollection1;
             this.DatebookMeetingCollectionOwnerGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -603,7 +588,7 @@
             // PlaceIDGridLookUpEdit1
             // 
             this.PlaceIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PlaceID!", true));
-            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(161, 90);
+            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(161, 89);
             this.PlaceIDGridLookUpEdit1.Name = "PlaceIDGridLookUpEdit1";
             this.PlaceIDGridLookUpEdit1.Properties.DataSource = this.PlaceXPCollection1;
             this.PlaceIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -639,13 +624,14 @@
             // 
             this.SexTimeDateEditEx1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "SexTime", true));
             this.SexTimeDateEditEx1.EditValue = new System.DateTime(2016, 1, 21, 0, 0, 0, 0);
-            this.SexTimeDateEditEx1.Location = new System.Drawing.Point(161, 114);
+            this.SexTimeDateEditEx1.Location = new System.Drawing.Point(161, 113);
             this.SexTimeDateEditEx1.Name = "SexTimeDateEditEx1";
             this.SexTimeDateEditEx1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.SexTimeDateEditEx1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.SexTimeDateEditEx1.Properties.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.SexTimeDateEditEx1.Size = new System.Drawing.Size(858, 20);
             this.SexTimeDateEditEx1.StyleController = this.formLayoutControl1;
             this.SexTimeDateEditEx1.TabIndex = 7;
@@ -658,7 +644,7 @@
             0,
             0,
             0});
-            this.OrgasmCountSpinEdit1.Location = new System.Drawing.Point(161, 138);
+            this.OrgasmCountSpinEdit1.Location = new System.Drawing.Point(161, 137);
             this.OrgasmCountSpinEdit1.Name = "OrgasmCountSpinEdit1";
             this.OrgasmCountSpinEdit1.Size = new System.Drawing.Size(858, 20);
             this.OrgasmCountSpinEdit1.StyleController = this.formLayoutControl1;
@@ -672,7 +658,7 @@
             0,
             0,
             0});
-            this.DurationSpinEdit1.Location = new System.Drawing.Point(161, 162);
+            this.DurationSpinEdit1.Location = new System.Drawing.Point(161, 161);
             this.DurationSpinEdit1.Name = "DurationSpinEdit1";
             this.DurationSpinEdit1.Size = new System.Drawing.Size(858, 20);
             this.DurationSpinEdit1.StyleController = this.formLayoutControl1;
@@ -681,7 +667,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(161, 186);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(161, 185);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(858, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -786,7 +772,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 120);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(999, 455);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(999, 456);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(134, 13);
             // 

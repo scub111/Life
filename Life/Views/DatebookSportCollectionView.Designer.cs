@@ -176,6 +176,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString4);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(903, 656);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -248,16 +249,6 @@
             this.tableLayoutControl1.Images = this.icons1;
             this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutControl1.Name = "tableLayoutControl1";
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tableLayoutControl1.Root = this.tableLayoutGroup1;
             this.tableLayoutControl1.Size = new System.Drawing.Size(868, 629);
             this.tableLayoutControl1.TabIndex = 0;
@@ -300,6 +291,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -352,6 +344,7 @@
             this.DatebookGridView1.Name = "DatebookGridView1";
             this.DatebookGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookGridView1.OptionsFind.AlwaysVisible = true;
             this.DatebookGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.DatebookGridView1.OptionsView.ShowAutoFilterRow = true;
             this.DatebookGridView1.OptionsView.ShowGroupPanel = false;
@@ -372,6 +365,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.DateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.DateRepositoryItemDateEdit1.Name = "DateRepositoryItemDateEdit1";
             // 
             // icons1
@@ -418,6 +412,7 @@
             this.PlaceGridView1.Name = "PlaceGridView1";
             this.PlaceGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView1.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView1.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView1.OptionsView.ShowGroupPanel = false;
@@ -467,6 +462,7 @@
             this.SportTypeGridView1.Name = "SportTypeGridView1";
             this.SportTypeGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.SportTypeGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.SportTypeGridView1.OptionsFind.AlwaysVisible = true;
             this.SportTypeGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.SportTypeGridView1.OptionsView.ShowAutoFilterRow = true;
             this.SportTypeGridView1.OptionsView.ShowGroupPanel = false;
@@ -499,13 +495,13 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(252, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(253, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Спорт";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1
@@ -574,16 +570,6 @@
             this.formLayoutControl1.Images = this.icons1;
             this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutControl1.Name = "formLayoutControl1";
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.formLayoutControl1.Root = this.formLayoutGroup1;
             this.formLayoutControl1.Size = new System.Drawing.Size(868, 629);
             this.formLayoutControl1.TabIndex = 0;
@@ -592,19 +578,19 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(252, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(253, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Спорт";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // DatebookOwnerGridLookUpEdit1
             // 
             this.DatebookOwnerGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "DatebookOwner!", true));
-            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 66);
+            this.DatebookOwnerGridLookUpEdit1.Location = new System.Drawing.Point(175, 65);
             this.DatebookOwnerGridLookUpEdit1.Name = "DatebookOwnerGridLookUpEdit1";
             this.DatebookOwnerGridLookUpEdit1.Properties.DataSource = this.DatebookXPCollection1;
             this.DatebookOwnerGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -642,7 +628,7 @@
             // PlaceIDGridLookUpEdit1
             // 
             this.PlaceIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PlaceID!", true));
-            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 90);
+            this.PlaceIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 89);
             this.PlaceIDGridLookUpEdit1.Name = "PlaceIDGridLookUpEdit1";
             this.PlaceIDGridLookUpEdit1.Properties.DataSource = this.PlaceXPCollection1;
             this.PlaceIDGridLookUpEdit1.Properties.DisplayMember = "DisplayMember";
@@ -677,7 +663,7 @@
             // SportTypeIDGridLookUpEdit1
             // 
             this.SportTypeIDGridLookUpEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "SportTypeID!", true));
-            this.SportTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 114);
+            this.SportTypeIDGridLookUpEdit1.Location = new System.Drawing.Point(175, 113);
             this.SportTypeIDGridLookUpEdit1.Name = "SportTypeIDGridLookUpEdit1";
             this.SportTypeIDGridLookUpEdit1.Properties.DataSource = this.SportTypeXPCollection1;
             this.SportTypeIDGridLookUpEdit1.Properties.DisplayMember = "SportTypeCaption";
@@ -712,7 +698,7 @@
             // TargetTextEdit1
             // 
             this.TargetTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Target", true));
-            this.TargetTextEdit1.Location = new System.Drawing.Point(175, 138);
+            this.TargetTextEdit1.Location = new System.Drawing.Point(175, 137);
             this.TargetTextEdit1.Name = "TargetTextEdit1";
             this.TargetTextEdit1.Size = new System.Drawing.Size(669, 20);
             this.TargetTextEdit1.StyleController = this.formLayoutControl1;
@@ -721,7 +707,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 162);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(175, 161);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(669, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -816,7 +802,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 96);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(824, 447);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(824, 448);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(148, 13);
             // 

@@ -113,6 +113,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString2);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(977, 597);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -214,6 +215,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -250,10 +252,10 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(289, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(290, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
             this.tableNavigatorControl1.TableCaption = "Тип тренировки";
@@ -330,10 +332,10 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(289, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(290, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
             this.formNavigatorControl1.TableCaption = "Тип тренировки";
@@ -342,7 +344,7 @@
             // SportTypeCaptionTextEdit1
             // 
             this.SportTypeCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "SportTypeCaption", true));
-            this.SportTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 66);
+            this.SportTypeCaptionTextEdit1.Location = new System.Drawing.Point(104, 65);
             this.SportTypeCaptionTextEdit1.Name = "SportTypeCaptionTextEdit1";
             this.SportTypeCaptionTextEdit1.Size = new System.Drawing.Size(814, 20);
             this.SportTypeCaptionTextEdit1.StyleController = this.formLayoutControl1;
@@ -351,7 +353,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 90);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(104, 89);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(814, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -410,7 +412,7 @@
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
             this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 24);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
-            this.CommentLayoutItem1.Size = new System.Drawing.Size(898, 460);
+            this.CommentLayoutItem1.Size = new System.Drawing.Size(898, 461);
             this.CommentLayoutItem1.Text = "Комментарий:";
             this.CommentLayoutItem1.TextSize = new System.Drawing.Size(77, 13);
             // 

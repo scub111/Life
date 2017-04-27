@@ -149,7 +149,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -205,7 +205,7 @@
             this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Тип заметки2";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // NoteTypeCaptionTextEdit1
@@ -349,6 +349,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -387,7 +388,7 @@
             this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Тип заметки";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1

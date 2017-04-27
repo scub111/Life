@@ -298,6 +298,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowFooter = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
@@ -353,6 +354,7 @@
             this.DatebookGridView1.Name = "DatebookGridView1";
             this.DatebookGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookGridView1.OptionsFind.AlwaysVisible = true;
             this.DatebookGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.DatebookGridView1.OptionsView.ShowAutoFilterRow = true;
             this.DatebookGridView1.OptionsView.ShowGroupPanel = false;
@@ -420,6 +422,7 @@
             this.CostTypeGridView1.Name = "CostTypeGridView1";
             this.CostTypeGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.CostTypeGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.CostTypeGridView1.OptionsFind.AlwaysVisible = true;
             this.CostTypeGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.CostTypeGridView1.OptionsView.ShowAutoFilterRow = true;
             this.CostTypeGridView1.OptionsView.ShowGroupPanel = false;
@@ -469,6 +472,7 @@
             this.PlaceGridView1.Name = "PlaceGridView1";
             this.PlaceGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView1.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView1.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView1.OptionsView.ShowGroupPanel = false;
@@ -517,7 +521,7 @@
             this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Расходы";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1
@@ -601,7 +605,7 @@
             this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Расходы";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // DatebookOwnerGridLookUpEdit1

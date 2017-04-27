@@ -34,6 +34,37 @@
             this.baseUnitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
             this.baseXPCollecton1 = new DevExpress.Xpo.XPCollection(this.components);
             this.dockPanelMerge1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
+            this.tableGridControl1 = new RapidInterface.GridControlEx(this.components);
+            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
+            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.Account1GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account2GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account3GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account4GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account5GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account6GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account7GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account8GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account9GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.Account10GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.BeginDateGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.BeginDateRepositoryItemDateEdit1 = new RapidInterface.RepositoryItemDateEditEx();
+            this.EndDateGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.EndDateRepositoryItemDateEdit1 = new RapidInterface.RepositoryItemDateEditEx();
+            this.ProfitGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CostGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CostPercentLastGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.ValueGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.ValuePercentLastGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.icons1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
+            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.formDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.formLayoutControl1 = new RapidInterface.LayoutControlEx();
@@ -56,7 +87,8 @@
             this.ProfitSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.CostSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.ValueSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
-            this.icons1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.CostPercentLastSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
+            this.ValuePercentLastSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.formLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.formNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDataLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -82,34 +114,8 @@
             this.Account4LayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CostLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.tableGridControl1 = new RapidInterface.GridControlEx(this.components);
-            this.tableGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.tableGridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.Account1GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account2GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account3GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account4GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account5GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account6GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account7GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account8GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account9GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.Account10GridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BeginDateGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BeginDateRepositoryItemDateEdit1 = new RapidInterface.RepositoryItemDateEditEx();
-            this.EndDateGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.EndDateRepositoryItemDateEdit1 = new RapidInterface.RepositoryItemDateEditEx();
-            this.ProfitGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.CostGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.ValueGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.CommentGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
-            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CostPercentLastLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ValuePercentLastLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.itemDateTime1 = new RapidInterface.DBInterfaceItemDateTime();
             this.itemDateTime2 = new RapidInterface.DBInterfaceItemDateTime();
@@ -126,19 +132,27 @@
             this.itemString1 = new RapidInterface.DBInterfaceItemString();
             this.itemNumeric11 = new RapidInterface.DBInterfaceItemNumeric();
             this.itemNumeric12 = new RapidInterface.DBInterfaceItemNumeric();
-            this.itemNumeric13 = new RapidInterface.DBInterfaceItemNumeric();
             this.itemNumeric14 = new RapidInterface.DBInterfaceItemNumeric();
-            this.CostPercentLastLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CostPercentLastGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.CostPercentLastSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
+            this.itemNumeric13 = new RapidInterface.DBInterfaceItemNumeric();
             this.itemNumeric15 = new RapidInterface.DBInterfaceItemNumeric();
-            this.ValuePercentLastLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ValuePercentLastGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.ValuePercentLastSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this._dbInterface1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton1)).BeginInit();
             this.dockPanelMerge1.SuspendLayout();
+            this.tableDockPanel1.SuspendLayout();
+            this.tableDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
+            this.tableLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             this.formDockPanel1.SuspendLayout();
             this.formDockContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
@@ -161,7 +175,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProfitSpinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostSpinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ValueSpinEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastSpinEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastSpinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).BeginInit();
@@ -187,24 +202,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Account4LayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            this.tableDockPanel1.SuspendLayout();
-            this.tableDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
-            this.tableLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastSpinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastSpinEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // _dbInterface1
@@ -306,6 +306,333 @@
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
             // 
+            // tableDockPanel1
+            // 
+            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
+            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
+            this.tableDockPanel1.ID = new System.Guid("77499804-c53b-4cec-9d14-e6424abe9fdb");
+            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
+            this.tableDockPanel1.Name = "tableDockPanel1";
+            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
+            this.tableDockPanel1.Size = new System.Drawing.Size(874, 650);
+            this.tableDockPanel1.Text = "Таблица";
+            // 
+            // tableDockContainer1
+            // 
+            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
+            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
+            this.tableDockContainer1.Name = "tableDockContainer1";
+            this.tableDockContainer1.Size = new System.Drawing.Size(874, 650);
+            this.tableDockContainer1.TabIndex = 0;
+            // 
+            // tableLayoutControl1
+            // 
+            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
+            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
+            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutControl1.Images = this.icons1;
+            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutControl1.Name = "tableLayoutControl1";
+            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
+            this.tableLayoutControl1.Size = new System.Drawing.Size(874, 650);
+            this.tableLayoutControl1.TabIndex = 0;
+            // 
+            // tableGridControl1
+            // 
+            this.tableGridControl1.DataSource = this.baseXPCollecton1;
+            this.tableGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
+            this.tableGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
+            this.tableGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
+            this.tableGridControl1.Location = new System.Drawing.Point(12, 35);
+            this.tableGridControl1.MainView = this.tableGridView1;
+            this.tableGridControl1.Name = "tableGridControl1";
+            this.tableGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.BeginDateRepositoryItemDateEdit1,
+            this.EndDateRepositoryItemDateEdit1});
+            this.tableGridControl1.ShowOnlyPredefinedDetails = true;
+            this.tableGridControl1.Size = new System.Drawing.Size(850, 603);
+            this.tableGridControl1.TabIndex = 4;
+            this.tableGridControl1.UseEmbeddedNavigator = true;
+            this.tableGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.tableGridView1});
+            // 
+            // tableGridView1
+            // 
+            this.tableGridView1.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(240)))));
+            this.tableGridView1.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.tableGridView1.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.tableGridBand1});
+            this.tableGridView1.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
+            this.BeginDateGridColumn1,
+            this.EndDateGridColumn1,
+            this.Account1GridColumn1,
+            this.Account2GridColumn1,
+            this.Account3GridColumn1,
+            this.Account4GridColumn1,
+            this.Account5GridColumn1,
+            this.Account6GridColumn1,
+            this.Account7GridColumn1,
+            this.Account8GridColumn1,
+            this.Account9GridColumn1,
+            this.Account10GridColumn1,
+            this.CommentGridColumn1,
+            this.ProfitGridColumn1,
+            this.CostGridColumn1,
+            this.ValueGridColumn1,
+            this.CostPercentLastGridColumn1,
+            this.ValuePercentLastGridColumn1});
+            this.tableGridView1.GridControl = this.tableGridControl1;
+            this.tableGridView1.Images = this.icons1;
+            this.tableGridView1.Name = "tableGridView1";
+            this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
+            this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
+            this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
+            this.tableGridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // tableGridBand1
+            // 
+            this.tableGridBand1.Caption = "Основные данные";
+            this.tableGridBand1.Columns.Add(this.Account1GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account2GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account3GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account4GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account5GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account6GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account7GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account8GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account9GridColumn1);
+            this.tableGridBand1.Columns.Add(this.Account10GridColumn1);
+            this.tableGridBand1.Columns.Add(this.BeginDateGridColumn1);
+            this.tableGridBand1.Columns.Add(this.EndDateGridColumn1);
+            this.tableGridBand1.Columns.Add(this.ProfitGridColumn1);
+            this.tableGridBand1.Columns.Add(this.CostGridColumn1);
+            this.tableGridBand1.Columns.Add(this.CostPercentLastGridColumn1);
+            this.tableGridBand1.Columns.Add(this.ValueGridColumn1);
+            this.tableGridBand1.Columns.Add(this.ValuePercentLastGridColumn1);
+            this.tableGridBand1.Columns.Add(this.CommentGridColumn1);
+            this.tableGridBand1.Name = "tableGridBand1";
+            this.tableGridBand1.VisibleIndex = 0;
+            this.tableGridBand1.Width = 832;
+            // 
+            // Account1GridColumn1
+            // 
+            this.Account1GridColumn1.Caption = "Счет 13";
+            this.Account1GridColumn1.FieldName = "Account1";
+            this.Account1GridColumn1.Name = "Account1GridColumn1";
+            this.Account1GridColumn1.Visible = true;
+            this.Account1GridColumn1.Width = 46;
+            // 
+            // Account2GridColumn1
+            // 
+            this.Account2GridColumn1.Caption = "Счет 2";
+            this.Account2GridColumn1.FieldName = "Account2";
+            this.Account2GridColumn1.Name = "Account2GridColumn1";
+            this.Account2GridColumn1.Visible = true;
+            this.Account2GridColumn1.Width = 46;
+            // 
+            // Account3GridColumn1
+            // 
+            this.Account3GridColumn1.Caption = "Счет 3";
+            this.Account3GridColumn1.FieldName = "Account3";
+            this.Account3GridColumn1.Name = "Account3GridColumn1";
+            this.Account3GridColumn1.Visible = true;
+            this.Account3GridColumn1.Width = 46;
+            // 
+            // Account4GridColumn1
+            // 
+            this.Account4GridColumn1.Caption = "Счет 4";
+            this.Account4GridColumn1.FieldName = "Account4";
+            this.Account4GridColumn1.Name = "Account4GridColumn1";
+            this.Account4GridColumn1.Visible = true;
+            this.Account4GridColumn1.Width = 46;
+            // 
+            // Account5GridColumn1
+            // 
+            this.Account5GridColumn1.Caption = "Счет 5";
+            this.Account5GridColumn1.FieldName = "Account5";
+            this.Account5GridColumn1.Name = "Account5GridColumn1";
+            this.Account5GridColumn1.Visible = true;
+            this.Account5GridColumn1.Width = 46;
+            // 
+            // Account6GridColumn1
+            // 
+            this.Account6GridColumn1.Caption = "Счет 6";
+            this.Account6GridColumn1.FieldName = "Account6";
+            this.Account6GridColumn1.Name = "Account6GridColumn1";
+            this.Account6GridColumn1.Visible = true;
+            this.Account6GridColumn1.Width = 46;
+            // 
+            // Account7GridColumn1
+            // 
+            this.Account7GridColumn1.Caption = "Счет 7";
+            this.Account7GridColumn1.FieldName = "Account7";
+            this.Account7GridColumn1.Name = "Account7GridColumn1";
+            this.Account7GridColumn1.Visible = true;
+            this.Account7GridColumn1.Width = 46;
+            // 
+            // Account8GridColumn1
+            // 
+            this.Account8GridColumn1.Caption = "Счет 8";
+            this.Account8GridColumn1.FieldName = "Account8";
+            this.Account8GridColumn1.Name = "Account8GridColumn1";
+            this.Account8GridColumn1.Visible = true;
+            this.Account8GridColumn1.Width = 46;
+            // 
+            // Account9GridColumn1
+            // 
+            this.Account9GridColumn1.Caption = "Счет 9";
+            this.Account9GridColumn1.FieldName = "Account9";
+            this.Account9GridColumn1.Name = "Account9GridColumn1";
+            this.Account9GridColumn1.Visible = true;
+            this.Account9GridColumn1.Width = 46;
+            // 
+            // Account10GridColumn1
+            // 
+            this.Account10GridColumn1.Caption = "Счет 10";
+            this.Account10GridColumn1.FieldName = "Account10";
+            this.Account10GridColumn1.Name = "Account10GridColumn1";
+            this.Account10GridColumn1.Visible = true;
+            this.Account10GridColumn1.Width = 46;
+            // 
+            // BeginDateGridColumn1
+            // 
+            this.BeginDateGridColumn1.Caption = "Начальное время";
+            this.BeginDateGridColumn1.ColumnEdit = this.BeginDateRepositoryItemDateEdit1;
+            this.BeginDateGridColumn1.FieldName = "BeginDate";
+            this.BeginDateGridColumn1.Name = "BeginDateGridColumn1";
+            this.BeginDateGridColumn1.Visible = true;
+            this.BeginDateGridColumn1.Width = 46;
+            // 
+            // BeginDateRepositoryItemDateEdit1
+            // 
+            this.BeginDateRepositoryItemDateEdit1.AutoHeight = false;
+            this.BeginDateRepositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.BeginDateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.BeginDateRepositoryItemDateEdit1.Name = "BeginDateRepositoryItemDateEdit1";
+            // 
+            // EndDateGridColumn1
+            // 
+            this.EndDateGridColumn1.Caption = "Конечное время";
+            this.EndDateGridColumn1.ColumnEdit = this.EndDateRepositoryItemDateEdit1;
+            this.EndDateGridColumn1.FieldName = "EndDate";
+            this.EndDateGridColumn1.Name = "EndDateGridColumn1";
+            this.EndDateGridColumn1.Visible = true;
+            this.EndDateGridColumn1.Width = 46;
+            // 
+            // EndDateRepositoryItemDateEdit1
+            // 
+            this.EndDateRepositoryItemDateEdit1.AutoHeight = false;
+            this.EndDateRepositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.EndDateRepositoryItemDateEdit1.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.EndDateRepositoryItemDateEdit1.Name = "EndDateRepositoryItemDateEdit1";
+            // 
+            // ProfitGridColumn1
+            // 
+            this.ProfitGridColumn1.Caption = "Доход";
+            this.ProfitGridColumn1.FieldName = "Profit";
+            this.ProfitGridColumn1.Name = "ProfitGridColumn1";
+            this.ProfitGridColumn1.Visible = true;
+            this.ProfitGridColumn1.Width = 46;
+            // 
+            // CostGridColumn1
+            // 
+            this.CostGridColumn1.Caption = "Расход";
+            this.CostGridColumn1.FieldName = "Cost";
+            this.CostGridColumn1.Name = "CostGridColumn1";
+            this.CostGridColumn1.Visible = true;
+            this.CostGridColumn1.Width = 46;
+            // 
+            // CostPercentLastGridColumn1
+            // 
+            this.CostPercentLastGridColumn1.Caption = "Разница расхода";
+            this.CostPercentLastGridColumn1.FieldName = "CostPercentLast";
+            this.CostPercentLastGridColumn1.Name = "CostPercentLastGridColumn1";
+            this.CostPercentLastGridColumn1.Visible = true;
+            this.CostPercentLastGridColumn1.Width = 46;
+            // 
+            // ValueGridColumn1
+            // 
+            this.ValueGridColumn1.Caption = "Дисбаланс";
+            this.ValueGridColumn1.FieldName = "Value";
+            this.ValueGridColumn1.Name = "ValueGridColumn1";
+            this.ValueGridColumn1.Visible = true;
+            this.ValueGridColumn1.Width = 46;
+            // 
+            // ValuePercentLastGridColumn1
+            // 
+            this.ValuePercentLastGridColumn1.Caption = "Дисбаланс %";
+            this.ValuePercentLastGridColumn1.FieldName = "ValuePercentLast";
+            this.ValuePercentLastGridColumn1.Name = "ValuePercentLastGridColumn1";
+            this.ValuePercentLastGridColumn1.Visible = true;
+            this.ValuePercentLastGridColumn1.Width = 50;
+            // 
+            // CommentGridColumn1
+            // 
+            this.CommentGridColumn1.Caption = "Комментарий";
+            this.CommentGridColumn1.FieldName = "Comment";
+            this.CommentGridColumn1.Name = "CommentGridColumn1";
+            this.CommentGridColumn1.Visible = true;
+            this.CommentGridColumn1.Width = 46;
+            // 
+            // icons1
+            // 
+            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
+            // 
+            // tableNavigatorControl1
+            // 
+            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
+            this.tableNavigatorControl1.Error = false;
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(256, 12);
+            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
+            this.tableNavigatorControl1.ShowToolTips = true;
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
+            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
+            this.tableNavigatorControl1.TabIndex = 5;
+            this.tableNavigatorControl1.TableCaption = "";
+            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
+            // 
+            // tableLayoutGroup1
+            // 
+            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
+            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.tableLayoutGroup1.GroupBordersVisible = false;
+            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.tableNavigatorLayoutItem1,
+            this.tableGridLayoutItem1});
+            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
+            this.tableLayoutGroup1.Size = new System.Drawing.Size(874, 650);
+            this.tableLayoutGroup1.TextVisible = false;
+            // 
+            // tableNavigatorLayoutItem1
+            // 
+            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
+            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
+            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
+            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(854, 23);
+            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableNavigatorLayoutItem1.TextVisible = false;
+            // 
+            // tableGridLayoutItem1
+            // 
+            this.tableGridLayoutItem1.Control = this.tableGridControl1;
+            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
+            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
+            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
+            this.tableGridLayoutItem1.Size = new System.Drawing.Size(854, 607);
+            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableGridLayoutItem1.TextVisible = false;
+            // 
             // formDockPanel1
             // 
             this.formDockPanel1.Controls.Add(this.formDockContainer1);
@@ -354,16 +681,6 @@
             this.formLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.formLayoutControl1.Name = "formLayoutControl1";
             this.formLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1046, 439, 588, 573);
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.formLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.formLayoutControl1.Root = this.formLayoutGroup1;
             this.formLayoutControl1.Size = new System.Drawing.Size(874, 650);
             this.formLayoutControl1.TabIndex = 0;
@@ -380,7 +697,7 @@
             // 
             // btnCalculateProfitCost
             // 
-            this.btnCalculateProfitCost.Location = new System.Drawing.Point(410, 210);
+            this.btnCalculateProfitCost.Location = new System.Drawing.Point(410, 209);
             this.btnCalculateProfitCost.Name = "btnCalculateProfitCost";
             this.btnCalculateProfitCost.Size = new System.Drawing.Size(440, 22);
             this.btnCalculateProfitCost.StyleController = this.formLayoutControl1;
@@ -392,26 +709,27 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(255, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(256, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Дисбаланс";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // BeginDateDateEditEx1
             // 
             this.BeginDateDateEditEx1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "BeginDate", true));
             this.BeginDateDateEditEx1.EditValue = new System.DateTime(2016, 1, 25, 0, 0, 0, 0);
-            this.BeginDateDateEditEx1.Location = new System.Drawing.Point(505, 66);
+            this.BeginDateDateEditEx1.Location = new System.Drawing.Point(505, 65);
             this.BeginDateDateEditEx1.Name = "BeginDateDateEditEx1";
             this.BeginDateDateEditEx1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.BeginDateDateEditEx1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.BeginDateDateEditEx1.Properties.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.BeginDateDateEditEx1.Size = new System.Drawing.Size(345, 20);
             this.BeginDateDateEditEx1.StyleController = this.formLayoutControl1;
             this.BeginDateDateEditEx1.TabIndex = 5;
@@ -420,13 +738,14 @@
             // 
             this.EndDateDateEditEx1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "EndDate", true));
             this.EndDateDateEditEx1.EditValue = new System.DateTime(2016, 1, 25, 0, 0, 0, 0);
-            this.EndDateDateEditEx1.Location = new System.Drawing.Point(505, 90);
+            this.EndDateDateEditEx1.Location = new System.Drawing.Point(505, 89);
             this.EndDateDateEditEx1.Name = "EndDateDateEditEx1";
             this.EndDateDateEditEx1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EndDateDateEditEx1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.EndDateDateEditEx1.Properties.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.EndDateDateEditEx1.Size = new System.Drawing.Size(345, 20);
             this.EndDateDateEditEx1.StyleController = this.formLayoutControl1;
             this.EndDateDateEditEx1.TabIndex = 6;
@@ -439,7 +758,7 @@
             0,
             0,
             0});
-            this.Account1SpinEdit1.Location = new System.Drawing.Point(119, 66);
+            this.Account1SpinEdit1.Location = new System.Drawing.Point(119, 65);
             this.Account1SpinEdit1.Name = "Account1SpinEdit1";
             this.Account1SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account1SpinEdit1.StyleController = this.formLayoutControl1;
@@ -453,7 +772,7 @@
             0,
             0,
             0});
-            this.Account2SpinEdit1.Location = new System.Drawing.Point(119, 90);
+            this.Account2SpinEdit1.Location = new System.Drawing.Point(119, 89);
             this.Account2SpinEdit1.Name = "Account2SpinEdit1";
             this.Account2SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account2SpinEdit1.StyleController = this.formLayoutControl1;
@@ -467,7 +786,7 @@
             0,
             0,
             0});
-            this.Account3SpinEdit1.Location = new System.Drawing.Point(119, 114);
+            this.Account3SpinEdit1.Location = new System.Drawing.Point(119, 113);
             this.Account3SpinEdit1.Name = "Account3SpinEdit1";
             this.Account3SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account3SpinEdit1.StyleController = this.formLayoutControl1;
@@ -481,7 +800,7 @@
             0,
             0,
             0});
-            this.Account4SpinEdit1.Location = new System.Drawing.Point(119, 138);
+            this.Account4SpinEdit1.Location = new System.Drawing.Point(119, 137);
             this.Account4SpinEdit1.Name = "Account4SpinEdit1";
             this.Account4SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account4SpinEdit1.StyleController = this.formLayoutControl1;
@@ -495,7 +814,7 @@
             0,
             0,
             0});
-            this.Account5SpinEdit1.Location = new System.Drawing.Point(119, 162);
+            this.Account5SpinEdit1.Location = new System.Drawing.Point(119, 161);
             this.Account5SpinEdit1.Name = "Account5SpinEdit1";
             this.Account5SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account5SpinEdit1.StyleController = this.formLayoutControl1;
@@ -509,7 +828,7 @@
             0,
             0,
             0});
-            this.Account6SpinEdit1.Location = new System.Drawing.Point(119, 210);
+            this.Account6SpinEdit1.Location = new System.Drawing.Point(119, 209);
             this.Account6SpinEdit1.Name = "Account6SpinEdit1";
             this.Account6SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account6SpinEdit1.StyleController = this.formLayoutControl1;
@@ -523,7 +842,7 @@
             0,
             0,
             0});
-            this.Account7SpinEdit1.Location = new System.Drawing.Point(119, 186);
+            this.Account7SpinEdit1.Location = new System.Drawing.Point(119, 185);
             this.Account7SpinEdit1.Name = "Account7SpinEdit1";
             this.Account7SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account7SpinEdit1.StyleController = this.formLayoutControl1;
@@ -537,7 +856,7 @@
             0,
             0,
             0});
-            this.Account8SpinEdit1.Location = new System.Drawing.Point(119, 234);
+            this.Account8SpinEdit1.Location = new System.Drawing.Point(119, 233);
             this.Account8SpinEdit1.Name = "Account8SpinEdit1";
             this.Account8SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account8SpinEdit1.StyleController = this.formLayoutControl1;
@@ -551,7 +870,7 @@
             0,
             0,
             0});
-            this.Account9SpinEdit1.Location = new System.Drawing.Point(119, 258);
+            this.Account9SpinEdit1.Location = new System.Drawing.Point(119, 257);
             this.Account9SpinEdit1.Name = "Account9SpinEdit1";
             this.Account9SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account9SpinEdit1.StyleController = this.formLayoutControl1;
@@ -565,7 +884,7 @@
             0,
             0,
             0});
-            this.Account10SpinEdit1.Location = new System.Drawing.Point(119, 282);
+            this.Account10SpinEdit1.Location = new System.Drawing.Point(119, 281);
             this.Account10SpinEdit1.Name = "Account10SpinEdit1";
             this.Account10SpinEdit1.Size = new System.Drawing.Size(287, 20);
             this.Account10SpinEdit1.StyleController = this.formLayoutControl1;
@@ -588,7 +907,7 @@
             0,
             0,
             0});
-            this.ProfitSpinEdit1.Location = new System.Drawing.Point(505, 114);
+            this.ProfitSpinEdit1.Location = new System.Drawing.Point(505, 113);
             this.ProfitSpinEdit1.Name = "ProfitSpinEdit1";
             this.ProfitSpinEdit1.Size = new System.Drawing.Size(345, 20);
             this.ProfitSpinEdit1.StyleController = this.formLayoutControl1;
@@ -602,7 +921,7 @@
             0,
             0,
             0});
-            this.CostSpinEdit1.Location = new System.Drawing.Point(505, 138);
+            this.CostSpinEdit1.Location = new System.Drawing.Point(505, 137);
             this.CostSpinEdit1.Name = "CostSpinEdit1";
             this.CostSpinEdit1.Size = new System.Drawing.Size(123, 20);
             this.CostSpinEdit1.StyleController = this.formLayoutControl1;
@@ -622,9 +941,33 @@
             this.ValueSpinEdit1.StyleController = this.formLayoutControl1;
             this.ValueSpinEdit1.TabIndex = 20;
             // 
-            // icons1
+            // CostPercentLastSpinEdit1
             // 
-            this.icons1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("icons1.ImageStream")));
+            this.CostPercentLastSpinEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "CostPercentLast", true));
+            this.CostPercentLastSpinEdit1.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.CostPercentLastSpinEdit1.Location = new System.Drawing.Point(727, 137);
+            this.CostPercentLastSpinEdit1.Name = "CostPercentLastSpinEdit1";
+            this.CostPercentLastSpinEdit1.Size = new System.Drawing.Size(123, 20);
+            this.CostPercentLastSpinEdit1.StyleController = this.formLayoutControl1;
+            this.CostPercentLastSpinEdit1.TabIndex = 23;
+            // 
+            // ValuePercentLastSpinEdit1
+            // 
+            this.ValuePercentLastSpinEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ValuePercentLast", true));
+            this.ValuePercentLastSpinEdit1.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ValuePercentLastSpinEdit1.Location = new System.Drawing.Point(534, 342);
+            this.ValuePercentLastSpinEdit1.Name = "ValuePercentLastSpinEdit1";
+            this.ValuePercentLastSpinEdit1.Size = new System.Drawing.Size(316, 20);
+            this.ValuePercentLastSpinEdit1.StyleController = this.formLayoutControl1;
+            this.ValuePercentLastSpinEdit1.TabIndex = 24;
             // 
             // formLayoutGroup1
             // 
@@ -689,7 +1032,7 @@
             // 
             this.ValueLayoutItem1.Control = this.ValueSpinEdit1;
             this.ValueLayoutItem1.CustomizationFormText = "Дисбаланс";
-            this.ValueLayoutItem1.Location = new System.Drawing.Point(0, 276);
+            this.ValueLayoutItem1.Location = new System.Drawing.Point(0, 277);
             this.ValueLayoutItem1.Name = "ValueLayoutItem1";
             this.ValueLayoutItem1.Size = new System.Drawing.Size(415, 24);
             this.ValueLayoutItem1.Text = "Дисбаланс:";
@@ -698,7 +1041,7 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 324);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 325);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(830, 240);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
@@ -707,7 +1050,7 @@
             // 
             this.CommentLayoutItem1.Control = this.CommentTextEdit1;
             this.CommentLayoutItem1.CustomizationFormText = "Комментарий";
-            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 300);
+            this.CommentLayoutItem1.Location = new System.Drawing.Point(0, 301);
             this.CommentLayoutItem1.Name = "CommentLayoutItem1";
             this.CommentLayoutItem1.Size = new System.Drawing.Size(830, 24);
             this.CommentLayoutItem1.Text = "Комментарий:";
@@ -748,7 +1091,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 240);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(830, 10);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(830, 11);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Account5LayoutItem1
@@ -889,325 +1232,31 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnCalculateDisbalance;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 250);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 251);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(830, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
-            // tableDockPanel1
+            // CostPercentLastLayoutItem1
             // 
-            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
-            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
-            this.tableDockPanel1.ID = new System.Guid("77499804-c53b-4cec-9d14-e6424abe9fdb");
-            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
-            this.tableDockPanel1.Name = "tableDockPanel1";
-            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(400, 400);
-            this.tableDockPanel1.Size = new System.Drawing.Size(874, 650);
-            this.tableDockPanel1.Text = "Таблица";
+            this.CostPercentLastLayoutItem1.Control = this.CostPercentLastSpinEdit1;
+            this.CostPercentLastLayoutItem1.CustomizationFormText = "Разница расхода";
+            this.CostPercentLastLayoutItem1.Location = new System.Drawing.Point(608, 72);
+            this.CostPercentLastLayoutItem1.Name = "CostPercentLastLayoutItem1";
+            this.CostPercentLastLayoutItem1.Size = new System.Drawing.Size(222, 24);
+            this.CostPercentLastLayoutItem1.Text = "Разница расхода:";
+            this.CostPercentLastLayoutItem1.TextSize = new System.Drawing.Size(92, 13);
             // 
-            // tableDockContainer1
+            // ValuePercentLastLayoutItem1
             // 
-            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
-            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
-            this.tableDockContainer1.Name = "tableDockContainer1";
-            this.tableDockContainer1.Size = new System.Drawing.Size(874, 650);
-            this.tableDockContainer1.TabIndex = 0;
-            // 
-            // tableLayoutControl1
-            // 
-            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
-            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
-            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutControl1.Images = this.icons1;
-            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutControl1.Name = "tableLayoutControl1";
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.LightGray;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseBackColor = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseFont = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.tableLayoutControl1.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
-            this.tableLayoutControl1.Size = new System.Drawing.Size(874, 650);
-            this.tableLayoutControl1.TabIndex = 0;
-            // 
-            // tableGridControl1
-            // 
-            this.tableGridControl1.DataSource = this.baseXPCollecton1;
-            this.tableGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
-            this.tableGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
-            this.tableGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.tableGridControl1.Location = new System.Drawing.Point(12, 35);
-            this.tableGridControl1.MainView = this.tableGridView1;
-            this.tableGridControl1.Name = "tableGridControl1";
-            this.tableGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.BeginDateRepositoryItemDateEdit1,
-            this.EndDateRepositoryItemDateEdit1});
-            this.tableGridControl1.ShowOnlyPredefinedDetails = true;
-            this.tableGridControl1.Size = new System.Drawing.Size(850, 603);
-            this.tableGridControl1.TabIndex = 4;
-            this.tableGridControl1.UseEmbeddedNavigator = true;
-            this.tableGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.tableGridView1});
-            // 
-            // tableGridView1
-            // 
-            this.tableGridView1.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(240)))));
-            this.tableGridView1.Appearance.FocusedRow.Options.UseBackColor = true;
-            this.tableGridView1.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
-            this.tableGridBand1});
-            this.tableGridView1.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
-            this.BeginDateGridColumn1,
-            this.EndDateGridColumn1,
-            this.Account1GridColumn1,
-            this.Account2GridColumn1,
-            this.Account3GridColumn1,
-            this.Account4GridColumn1,
-            this.Account5GridColumn1,
-            this.Account6GridColumn1,
-            this.Account7GridColumn1,
-            this.Account8GridColumn1,
-            this.Account9GridColumn1,
-            this.Account10GridColumn1,
-            this.CommentGridColumn1,
-            this.ProfitGridColumn1,
-            this.CostGridColumn1,
-            this.ValueGridColumn1,
-            this.CostPercentLastGridColumn1,
-            this.ValuePercentLastGridColumn1});
-            this.tableGridView1.GridControl = this.tableGridControl1;
-            this.tableGridView1.Images = this.icons1;
-            this.tableGridView1.Name = "tableGridView1";
-            this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
-            this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
-            this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
-            this.tableGridView1.OptionsView.ShowGroupPanel = false;
-            // 
-            // tableGridBand1
-            // 
-            this.tableGridBand1.Caption = "Основные данные";
-            this.tableGridBand1.Columns.Add(this.Account1GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account2GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account3GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account4GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account5GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account6GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account7GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account8GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account9GridColumn1);
-            this.tableGridBand1.Columns.Add(this.Account10GridColumn1);
-            this.tableGridBand1.Columns.Add(this.BeginDateGridColumn1);
-            this.tableGridBand1.Columns.Add(this.EndDateGridColumn1);
-            this.tableGridBand1.Columns.Add(this.ProfitGridColumn1);
-            this.tableGridBand1.Columns.Add(this.CostGridColumn1);
-            this.tableGridBand1.Columns.Add(this.CostPercentLastGridColumn1);
-            this.tableGridBand1.Columns.Add(this.ValueGridColumn1);
-            this.tableGridBand1.Columns.Add(this.ValuePercentLastGridColumn1);
-            this.tableGridBand1.Columns.Add(this.CommentGridColumn1);
-            this.tableGridBand1.Name = "tableGridBand1";
-            this.tableGridBand1.VisibleIndex = 0;
-            this.tableGridBand1.Width = 832;
-            // 
-            // Account1GridColumn1
-            // 
-            this.Account1GridColumn1.Caption = "Счет 13";
-            this.Account1GridColumn1.FieldName = "Account1";
-            this.Account1GridColumn1.Name = "Account1GridColumn1";
-            this.Account1GridColumn1.Visible = true;
-            this.Account1GridColumn1.Width = 46;
-            // 
-            // Account2GridColumn1
-            // 
-            this.Account2GridColumn1.Caption = "Счет 2";
-            this.Account2GridColumn1.FieldName = "Account2";
-            this.Account2GridColumn1.Name = "Account2GridColumn1";
-            this.Account2GridColumn1.Visible = true;
-            this.Account2GridColumn1.Width = 46;
-            // 
-            // Account3GridColumn1
-            // 
-            this.Account3GridColumn1.Caption = "Счет 3";
-            this.Account3GridColumn1.FieldName = "Account3";
-            this.Account3GridColumn1.Name = "Account3GridColumn1";
-            this.Account3GridColumn1.Visible = true;
-            this.Account3GridColumn1.Width = 46;
-            // 
-            // Account4GridColumn1
-            // 
-            this.Account4GridColumn1.Caption = "Счет 4";
-            this.Account4GridColumn1.FieldName = "Account4";
-            this.Account4GridColumn1.Name = "Account4GridColumn1";
-            this.Account4GridColumn1.Visible = true;
-            this.Account4GridColumn1.Width = 46;
-            // 
-            // Account5GridColumn1
-            // 
-            this.Account5GridColumn1.Caption = "Счет 5";
-            this.Account5GridColumn1.FieldName = "Account5";
-            this.Account5GridColumn1.Name = "Account5GridColumn1";
-            this.Account5GridColumn1.Visible = true;
-            this.Account5GridColumn1.Width = 46;
-            // 
-            // Account6GridColumn1
-            // 
-            this.Account6GridColumn1.Caption = "Счет 6";
-            this.Account6GridColumn1.FieldName = "Account6";
-            this.Account6GridColumn1.Name = "Account6GridColumn1";
-            this.Account6GridColumn1.Visible = true;
-            this.Account6GridColumn1.Width = 46;
-            // 
-            // Account7GridColumn1
-            // 
-            this.Account7GridColumn1.Caption = "Счет 7";
-            this.Account7GridColumn1.FieldName = "Account7";
-            this.Account7GridColumn1.Name = "Account7GridColumn1";
-            this.Account7GridColumn1.Visible = true;
-            this.Account7GridColumn1.Width = 46;
-            // 
-            // Account8GridColumn1
-            // 
-            this.Account8GridColumn1.Caption = "Счет 8";
-            this.Account8GridColumn1.FieldName = "Account8";
-            this.Account8GridColumn1.Name = "Account8GridColumn1";
-            this.Account8GridColumn1.Visible = true;
-            this.Account8GridColumn1.Width = 46;
-            // 
-            // Account9GridColumn1
-            // 
-            this.Account9GridColumn1.Caption = "Счет 9";
-            this.Account9GridColumn1.FieldName = "Account9";
-            this.Account9GridColumn1.Name = "Account9GridColumn1";
-            this.Account9GridColumn1.Visible = true;
-            this.Account9GridColumn1.Width = 46;
-            // 
-            // Account10GridColumn1
-            // 
-            this.Account10GridColumn1.Caption = "Счет 10";
-            this.Account10GridColumn1.FieldName = "Account10";
-            this.Account10GridColumn1.Name = "Account10GridColumn1";
-            this.Account10GridColumn1.Visible = true;
-            this.Account10GridColumn1.Width = 46;
-            // 
-            // BeginDateGridColumn1
-            // 
-            this.BeginDateGridColumn1.Caption = "Начальное время";
-            this.BeginDateGridColumn1.ColumnEdit = this.BeginDateRepositoryItemDateEdit1;
-            this.BeginDateGridColumn1.FieldName = "BeginDate";
-            this.BeginDateGridColumn1.Name = "BeginDateGridColumn1";
-            this.BeginDateGridColumn1.Visible = true;
-            this.BeginDateGridColumn1.Width = 46;
-            // 
-            // BeginDateRepositoryItemDateEdit1
-            // 
-            this.BeginDateRepositoryItemDateEdit1.AutoHeight = false;
-            this.BeginDateRepositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.BeginDateRepositoryItemDateEdit1.Name = "BeginDateRepositoryItemDateEdit1";
-            // 
-            // EndDateGridColumn1
-            // 
-            this.EndDateGridColumn1.Caption = "Конечное время";
-            this.EndDateGridColumn1.ColumnEdit = this.EndDateRepositoryItemDateEdit1;
-            this.EndDateGridColumn1.FieldName = "EndDate";
-            this.EndDateGridColumn1.Name = "EndDateGridColumn1";
-            this.EndDateGridColumn1.Visible = true;
-            this.EndDateGridColumn1.Width = 46;
-            // 
-            // EndDateRepositoryItemDateEdit1
-            // 
-            this.EndDateRepositoryItemDateEdit1.AutoHeight = false;
-            this.EndDateRepositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.EndDateRepositoryItemDateEdit1.Name = "EndDateRepositoryItemDateEdit1";
-            // 
-            // ProfitGridColumn1
-            // 
-            this.ProfitGridColumn1.Caption = "Доход";
-            this.ProfitGridColumn1.FieldName = "Profit";
-            this.ProfitGridColumn1.Name = "ProfitGridColumn1";
-            this.ProfitGridColumn1.Visible = true;
-            this.ProfitGridColumn1.Width = 46;
-            // 
-            // CostGridColumn1
-            // 
-            this.CostGridColumn1.Caption = "Расход";
-            this.CostGridColumn1.FieldName = "Cost";
-            this.CostGridColumn1.Name = "CostGridColumn1";
-            this.CostGridColumn1.Visible = true;
-            this.CostGridColumn1.Width = 46;
-            // 
-            // ValueGridColumn1
-            // 
-            this.ValueGridColumn1.Caption = "Дисбаланс";
-            this.ValueGridColumn1.FieldName = "Value";
-            this.ValueGridColumn1.Name = "ValueGridColumn1";
-            this.ValueGridColumn1.Visible = true;
-            this.ValueGridColumn1.Width = 46;
-            // 
-            // CommentGridColumn1
-            // 
-            this.CommentGridColumn1.Caption = "Комментарий";
-            this.CommentGridColumn1.FieldName = "Comment";
-            this.CommentGridColumn1.Name = "CommentGridColumn1";
-            this.CommentGridColumn1.Visible = true;
-            this.CommentGridColumn1.Width = 46;
-            // 
-            // tableNavigatorControl1
-            // 
-            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
-            this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(255, 12);
-            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
-            this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
-            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
-            this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Дисбаланс";
-            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
-            // 
-            // tableLayoutGroup1
-            // 
-            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
-            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.tableLayoutGroup1.GroupBordersVisible = false;
-            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.tableNavigatorLayoutItem1,
-            this.tableGridLayoutItem1});
-            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
-            this.tableLayoutGroup1.Size = new System.Drawing.Size(874, 650);
-            this.tableLayoutGroup1.TextVisible = false;
-            // 
-            // tableNavigatorLayoutItem1
-            // 
-            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
-            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
-            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
-            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(854, 23);
-            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableNavigatorLayoutItem1.TextVisible = false;
-            // 
-            // tableGridLayoutItem1
-            // 
-            this.tableGridLayoutItem1.Control = this.tableGridControl1;
-            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
-            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
-            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
-            this.tableGridLayoutItem1.Size = new System.Drawing.Size(854, 607);
-            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableGridLayoutItem1.TextVisible = false;
+            this.ValuePercentLastLayoutItem1.Control = this.ValuePercentLastSpinEdit1;
+            this.ValuePercentLastLayoutItem1.CustomizationFormText = "Дисбаланс %";
+            this.ValuePercentLastLayoutItem1.Location = new System.Drawing.Point(415, 277);
+            this.ValuePercentLastLayoutItem1.Name = "ValuePercentLastLayoutItem1";
+            this.ValuePercentLastLayoutItem1.Size = new System.Drawing.Size(415, 24);
+            this.ValuePercentLastLayoutItem1.Text = "Дисбаланс %:";
+            this.ValuePercentLastLayoutItem1.TextSize = new System.Drawing.Size(92, 13);
             // 
             // dockManager1
             // 
@@ -1427,20 +1476,6 @@
             this.itemNumeric12.Parent = null;
             this.itemNumeric12.TableGridColumn = this.CostGridColumn1;
             // 
-            // itemNumeric13
-            // 
-            this.itemNumeric13.Caption = "Дисбаланс";
-            this.itemNumeric13.ControlName = "Value";
-            this.itemNumeric13.DBInterface = this._dbInterface1;
-            this.itemNumeric13.FieldName = "Value";
-            this.itemNumeric13.FormEdit = this.ValueSpinEdit1;
-            this.itemNumeric13.FormGridColumn = null;
-            this.itemNumeric13.FormLayoutItem = this.ValueLayoutItem1;
-            this.itemNumeric13.ImageName = "";
-            this.itemNumeric13.Images = this.icons1;
-            this.itemNumeric13.Parent = null;
-            this.itemNumeric13.TableGridColumn = this.ValueGridColumn1;
-            // 
             // itemNumeric14
             // 
             this.itemNumeric14.Caption = "Разница расхода";
@@ -1455,37 +1490,19 @@
             this.itemNumeric14.Parent = null;
             this.itemNumeric14.TableGridColumn = this.CostPercentLastGridColumn1;
             // 
-            // CostPercentLastLayoutItem1
+            // itemNumeric13
             // 
-            this.CostPercentLastLayoutItem1.Control = this.CostPercentLastSpinEdit1;
-            this.CostPercentLastLayoutItem1.CustomizationFormText = "Разница расхода";
-            this.CostPercentLastLayoutItem1.Location = new System.Drawing.Point(608, 72);
-            this.CostPercentLastLayoutItem1.Name = "CostPercentLastLayoutItem1";
-            this.CostPercentLastLayoutItem1.Size = new System.Drawing.Size(222, 24);
-            this.CostPercentLastLayoutItem1.Text = "Разница расхода:";
-            this.CostPercentLastLayoutItem1.TextSize = new System.Drawing.Size(92, 13);
-            // 
-            // CostPercentLastGridColumn1
-            // 
-            this.CostPercentLastGridColumn1.Caption = "Разница расхода";
-            this.CostPercentLastGridColumn1.FieldName = "CostPercentLast";
-            this.CostPercentLastGridColumn1.Name = "CostPercentLastGridColumn1";
-            this.CostPercentLastGridColumn1.Visible = true;
-            this.CostPercentLastGridColumn1.Width = 46;
-            // 
-            // CostPercentLastSpinEdit1
-            // 
-            this.CostPercentLastSpinEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "CostPercentLast", true));
-            this.CostPercentLastSpinEdit1.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.CostPercentLastSpinEdit1.Location = new System.Drawing.Point(727, 138);
-            this.CostPercentLastSpinEdit1.Name = "CostPercentLastSpinEdit1";
-            this.CostPercentLastSpinEdit1.Size = new System.Drawing.Size(123, 20);
-            this.CostPercentLastSpinEdit1.StyleController = this.formLayoutControl1;
-            this.CostPercentLastSpinEdit1.TabIndex = 23;
+            this.itemNumeric13.Caption = "Дисбаланс";
+            this.itemNumeric13.ControlName = "Value";
+            this.itemNumeric13.DBInterface = this._dbInterface1;
+            this.itemNumeric13.FieldName = "Value";
+            this.itemNumeric13.FormEdit = this.ValueSpinEdit1;
+            this.itemNumeric13.FormGridColumn = null;
+            this.itemNumeric13.FormLayoutItem = this.ValueLayoutItem1;
+            this.itemNumeric13.ImageName = "";
+            this.itemNumeric13.Images = this.icons1;
+            this.itemNumeric13.Parent = null;
+            this.itemNumeric13.TableGridColumn = this.ValueGridColumn1;
             // 
             // itemNumeric15
             // 
@@ -1501,38 +1518,6 @@
             this.itemNumeric15.Parent = null;
             this.itemNumeric15.TableGridColumn = this.ValuePercentLastGridColumn1;
             // 
-            // ValuePercentLastLayoutItem1
-            // 
-            this.ValuePercentLastLayoutItem1.Control = this.ValuePercentLastSpinEdit1;
-            this.ValuePercentLastLayoutItem1.CustomizationFormText = "Дисбаланс %";
-            this.ValuePercentLastLayoutItem1.Location = new System.Drawing.Point(415, 276);
-            this.ValuePercentLastLayoutItem1.Name = "ValuePercentLastLayoutItem1";
-            this.ValuePercentLastLayoutItem1.Size = new System.Drawing.Size(415, 24);
-            this.ValuePercentLastLayoutItem1.Text = "Дисбаланс %:";
-            this.ValuePercentLastLayoutItem1.TextSize = new System.Drawing.Size(92, 13);
-            // 
-            // ValuePercentLastGridColumn1
-            // 
-            this.ValuePercentLastGridColumn1.Caption = "Дисбаланс %";
-            this.ValuePercentLastGridColumn1.FieldName = "ValuePercentLast";
-            this.ValuePercentLastGridColumn1.Name = "ValuePercentLastGridColumn1";
-            this.ValuePercentLastGridColumn1.Visible = true;
-            this.ValuePercentLastGridColumn1.Width = 50;
-            // 
-            // ValuePercentLastSpinEdit1
-            // 
-            this.ValuePercentLastSpinEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ValuePercentLast", true));
-            this.ValuePercentLastSpinEdit1.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ValuePercentLastSpinEdit1.Location = new System.Drawing.Point(534, 342);
-            this.ValuePercentLastSpinEdit1.Name = "ValuePercentLastSpinEdit1";
-            this.ValuePercentLastSpinEdit1.Size = new System.Drawing.Size(316, 20);
-            this.ValuePercentLastSpinEdit1.StyleController = this.formLayoutControl1;
-            this.ValuePercentLastSpinEdit1.TabIndex = 24;
-            // 
             // DisbalanceView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1546,6 +1531,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.baseUnitOfWork1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseXPCollecton1)).EndInit();
             this.dockPanelMerge1.ResumeLayout(false);
+            this.tableDockPanel1.ResumeLayout(false);
+            this.tableDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
+            this.tableLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             this.formDockPanel1.ResumeLayout(false);
             this.formDockContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
@@ -1568,7 +1567,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProfitSpinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostSpinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ValueSpinEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icons1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastSpinEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastSpinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formNavigatorLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formDataLayoutGroup1)).EndInit();
@@ -1594,24 +1594,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Account4LayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            this.tableDockPanel1.ResumeLayout(false);
-            this.tableDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
-            this.tableLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BeginDateRepositoryItemDateEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EndDateRepositoryItemDateEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CostPercentLastSpinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ValuePercentLastSpinEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
 
         }

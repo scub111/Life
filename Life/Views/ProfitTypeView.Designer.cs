@@ -150,7 +150,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -374,6 +374,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 

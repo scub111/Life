@@ -172,3 +172,6 @@ D:\_Projects\Life\Life\obj\x86\Debug\Life.exe
 D:\_Projects\Life\Life\obj\x86\Debug\Life.pdb
 D:\_Projects\Life\Life\obj\x86\Debug\Life.DatebookProfitReportView.resources
 D:\_Projects\Life\Life\obj\x86\Debug\Life.DatebookProfitReport.resources
+I:\_Projects\Life\Life\bin\Debug\Life.exe.config
+I:\_Projects\Life\Life\obj\x86\Debug\Life.exe
+I:\_Projects\Life\Life\obj\x86\Debug\Life.pdb

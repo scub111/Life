@@ -415,6 +415,7 @@
             this.DatebookCostCollectionGridView2.Name = "DatebookCostCollectionGridView2";
             this.DatebookCostCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookCostCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookCostCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookCostCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // CostTypeIDGridColumn2
@@ -460,6 +461,7 @@
             this.CostTypeGridView2.Name = "CostTypeGridView2";
             this.CostTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.CostTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.CostTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.CostTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.CostTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.CostTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -532,6 +534,7 @@
             this.PlaceGridView2.Name = "PlaceGridView2";
             this.PlaceGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView2.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView2.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView2.OptionsView.ShowGroupPanel = false;
@@ -641,6 +644,7 @@
             this.DatebookMealsCollectionGridView2.Name = "DatebookMealsCollectionGridView2";
             this.DatebookMealsCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookMealsCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookMealsCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookMealsCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // MealsTimeGridColumn2
@@ -717,6 +721,7 @@
             this.DatebookSportCollectionGridView2.Name = "DatebookSportCollectionGridView2";
             this.DatebookSportCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookSportCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookSportCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookSportCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // SportTypeIDGridColumn2
@@ -757,6 +762,7 @@
             this.SportTypeGridView2.Name = "SportTypeGridView2";
             this.SportTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.SportTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.SportTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.SportTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.SportTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.SportTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -826,6 +832,7 @@
             this.PlaceGridView4.Name = "PlaceGridView4";
             this.PlaceGridView4.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView4.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView4.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView4.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView4.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView4.OptionsView.ShowGroupPanel = false;
@@ -868,6 +875,7 @@
             this.DatebookMeetingCollectionGridView2.Name = "DatebookMeetingCollectionGridView2";
             this.DatebookMeetingCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookMeetingCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookMeetingCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookMeetingCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // PlaceIDGridColumn6
@@ -902,6 +910,7 @@
             this.PlaceGridView6.Name = "PlaceGridView6";
             this.PlaceGridView6.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView6.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView6.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView6.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView6.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView6.OptionsView.ShowGroupPanel = false;
@@ -986,6 +995,7 @@
             this.PersonGridView2.Name = "PersonGridView2";
             this.PersonGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonGridView2.OptionsFind.AlwaysVisible = true;
             this.PersonGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PersonGridView2.OptionsView.ShowAutoFilterRow = true;
             this.PersonGridView2.OptionsView.ShowGroupPanel = false;
@@ -1011,6 +1021,7 @@
             this.DatebookMeetingSexCollectionGridView2.Name = "DatebookMeetingSexCollectionGridView2";
             this.DatebookMeetingSexCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookMeetingSexCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookMeetingSexCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookMeetingSexCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // SexTimeGridColumn2
@@ -1070,6 +1081,7 @@
             this.PlaceGridView8.Name = "PlaceGridView8";
             this.PlaceGridView8.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView8.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView8.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView8.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView8.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView8.OptionsView.ShowGroupPanel = false;
@@ -1122,6 +1134,7 @@
             this.DatebookProfitCollectionGridView2.Name = "DatebookProfitCollectionGridView2";
             this.DatebookProfitCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.DatebookProfitCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.DatebookProfitCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.DatebookProfitCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // ProfitTypeIDGridColumn2
@@ -1162,6 +1175,7 @@
             this.ProfitTypeGridView2.Name = "ProfitTypeGridView2";
             this.ProfitTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.ProfitTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.ProfitTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.ProfitTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.ProfitTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.ProfitTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -1206,6 +1220,7 @@
             this.PlaceGridView10.Name = "PlaceGridView10";
             this.PlaceGridView10.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView10.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView10.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView10.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView10.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView10.OptionsView.ShowGroupPanel = false;
@@ -1261,6 +1276,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -1722,7 +1738,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -1787,7 +1803,7 @@
             this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 1;
-            this.formNavigatorControl1.TableCaption = "Ежедневник";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // DateDateEditEx1
@@ -2684,7 +2700,7 @@
             this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Ежедневник";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1

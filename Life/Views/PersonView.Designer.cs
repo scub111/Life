@@ -379,6 +379,7 @@
             this.PersonAddressCollectionGridView2.Name = "PersonAddressCollectionGridView2";
             this.PersonAddressCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonAddressCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonAddressCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.PersonAddressCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // CommentGridColumn5
@@ -431,6 +432,7 @@
             this.PlaceGridView8.Name = "PlaceGridView8";
             this.PlaceGridView8.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView8.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView8.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView8.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView8.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView8.OptionsView.ShowGroupPanel = false;
@@ -518,6 +520,7 @@
             this.PersonEducationCollectionGridView2.Name = "PersonEducationCollectionGridView2";
             this.PersonEducationCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonEducationCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonEducationCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.PersonEducationCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // EducationDocumentGridColumn2
@@ -567,6 +570,7 @@
             this.PlaceGridView10.Name = "PlaceGridView10";
             this.PlaceGridView10.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView10.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView10.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView10.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView10.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView10.OptionsView.ShowGroupPanel = false;
@@ -615,6 +619,7 @@
             this.EducationGridView2.Name = "EducationGridView2";
             this.EducationGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.EducationGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.EducationGridView2.OptionsFind.AlwaysVisible = true;
             this.EducationGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.EducationGridView2.OptionsView.ShowAutoFilterRow = true;
             this.EducationGridView2.OptionsView.ShowGroupPanel = false;
@@ -638,6 +643,7 @@
             this.PersonWorkCollectionGridView2.Name = "PersonWorkCollectionGridView2";
             this.PersonWorkCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonWorkCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonWorkCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.PersonWorkCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // WorkPostGridColumn2
@@ -687,6 +693,7 @@
             this.PlaceGridView12.Name = "PlaceGridView12";
             this.PlaceGridView12.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView12.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView12.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView12.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView12.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView12.OptionsView.ShowGroupPanel = false;
@@ -710,6 +717,7 @@
             this.XPObjectWithPhonesCollectionGridView2.Name = "XPObjectWithPhonesCollectionGridView2";
             this.XPObjectWithPhonesCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.XPObjectWithPhonesCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.XPObjectWithPhonesCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.XPObjectWithPhonesCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // PhoneTypeIDGridColumn2
@@ -749,6 +757,7 @@
             this.PhoneTypeGridView2.Name = "PhoneTypeGridView2";
             this.PhoneTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PhoneTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PhoneTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.PhoneTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PhoneTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.PhoneTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -790,6 +799,7 @@
             this.PersonElectronCouplingCollectionGridView2.Name = "PersonElectronCouplingCollectionGridView2";
             this.PersonElectronCouplingCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonElectronCouplingCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonElectronCouplingCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.PersonElectronCouplingCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // ElectronCouplingTypeIDGridColumn2
@@ -829,6 +839,7 @@
             this.ElectronCouplingTypeGridView2.Name = "ElectronCouplingTypeGridView2";
             this.ElectronCouplingTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.ElectronCouplingTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.ElectronCouplingTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.ElectronCouplingTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.ElectronCouplingTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.ElectronCouplingTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -895,6 +906,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -978,6 +990,7 @@
             this.SexGridView1.Name = "SexGridView1";
             this.SexGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.SexGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.SexGridView1.OptionsFind.AlwaysVisible = true;
             this.SexGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.SexGridView1.OptionsView.ShowAutoFilterRow = true;
             this.SexGridView1.OptionsView.ShowGroupPanel = false;
@@ -1027,6 +1040,7 @@
             this.PersonCategoryGridView1.Name = "PersonCategoryGridView1";
             this.PersonCategoryGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.PersonCategoryGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PersonCategoryGridView1.OptionsFind.AlwaysVisible = true;
             this.PersonCategoryGridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PersonCategoryGridView1.OptionsView.ShowAutoFilterRow = true;
             this.PersonCategoryGridView1.OptionsView.ShowGroupPanel = false;
@@ -1099,6 +1113,7 @@
             this.PlaceGridView13.Name = "PlaceGridView13";
             this.PlaceGridView13.OptionsBehavior.AutoPopulateColumns = false;
             this.PlaceGridView13.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PlaceGridView13.OptionsFind.AlwaysVisible = true;
             this.PlaceGridView13.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PlaceGridView13.OptionsView.ShowAutoFilterRow = true;
             this.PlaceGridView13.OptionsView.ShowGroupPanel = false;
@@ -1247,7 +1262,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -1318,7 +1333,7 @@
             this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Человек";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // PersonCategoryIDGridLookUpEdit1
@@ -2355,7 +2370,7 @@
             this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Человек";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1

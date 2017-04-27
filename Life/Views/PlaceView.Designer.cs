@@ -206,6 +206,7 @@
             this.XPObjectWithPhonesCollectionGridView2.Name = "XPObjectWithPhonesCollectionGridView2";
             this.XPObjectWithPhonesCollectionGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.XPObjectWithPhonesCollectionGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.XPObjectWithPhonesCollectionGridView2.OptionsFind.AlwaysVisible = true;
             this.XPObjectWithPhonesCollectionGridView2.OptionsView.ShowGroupPanel = false;
             // 
             // PhoneTypeIDGridColumn2
@@ -249,6 +250,7 @@
             this.PhoneTypeGridView2.Name = "PhoneTypeGridView2";
             this.PhoneTypeGridView2.OptionsBehavior.AutoPopulateColumns = false;
             this.PhoneTypeGridView2.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.PhoneTypeGridView2.OptionsFind.AlwaysVisible = true;
             this.PhoneTypeGridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PhoneTypeGridView2.OptionsView.ShowAutoFilterRow = true;
             this.PhoneTypeGridView2.OptionsView.ShowGroupPanel = false;
@@ -334,6 +336,7 @@
             this.tableGridView1.Name = "tableGridView1";
             this.tableGridView1.OptionsBehavior.AutoPopulateColumns = false;
             this.tableGridView1.OptionsDetail.AllowExpandEmptyDetails = true;
+            this.tableGridView1.OptionsFind.AlwaysVisible = true;
             this.tableGridView1.OptionsView.ShowAutoFilterRow = true;
             this.tableGridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -527,6 +530,7 @@
             this._dbInterface1.ItemsSeq.Add(this.itemString23);
             this._dbInterface1.Location = new System.Drawing.Point(0, 0);
             this._dbInterface1.Name = "_dbInterface1";
+            this._dbInterface1.ProgramDesign = false;
             this._dbInterface1.Size = new System.Drawing.Size(887, 630);
             this._dbInterface1.TabIndex = 0;
             this._dbInterface1.TableDockContainer = this.tableDockContainer1;
@@ -608,19 +612,19 @@
             // 
             this.formNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.formNavigatorControl1.Error = false;
-            this.formNavigatorControl1.Location = new System.Drawing.Point(244, 12);
+            this.formNavigatorControl1.Location = new System.Drawing.Point(245, 12);
             this.formNavigatorControl1.Name = "formNavigatorControl1";
             this.formNavigatorControl1.ShowToolTips = true;
-            this.formNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 4;
-            this.formNavigatorControl1.TableCaption = "Место";
+            this.formNavigatorControl1.TableCaption = "";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // PlaceCaptionTextEdit1
             // 
             this.PlaceCaptionTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "PlaceCaption", true));
-            this.PlaceCaptionTextEdit1.Location = new System.Drawing.Point(121, 66);
+            this.PlaceCaptionTextEdit1.Location = new System.Drawing.Point(121, 65);
             this.PlaceCaptionTextEdit1.Name = "PlaceCaptionTextEdit1";
             this.PlaceCaptionTextEdit1.Size = new System.Drawing.Size(707, 20);
             this.PlaceCaptionTextEdit1.StyleController = this.formLayoutControl1;
@@ -629,7 +633,7 @@
             // OperatingScheduleTextEdit1
             // 
             this.OperatingScheduleTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "OperatingSchedule", true));
-            this.OperatingScheduleTextEdit1.Location = new System.Drawing.Point(525, 186);
+            this.OperatingScheduleTextEdit1.Location = new System.Drawing.Point(525, 185);
             this.OperatingScheduleTextEdit1.Name = "OperatingScheduleTextEdit1";
             this.OperatingScheduleTextEdit1.Size = new System.Drawing.Size(303, 20);
             this.OperatingScheduleTextEdit1.StyleController = this.formLayoutControl1;
@@ -638,7 +642,7 @@
             // CommentTextEdit1
             // 
             this.CommentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Comment", true));
-            this.CommentTextEdit1.Location = new System.Drawing.Point(121, 210);
+            this.CommentTextEdit1.Location = new System.Drawing.Point(121, 209);
             this.CommentTextEdit1.Name = "CommentTextEdit1";
             this.CommentTextEdit1.Size = new System.Drawing.Size(707, 20);
             this.CommentTextEdit1.StyleController = this.formLayoutControl1;
@@ -647,7 +651,7 @@
             // CountryTextEdit1
             // 
             this.CountryTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Country", true));
-            this.CountryTextEdit1.Location = new System.Drawing.Point(121, 90);
+            this.CountryTextEdit1.Location = new System.Drawing.Point(121, 89);
             this.CountryTextEdit1.Name = "CountryTextEdit1";
             this.CountryTextEdit1.Size = new System.Drawing.Size(333, 20);
             this.CountryTextEdit1.StyleController = this.formLayoutControl1;
@@ -656,7 +660,7 @@
             // CityTextEdit1
             // 
             this.CityTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "City", true));
-            this.CityTextEdit1.Location = new System.Drawing.Point(555, 90);
+            this.CityTextEdit1.Location = new System.Drawing.Point(555, 89);
             this.CityTextEdit1.Name = "CityTextEdit1";
             this.CityTextEdit1.Size = new System.Drawing.Size(273, 20);
             this.CityTextEdit1.StyleController = this.formLayoutControl1;
@@ -665,7 +669,7 @@
             // StreetTextEdit1
             // 
             this.StreetTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Street", true));
-            this.StreetTextEdit1.Location = new System.Drawing.Point(121, 114);
+            this.StreetTextEdit1.Location = new System.Drawing.Point(121, 113);
             this.StreetTextEdit1.Name = "StreetTextEdit1";
             this.StreetTextEdit1.Size = new System.Drawing.Size(292, 20);
             this.StreetTextEdit1.StyleController = this.formLayoutControl1;
@@ -674,7 +678,7 @@
             // HouseTextEdit1
             // 
             this.HouseTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "House", true));
-            this.HouseTextEdit1.Location = new System.Drawing.Point(514, 114);
+            this.HouseTextEdit1.Location = new System.Drawing.Point(514, 113);
             this.HouseTextEdit1.Name = "HouseTextEdit1";
             this.HouseTextEdit1.Size = new System.Drawing.Size(109, 20);
             this.HouseTextEdit1.StyleController = this.formLayoutControl1;
@@ -683,7 +687,7 @@
             // LetterTextEdit1
             // 
             this.LetterTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Letter", true));
-            this.LetterTextEdit1.Location = new System.Drawing.Point(724, 114);
+            this.LetterTextEdit1.Location = new System.Drawing.Point(724, 113);
             this.LetterTextEdit1.Name = "LetterTextEdit1";
             this.LetterTextEdit1.Size = new System.Drawing.Size(104, 20);
             this.LetterTextEdit1.StyleController = this.formLayoutControl1;
@@ -692,7 +696,7 @@
             // ZipCodeTextEdit1
             // 
             this.ZipCodeTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "ZipCode", true));
-            this.ZipCodeTextEdit1.Location = new System.Drawing.Point(121, 186);
+            this.ZipCodeTextEdit1.Location = new System.Drawing.Point(121, 185);
             this.ZipCodeTextEdit1.Name = "ZipCodeTextEdit1";
             this.ZipCodeTextEdit1.Size = new System.Drawing.Size(303, 20);
             this.ZipCodeTextEdit1.StyleController = this.formLayoutControl1;
@@ -701,7 +705,7 @@
             // ApartmentTextEdit1
             // 
             this.ApartmentTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Apartment", true));
-            this.ApartmentTextEdit1.Location = new System.Drawing.Point(121, 138);
+            this.ApartmentTextEdit1.Location = new System.Drawing.Point(121, 137);
             this.ApartmentTextEdit1.Name = "ApartmentTextEdit1";
             this.ApartmentTextEdit1.Size = new System.Drawing.Size(207, 20);
             this.ApartmentTextEdit1.StyleController = this.formLayoutControl1;
@@ -710,7 +714,7 @@
             // EntranceTextEdit1
             // 
             this.EntranceTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Entrance", true));
-            this.EntranceTextEdit1.Location = new System.Drawing.Point(429, 138);
+            this.EntranceTextEdit1.Location = new System.Drawing.Point(429, 137);
             this.EntranceTextEdit1.Name = "EntranceTextEdit1";
             this.EntranceTextEdit1.Size = new System.Drawing.Size(155, 20);
             this.EntranceTextEdit1.StyleController = this.formLayoutControl1;
@@ -719,7 +723,7 @@
             // FloorTextEdit1
             // 
             this.FloorTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Floor", true));
-            this.FloorTextEdit1.Location = new System.Drawing.Point(685, 138);
+            this.FloorTextEdit1.Location = new System.Drawing.Point(685, 137);
             this.FloorTextEdit1.Name = "FloorTextEdit1";
             this.FloorTextEdit1.Size = new System.Drawing.Size(143, 20);
             this.FloorTextEdit1.StyleController = this.formLayoutControl1;
@@ -728,7 +732,7 @@
             // AddressTextEdit1
             // 
             this.AddressTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Address", true));
-            this.AddressTextEdit1.Location = new System.Drawing.Point(121, 162);
+            this.AddressTextEdit1.Location = new System.Drawing.Point(121, 161);
             this.AddressTextEdit1.Name = "AddressTextEdit1";
             this.AddressTextEdit1.Properties.ReadOnly = true;
             this.AddressTextEdit1.Size = new System.Drawing.Size(707, 20);
@@ -742,13 +746,13 @@
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.XPObjectWithPhonesCollectionGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.XPObjectWithPhonesCollectionGridControl1.Location = new System.Drawing.Point(24, 301);
+            this.XPObjectWithPhonesCollectionGridControl1.Location = new System.Drawing.Point(24, 299);
             this.XPObjectWithPhonesCollectionGridControl1.MainView = this.XPObjectWithPhonesCollectionGridView1;
             this.XPObjectWithPhonesCollectionGridControl1.Name = "XPObjectWithPhonesCollectionGridControl1";
             this.XPObjectWithPhonesCollectionGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.PhoneTypeRepGridLookUpEdit1});
             this.XPObjectWithPhonesCollectionGridControl1.ShowOnlyPredefinedDetails = true;
-            this.XPObjectWithPhonesCollectionGridControl1.Size = new System.Drawing.Size(804, 278);
+            this.XPObjectWithPhonesCollectionGridControl1.Size = new System.Drawing.Size(804, 280);
             this.XPObjectWithPhonesCollectionGridControl1.TabIndex = 25;
             this.XPObjectWithPhonesCollectionGridControl1.UseEmbeddedNavigator = true;
             this.XPObjectWithPhonesCollectionGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -828,7 +832,7 @@
             // LinkTextEdit1
             // 
             this.LinkTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.baseXPCollecton1, "Link", true));
-            this.LinkTextEdit1.Location = new System.Drawing.Point(121, 234);
+            this.LinkTextEdit1.Location = new System.Drawing.Point(121, 233);
             this.LinkTextEdit1.Name = "LinkTextEdit1";
             this.LinkTextEdit1.Size = new System.Drawing.Size(707, 20);
             this.LinkTextEdit1.StyleController = this.formLayoutControl1;
@@ -881,7 +885,7 @@
             this.LinkLayoutItem1});
             this.formDataLayoutGroup1.Location = new System.Drawing.Point(0, 23);
             this.formDataLayoutGroup1.Name = "formDataLayoutGroup1";
-            this.formDataLayoutGroup1.Size = new System.Drawing.Size(832, 235);
+            this.formDataLayoutGroup1.Size = new System.Drawing.Size(832, 234);
             this.formDataLayoutGroup1.Text = "Основные данные";
             // 
             // PlaceCaptionLayoutItem1
@@ -1031,9 +1035,9 @@
             this.XPObjectWithPhonesCollectionLayoutGroup1.CustomizationFormText = "Телефоны";
             this.XPObjectWithPhonesCollectionLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.XPObjectWithPhonesCollectionLayoutItem1});
-            this.XPObjectWithPhonesCollectionLayoutGroup1.Location = new System.Drawing.Point(0, 258);
+            this.XPObjectWithPhonesCollectionLayoutGroup1.Location = new System.Drawing.Point(0, 257);
             this.XPObjectWithPhonesCollectionLayoutGroup1.Name = "XPObjectWithPhonesCollectionLayoutGroup1";
-            this.XPObjectWithPhonesCollectionLayoutGroup1.Size = new System.Drawing.Size(832, 325);
+            this.XPObjectWithPhonesCollectionLayoutGroup1.Size = new System.Drawing.Size(832, 326);
             this.XPObjectWithPhonesCollectionLayoutGroup1.Text = "Телефоны";
             // 
             // XPObjectWithPhonesCollectionLayoutItem1
@@ -1042,7 +1046,7 @@
             this.XPObjectWithPhonesCollectionLayoutItem1.CustomizationFormText = "Телефоны";
             this.XPObjectWithPhonesCollectionLayoutItem1.Location = new System.Drawing.Point(0, 0);
             this.XPObjectWithPhonesCollectionLayoutItem1.Name = "XPObjectWithPhonesCollectionLayoutItem1";
-            this.XPObjectWithPhonesCollectionLayoutItem1.Size = new System.Drawing.Size(808, 282);
+            this.XPObjectWithPhonesCollectionLayoutItem1.Size = new System.Drawing.Size(808, 284);
             this.XPObjectWithPhonesCollectionLayoutItem1.Text = "Телефоны:";
             this.XPObjectWithPhonesCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.XPObjectWithPhonesCollectionLayoutItem1.TextVisible = false;
@@ -1083,13 +1087,13 @@
             // 
             this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
             this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(244, 12);
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(245, 12);
             this.tableNavigatorControl1.Name = "tableNavigatorControl1";
             this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(364, 19);
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
             this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "Место";
+            this.tableNavigatorControl1.TableCaption = "";
             this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutGroup1
