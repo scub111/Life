@@ -147,6 +147,13 @@
             this.AcronymGridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this._dbInterface1 = new RapidInterface.DBInterface();
             this.dockPanelMerge1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
+            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
+            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.formDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.formDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.formLayoutControl1 = new RapidInterface.LayoutControlEx();
@@ -222,13 +229,6 @@
             this.DatebookCostCollectionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.DatebookSportCollectionLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.DatebookSportCollectionLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableDockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.tableDockContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.tableLayoutControl1 = new RapidInterface.LayoutControlEx();
-            this.tableNavigatorControl1 = new RapidInterface.DataNavigatorEx(this.components);
-            this.tableLayoutGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tableNavigatorLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableGridLayoutItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.itemDateTime1 = new RapidInterface.DBInterfaceItemDateTime();
             this.itemString20 = new RapidInterface.DBInterfaceItemString();
@@ -340,6 +340,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonGridView1)).BeginInit();
             this._dbInterface1.SuspendLayout();
             this.dockPanelMerge1.SuspendLayout();
+            this.tableDockPanel1.SuspendLayout();
+            this.tableDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
+            this.tableLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             this.formDockPanel1.SuspendLayout();
             this.formDockContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).BeginInit();
@@ -392,13 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DatebookCostCollectionLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatebookSportCollectionLayoutGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatebookSportCollectionLayoutItem1)).BeginInit();
-            this.tableDockPanel1.SuspendLayout();
-            this.tableDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).BeginInit();
-            this.tableLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1738,7 +1738,7 @@
             // 
             // dockPanelMerge1
             // 
-            this.dockPanelMerge1.ActiveChild = this.tableDockPanel1;
+            this.dockPanelMerge1.ActiveChild = this.formDockPanel1;
             this.dockPanelMerge1.Controls.Add(this.formDockPanel1);
             this.dockPanelMerge1.Controls.Add(this.tableDockPanel1);
             this.dockPanelMerge1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
@@ -1750,6 +1750,85 @@
             this.dockPanelMerge1.Size = new System.Drawing.Size(1253, 814);
             this.dockPanelMerge1.Tabbed = true;
             this.dockPanelMerge1.TabsPosition = DevExpress.XtraBars.Docking.TabsPosition.Left;
+            // 
+            // tableDockPanel1
+            // 
+            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
+            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
+            this.tableDockPanel1.ID = new System.Guid("cf7208af-6fa3-42d9-927c-1913042145e9");
+            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
+            this.tableDockPanel1.Name = "tableDockPanel1";
+            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(942, 623);
+            this.tableDockPanel1.Size = new System.Drawing.Size(1218, 787);
+            this.tableDockPanel1.Text = "Таблица";
+            // 
+            // tableDockContainer1
+            // 
+            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
+            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
+            this.tableDockContainer1.Name = "tableDockContainer1";
+            this.tableDockContainer1.Size = new System.Drawing.Size(1218, 787);
+            this.tableDockContainer1.TabIndex = 0;
+            // 
+            // tableLayoutControl1
+            // 
+            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
+            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
+            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutControl1.Images = this.icons1;
+            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutControl1.Name = "tableLayoutControl1";
+            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
+            this.tableLayoutControl1.Size = new System.Drawing.Size(1218, 787);
+            this.tableLayoutControl1.TabIndex = 0;
+            // 
+            // tableNavigatorControl1
+            // 
+            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
+            this.tableNavigatorControl1.Error = false;
+            this.tableNavigatorControl1.Location = new System.Drawing.Point(428, 12);
+            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
+            this.tableNavigatorControl1.ShowToolTips = true;
+            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
+            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
+            this.tableNavigatorControl1.TabIndex = 5;
+            this.tableNavigatorControl1.TableCaption = "Ежедневник";
+            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
+            // 
+            // tableLayoutGroup1
+            // 
+            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
+            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.tableLayoutGroup1.GroupBordersVisible = false;
+            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.tableNavigatorLayoutItem1,
+            this.tableGridLayoutItem1});
+            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
+            this.tableLayoutGroup1.Size = new System.Drawing.Size(1218, 787);
+            this.tableLayoutGroup1.TextVisible = false;
+            // 
+            // tableNavigatorLayoutItem1
+            // 
+            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
+            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
+            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
+            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
+            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(1198, 23);
+            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableNavigatorLayoutItem1.TextVisible = false;
+            // 
+            // tableGridLayoutItem1
+            // 
+            this.tableGridLayoutItem1.Control = this.tableGridControl1;
+            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
+            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
+            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
+            this.tableGridLayoutItem1.Size = new System.Drawing.Size(1198, 744);
+            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.tableGridLayoutItem1.TextVisible = false;
             // 
             // formDockPanel1
             // 
@@ -1803,7 +1882,7 @@
             this.formNavigatorControl1.Size = new System.Drawing.Size(361, 19);
             this.formNavigatorControl1.StyleController = this.formLayoutControl1;
             this.formNavigatorControl1.TabIndex = 1;
-            this.formNavigatorControl1.TableCaption = "";
+            this.formNavigatorControl1.TableCaption = "Ежедневник";
             this.formNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // DateDateEditEx1
@@ -2657,85 +2736,6 @@
             this.DatebookSportCollectionLayoutItem1.Text = "Спорт:";
             this.DatebookSportCollectionLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.DatebookSportCollectionLayoutItem1.TextVisible = false;
-            // 
-            // tableDockPanel1
-            // 
-            this.tableDockPanel1.Controls.Add(this.tableDockContainer1);
-            this.tableDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.tableDockPanel1.FloatSize = new System.Drawing.Size(600, 600);
-            this.tableDockPanel1.ID = new System.Guid("cf7208af-6fa3-42d9-927c-1913042145e9");
-            this.tableDockPanel1.Location = new System.Drawing.Point(31, 23);
-            this.tableDockPanel1.Name = "tableDockPanel1";
-            this.tableDockPanel1.OriginalSize = new System.Drawing.Size(942, 623);
-            this.tableDockPanel1.Size = new System.Drawing.Size(1218, 787);
-            this.tableDockPanel1.Text = "Таблица";
-            // 
-            // tableDockContainer1
-            // 
-            this.tableDockContainer1.Controls.Add(this.tableLayoutControl1);
-            this.tableDockContainer1.Location = new System.Drawing.Point(0, 0);
-            this.tableDockContainer1.Name = "tableDockContainer1";
-            this.tableDockContainer1.Size = new System.Drawing.Size(1218, 787);
-            this.tableDockContainer1.TabIndex = 0;
-            // 
-            // tableLayoutControl1
-            // 
-            this.tableLayoutControl1.Controls.Add(this.tableGridControl1);
-            this.tableLayoutControl1.Controls.Add(this.tableNavigatorControl1);
-            this.tableLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutControl1.Images = this.icons1;
-            this.tableLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutControl1.Name = "tableLayoutControl1";
-            this.tableLayoutControl1.Root = this.tableLayoutGroup1;
-            this.tableLayoutControl1.Size = new System.Drawing.Size(1218, 787);
-            this.tableLayoutControl1.TabIndex = 0;
-            // 
-            // tableNavigatorControl1
-            // 
-            this.tableNavigatorControl1.DataSource = this.baseXPCollecton1;
-            this.tableNavigatorControl1.Error = false;
-            this.tableNavigatorControl1.Location = new System.Drawing.Point(428, 12);
-            this.tableNavigatorControl1.Name = "tableNavigatorControl1";
-            this.tableNavigatorControl1.ShowToolTips = true;
-            this.tableNavigatorControl1.Size = new System.Drawing.Size(361, 19);
-            this.tableNavigatorControl1.StyleController = this.tableLayoutControl1;
-            this.tableNavigatorControl1.TabIndex = 5;
-            this.tableNavigatorControl1.TableCaption = "";
-            this.tableNavigatorControl1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
-            // 
-            // tableLayoutGroup1
-            // 
-            this.tableLayoutGroup1.CustomizationFormText = "Основная группа";
-            this.tableLayoutGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.tableLayoutGroup1.GroupBordersVisible = false;
-            this.tableLayoutGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.tableNavigatorLayoutItem1,
-            this.tableGridLayoutItem1});
-            this.tableLayoutGroup1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutGroup1.Name = "tableLayoutGroup1";
-            this.tableLayoutGroup1.Size = new System.Drawing.Size(1218, 787);
-            this.tableLayoutGroup1.TextVisible = false;
-            // 
-            // tableNavigatorLayoutItem1
-            // 
-            this.tableNavigatorLayoutItem1.Control = this.tableNavigatorControl1;
-            this.tableNavigatorLayoutItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tableNavigatorLayoutItem1.CustomizationFormText = "Панель навигации";
-            this.tableNavigatorLayoutItem1.Location = new System.Drawing.Point(0, 0);
-            this.tableNavigatorLayoutItem1.Name = "tableNavigatorLayoutItem1";
-            this.tableNavigatorLayoutItem1.Size = new System.Drawing.Size(1198, 23);
-            this.tableNavigatorLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableNavigatorLayoutItem1.TextVisible = false;
-            // 
-            // tableGridLayoutItem1
-            // 
-            this.tableGridLayoutItem1.Control = this.tableGridControl1;
-            this.tableGridLayoutItem1.CustomizationFormText = "Таблица";
-            this.tableGridLayoutItem1.Location = new System.Drawing.Point(0, 23);
-            this.tableGridLayoutItem1.Name = "tableGridLayoutItem1";
-            this.tableGridLayoutItem1.Size = new System.Drawing.Size(1198, 744);
-            this.tableGridLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.tableGridLayoutItem1.TextVisible = false;
             // 
             // dockManager1
             // 
@@ -3691,6 +3691,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonGridView1)).EndInit();
             this._dbInterface1.ResumeLayout(false);
             this.dockPanelMerge1.ResumeLayout(false);
+            this.tableDockPanel1.ResumeLayout(false);
+            this.tableDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
+            this.tableLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             this.formDockPanel1.ResumeLayout(false);
             this.formDockContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.formLayoutControl1)).EndInit();
@@ -3743,13 +3750,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DatebookCostCollectionLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatebookSportCollectionLayoutGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatebookSportCollectionLayoutItem1)).EndInit();
-            this.tableDockPanel1.ResumeLayout(false);
-            this.tableDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutControl1)).EndInit();
-            this.tableLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLayoutGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableNavigatorLayoutItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGridLayoutItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
 

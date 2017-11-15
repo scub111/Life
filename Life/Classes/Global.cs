@@ -170,9 +170,9 @@ namespace Life
         /// </summary>
         public void SaveToXML()
         {
-            XmlSerializer xmlSer = new XmlSerializer(typeof(VarXml));
+            XmlSerializer deserializer = new XmlSerializer(typeof(VarXml));
             TextWriter textWriter = new StreamWriter(FilePath);
-            xmlSer.Serialize(textWriter, this);
+            deserializer.Serialize(textWriter, this);
             textWriter.Close();
         }
 
