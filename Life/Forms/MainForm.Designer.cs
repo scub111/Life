@@ -173,7 +173,7 @@
             this._dbForm1.Name = "_dbForm1";
             this._dbForm1.NotifyIcon = this.notifyIcon1;
             this._dbForm1.OwnerForm = this;
-            this._dbForm1.Size = new System.Drawing.Size(158, 756);
+            this._dbForm1.Size = new System.Drawing.Size(157, 756);
             this._dbForm1.TabIndex = 0;
             // 
             // barLayoutItem1
@@ -182,7 +182,7 @@
             this.barLayoutItem1.CustomizationFormText = "Навигация";
             this.barLayoutItem1.Location = new System.Drawing.Point(0, 26);
             this.barLayoutItem1.Name = "barLayoutItem1";
-            this.barLayoutItem1.Size = new System.Drawing.Size(158, 730);
+            this.barLayoutItem1.Size = new System.Drawing.Size(157, 730);
             this.barLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.barLayoutItem1.TextVisible = false;
             // 
@@ -221,8 +221,8 @@
             this.baseNavBarControl1.LinkSelectionMode = DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl;
             this.baseNavBarControl1.Location = new System.Drawing.Point(2, 28);
             this.baseNavBarControl1.Name = "baseNavBarControl1";
-            this.baseNavBarControl1.OptionsNavPane.ExpandedWidth = 154;
-            this.baseNavBarControl1.Size = new System.Drawing.Size(154, 726);
+            this.baseNavBarControl1.OptionsNavPane.ExpandedWidth = 153;
+            this.baseNavBarControl1.Size = new System.Drawing.Size(153, 726);
             this.baseNavBarControl1.SmallImages = this.icons1;
             this.baseNavBarControl1.TabIndex = 5;
             // 
@@ -540,7 +540,7 @@
             this.baseControlContainer1.Controls.Add(this._dbForm1);
             this.baseControlContainer1.Location = new System.Drawing.Point(4, 23);
             this.baseControlContainer1.Name = "baseControlContainer1";
-            this.baseControlContainer1.Size = new System.Drawing.Size(158, 756);
+            this.baseControlContainer1.Size = new System.Drawing.Size(157, 756);
             this.baseControlContainer1.TabIndex = 0;
             // 
             // baseDockManager1
@@ -574,6 +574,10 @@
             this.baseDocumentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.baseTabbedView1});
             // 
+            // baseTabbedView1
+            // 
+            this.baseTabbedView1.RootContainer.Element = null;
+            // 
             // baseLayoutControl1
             // 
             this.baseLayoutControl1.Controls.Add(this.filterClearButton1);
@@ -583,12 +587,12 @@
             this.baseLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.baseLayoutControl1.Name = "baseLayoutControl1";
             this.baseLayoutControl1.Root = this.baseLayoutGroup1;
-            this.baseLayoutControl1.Size = new System.Drawing.Size(158, 756);
+            this.baseLayoutControl1.Size = new System.Drawing.Size(157, 756);
             this.baseLayoutControl1.TabIndex = 0;
             // 
             // filterClearButton1
             // 
-            this.filterClearButton1.Image = ((System.Drawing.Image)(resources.GetObject("filterClearButton1.Image")));
+            this.filterClearButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("filterClearButton1.ImageOptions.Image")));
             this.filterClearButton1.Location = new System.Drawing.Point(2, 2);
             this.filterClearButton1.Name = "filterClearButton1";
             this.filterClearButton1.Size = new System.Drawing.Size(26, 22);
@@ -599,7 +603,7 @@
             // 
             this.filterTextEdit1.Location = new System.Drawing.Point(32, 2);
             this.filterTextEdit1.Name = "filterTextEdit1";
-            this.filterTextEdit1.Size = new System.Drawing.Size(124, 20);
+            this.filterTextEdit1.Size = new System.Drawing.Size(123, 20);
             this.filterTextEdit1.StyleController = this.baseLayoutControl1;
             this.filterTextEdit1.TabIndex = 6;
             // 
@@ -615,7 +619,7 @@
             this.baseLayoutGroup1.Location = new System.Drawing.Point(0, 0);
             this.baseLayoutGroup1.Name = "baseLayoutGroup1";
             this.baseLayoutGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.baseLayoutGroup1.Size = new System.Drawing.Size(158, 756);
+            this.baseLayoutGroup1.Size = new System.Drawing.Size(157, 756);
             this.baseLayoutGroup1.TextVisible = false;
             // 
             // filterLayoutItem1
@@ -624,7 +628,7 @@
             this.filterLayoutItem1.CustomizationFormText = "Фильтр";
             this.filterLayoutItem1.Location = new System.Drawing.Point(30, 0);
             this.filterLayoutItem1.Name = "filterLayoutItem1";
-            this.filterLayoutItem1.Size = new System.Drawing.Size(128, 26);
+            this.filterLayoutItem1.Size = new System.Drawing.Size(127, 26);
             this.filterLayoutItem1.TextSize = new System.Drawing.Size(0, 0);
             this.filterLayoutItem1.TextVisible = false;
             // 
